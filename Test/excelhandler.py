@@ -8,19 +8,14 @@ def runMacro(xlsmFileName, macroname):
     os.listdir('.')
     modulename = "Module1"
     if os.path.exists(xlsmFileName):
-        xl = win32com.client.DispatchEx("Excel.Application")
-        #print('Opening '+xlsxFileName)
-        wb = xl.Workbooks.Open(os.path.abspath(xlsmFileName))
-        print('Running macro: ' + xlsmFileName + "!" + modulename + "." + macroname)
-        xl.Application.Run(xlsmFileName + "!" + modulename + "." + macroname)
-        #print('Saving '+xlsxFileName)
-        wb.Save()
-        #print('Closing '+xlsxFileName)
-        xl.Visible = True
-        wb.Close()
+        xl = win32com.client.Dispatch('Excel.Application')
+        xl.Workbooks.Open(Filename=xlsmFileName, ReadOnly=1)
+        xl.Application.Run("copyThings")
         xl.Application.Quit()
-        print(xlsmFileName + ' closed.')
-        del xl, wb
+        del xl
+
+    # PRINT FINAL COMPLETED MESSAGE#
+        print("Macro refresh completed!")
 
 
 

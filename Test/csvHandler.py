@@ -9,9 +9,9 @@ import shutil
 
 def csv2xl(csvFileName, xlFileName, xlSheetName, kommunekode, macroEnebeled):
     os.listdir('.')
-    workingFileName = xlFileName+kommunekode+'.xlsm'
+    workingFileName = xlFileName+kommunekode+'.xlsx'
     print("Writing "+csvFileName+" to "+workingFileName)
-    shutil.copyfile(xlFileName+'.xlsm', workingFileName)
+    shutil.copyfile(xlFileName+'.xlsx', workingFileName)
     data = pd.read_csv(csvFileName, encoding='latin1', header=0, quotechar='"', delimiter=";")
 
     if macroEnebeled:
@@ -27,6 +27,11 @@ def csv2xl(csvFileName, xlFileName, xlSheetName, kommunekode, macroEnebeled):
     writer.close()
     print("Saved " + workingFileName + " successfully")
 
+    filename_macro = workingFileName + '.xlsm'
+    workbook = writer.book
+    workbook.filename = filename_macro
+    workbook.add_vba_project('vbaProject.bin')
+    writer.save()
 
 def xl2csv(csvFileName, xlsxFileName, xlsxSheetName):
     print("Writing "+xlsxFileName+" to "+csvFileName)
