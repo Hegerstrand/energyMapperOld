@@ -6,15 +6,13 @@ import excelhandler
 def calculateEnergyDemand(kommunekode):
     limit = 100*1000
     Filename = 'BBR'+kommunekode
-    SBi = 'Energi'
     xlFilename = 'SBi'
 
-    sql2csv.getBBRfromKommune(str(kommunekode), 'BBR.sql', Filename + '.csv', str(limit))
-    # #sql2csv.getBBRfromKommune(str(kommunekode), BBR+'Sum.sql', BBR+'Sum.csv', str(limit))
+    #sql2csv.getBBRfromKommune(str(kommunekode), 'BBR.sql', Filename + '.csv', str(limit))
 
-    csvHandler.csv2xl(Filename + '.csv', xlFilename, kommunekode)
+    #csvHandler.csv2xl(Filename + '.csv', xlFilename, kommunekode)
 
     excelhandler.runMacro(xlFilename+kommunekode, 'copyThings')
 
-    csvHandler.xl2csv(Filename + SBi + '.csv', xlFilename+kommunekode+'.xlsm', SBi)
+    csvHandler.xl2csv('BBREnergi.csv', xlFilename+kommunekode + '.xlsm', 'Energi')
 

@@ -1,25 +1,22 @@
 import os
-import math
-import csv
 import pandas as pd
-import numpy as np
 from openpyxl import load_workbook
-from openpyxl import Workbook
 import shutil
 
 def csv2xl(csvFileName, xlFileName, kommunekode):
     os.listdir('.')
-    workingFileName = xlFileName+kommunekode+'.xlsx'
-    print("Writing "+csvFileName+" to " + workingFileName)
-    shutil.copyfile(xlFileName+'.xlsx', workingFileName)
+    FileName = xlFileName+kommunekode
+    print("Writing " + csvFileName + " to " + FileName+'.xlsm')
+    shutil.copyfile(xlFileName+'.xlsm', FileName+'.xlsm')
     data = pd.read_csv(csvFileName, encoding='latin1', header=0, quotechar='"', delimiter=";")
-    writer = pd.ExcelWriter(workingFileName, engine='openpyxl')
-    book = load_workbook(workingFileName)
+    book = load_workbook(filename=xlFileName+'.xlsm', read_only=False, keep_vba=True)
+    writer = pd.ExcelWriter(FileName+'.xlsm', engine='openpyxl')
     writer.book = book
     data.to_excel(writer, sheet_name='BBR')
     writer.save()
     writer.close()
-    print("Saved " + workingFileName + " successfully")
+    print("Done writing " + csvFileName + " to " + FileName + '.xlsm')
+
 
 
 def xl2csv(csvFileName, xlsxFileName, xlsxSheetName):

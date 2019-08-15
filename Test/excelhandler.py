@@ -1,25 +1,19 @@
 import os, os.path
-import math
-import csv
 import pandas as pd
 import win32com.client
 
 def runMacro(FileName, macroname):
     os.listdir('.')
-    xlsxwriterwriter = pd.ExcelWriter(FileName+'.xlsx', engine='xlsxwriter')
-    workbook = xlsxwriterwriter.book
-    workbook.filename = FileName+'.xlsm'
-    workbook.add_vba_project('vbaProject.bin')
-    xlsxwriterwriter.save()
-    print('File ' + FileName+'.xlsx saved as ' + FileName+'.xlsm')
+    print('Running macro: ' + macroname)
     if os.path.exists(FileName+'.xlsm'):
-        xl = win32com.client.Dispatch('Excel.Application')
-        xl.Workbooks.Open(Filename=FileName+'.xlsm', ReadOnly=1)
-        xl.Application.Run("copyThings")
+        xl = win32com.client.DispatchEx("Excel.Application")
+        wb = xl.Workbooks.Open(os.path.abspath(FileName+'.xlsm'))
+        xl.Application.Run(FileName+'.xlsm' + "!" + macroname)
+        wb.Save()
+        xl.Visible = True
+        wb.Close()
         xl.Application.Quit()
-        del xl
-
-    # PRINT FINAL COMPLETED MESSAGE#
+        del xl, wb
         print("Macro refresh completed!")
 
 
