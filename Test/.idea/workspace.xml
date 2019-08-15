@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBR.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BBR.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBR230.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBR561.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BBRhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/BBRhandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapInfo/kommunetable.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/kommunetable.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SBi.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SBi.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/SBi.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SBi167.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SBi230.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SBi561.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/csvHandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/excelhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/excelhandler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,12 +73,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="29" />
-          <entry key="py" value="77" />
+          <entry key="py" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="106" />
+          <entry key="Python" value="190" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -110,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/excelhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="316">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -122,8 +122,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csvHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="323">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -135,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/BBRhandler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -423,7 +423,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/excelhandler.py</url>
-          <line>45</line>
+          <line>50</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -578,13 +578,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excelhandler.py">
+    <entry file="file://$PROJECT_DIR$/sql2csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="4" column="59" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -598,17 +595,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql2csv.py">
+    <entry file="file://$PROJECT_DIR$/excelhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="59" />
+        <state relative-caret-position="316">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BBRhandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -617,8 +617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csvHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="323">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

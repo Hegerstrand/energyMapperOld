@@ -4,12 +4,17 @@ import csv
 import pandas as pd
 import win32com.client
 
-def runMacro(xlsmFileName, macroname):
+def runMacro(FileName, macroname):
     os.listdir('.')
-    modulename = "Module1"
-    if os.path.exists(xlsmFileName):
+    xlsxwriterwriter = pd.ExcelWriter(FileName+'.xlsx', engine='xlsxwriter')
+    workbook = xlsxwriterwriter.book
+    workbook.filename = FileName+'.xlsm'
+    workbook.add_vba_project('vbaProject.bin')
+    xlsxwriterwriter.save()
+    print('File ' + FileName+'.xlsx saved as ' + FileName+'.xlsm')
+    if os.path.exists(FileName+'.xlsm'):
         xl = win32com.client.Dispatch('Excel.Application')
-        xl.Workbooks.Open(Filename=xlsmFileName, ReadOnly=1)
+        xl.Workbooks.Open(Filename=FileName+'.xlsm', ReadOnly=1)
         xl.Application.Run("copyThings")
         xl.Application.Quit()
         del xl
