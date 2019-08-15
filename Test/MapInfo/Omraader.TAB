@@ -1,0 +1,18 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 6
+    Id Integer ;
+    Områdenavn Char (32) ;
+    Areal Float ;
+    Antal Integer ;
+    Varmebehov Float ;
+    Varmedensitet Float ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "9f44f44b-f6b1-418f-85c0-879ad03b7fcf"
+end_metadata

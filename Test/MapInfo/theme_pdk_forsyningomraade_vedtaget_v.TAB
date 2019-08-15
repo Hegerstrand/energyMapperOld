@@ -1,0 +1,58 @@
+!table
+!version 780
+!charset WindowsLatin1
+
+Definition Table
+  File "theme_pdk_forsyningomraade_vedtaget_v.xml"
+  Type WFS Charset "WindowsLatin1"
+  Fields 20
+    uuid Char (32) ;
+    temakode Integer ;
+    temanavn Char (32) ;
+    objekt_id Integer ;
+    systid_fra Char (32) ;
+    systid_til Char (32) ;
+    oprettet Char (32) ;
+    oprindkode Integer ;
+    oprindelse Char (32) ;
+    statuskode Integer ;
+    status Char (32) ;
+    cvr_kode Char (32) ;
+    cvrname Char (32) ;
+    bruger_id Char (32) ;
+    link Char (191) ;
+    navn1203 Char (113) ;
+    type1203 Integer ;
+    vaerdi1203 Char (41) ;
+    forsyid Char (32) ;
+    forsytekst Char (82) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 8, 115, ""m"", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315)"
+"\DefaultStyles" = ""
+"\DefaultStyles\Symbol" = ""
+"\DefaultStyles\Symbol\Type" = "0"
+"\DefaultStyles\Symbol\Pointsize" = "9"
+"\DefaultStyles\Symbol\Color" = "32960"
+"\DefaultStyles\Symbol\Code" = "34"
+"\DefaultStyles\LinePen" = ""
+"\DefaultStyles\LinePen\LineWidth" = "2"
+"\DefaultStyles\LinePen\LineStyle" = "0"
+"\DefaultStyles\LinePen\Color" = "14680064"
+"\DefaultStyles\LinePen\Pattern" = "2"
+"\DefaultStyles\Pen" = ""
+"\DefaultStyles\Pen\LineWidth" = "2"
+"\DefaultStyles\Pen\LineStyle" = "0"
+"\DefaultStyles\Pen\Color" = "0"
+"\DefaultStyles\Pen\Pattern" = "2"
+"\DefaultStyles\Brush" = ""
+"\DefaultStyles\Brush\Pattern" = "1"
+"\DefaultStyles\Brush\Forecolor" = "16777215"
+"\DefaultStyles\Brush\Backcolor" = "16777215"
+"\DefaultStyles\Brush\Transparent" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "5efa219e-132a-4535-90df-8bb0b89548f2"
+end_metadata

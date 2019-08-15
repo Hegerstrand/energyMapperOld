@@ -1,0 +1,1 @@
+declare sub getEnergy(nWindowID as integer) 

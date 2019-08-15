@@ -1,0 +1,6 @@
+[link]
+Application = EnergyMapper.mbx
+module = Main.mbo
+module = Maps.mbo
+module = Local.mbo
+module = Worker.mbo

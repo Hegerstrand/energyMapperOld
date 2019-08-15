@@ -1,0 +1,21 @@
+include "External.def"
+
+sub getBBR(kommunekode AS String)	
+	Dim commandLine As String
+	commandLine = "C:\Users\JOLN\PycharmProjects\Test\runbatch.bat "+kommunekode 
+	Run Program commandLine
+end sub
+
+
+sub getDAGI(nWindowID AS Integer)		
+
+	Register Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kommuneinddeling.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kommuneinddeling.TAB"
+	Open Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kommuneinddeling.TAB" Interactive
+	Add Map Auto Layer Kommuneinddeling
+
+end sub
+
+sub doNothing()	
+
+end sub
+

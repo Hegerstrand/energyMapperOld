@@ -1,0 +1,23 @@
+include "MapBasic.def"
+include "External.def"
+include "Local.def"
+include "Worker.def"
+
+Declare Sub main
+
+
+Sub main	
+	Close All
+	Dim nWindowID As Integer	
+
+	Register Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kort.xml" Type "WMS" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Into "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kort.TAB"
+	Open Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kort.TAB" Interactive
+	Map From Kort
+	nWindowID = FrontWindow()
+
+	Set Map Window nWindowID Layer 1 Display Global contrast 50 brightness 50 alpha 219 transparency on color 16777215 grayscale on
+	
+	call getEnergy(nWindowID)
+	call doWork(nWindowID)
+
+end sub

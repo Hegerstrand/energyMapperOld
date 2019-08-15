@@ -1,0 +1,3 @@
+declare sub getBBR(kommunekode as String) 
+declare sub getDAGI(nWindowID as integer) 
+declare sub doNothing() 

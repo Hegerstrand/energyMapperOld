@@ -1,0 +1,15 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "kommunekoder.txt"
+  Type ASCII Delimiter 09 Titles Charset "WindowsLatin1"
+  Fields 2
+    kommunenummer Smallint ;
+    kommune Char (17) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "0ec0177c-1d5e-445e-90f6-491b3bf9dd52"
+end_metadata

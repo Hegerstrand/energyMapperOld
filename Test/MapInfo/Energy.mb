@@ -1,0 +1,67 @@
+include "MapBasic.def"
+include "External.def"
+
+Declare Sub main
+
+Declare Sub CancelButton
+
+
+Sub main	
+	Close All	
+	Dim nWindowID As Integer	
+   
+	Register Table "C:\Users\JOLN\PycharmProjects\Test\kommunekoder.txt"  TYPE ASCII Delimiter 9 Titles Charset "WindowsLatin1" Into "C:\Users\JOLN\PycharmProjects\Test\kommunetable.TAB"
+	Open Table "C:\Users\JOLN\PycharmProjects\Test\kommunetable.TAB" Interactive
+	Browse * From kommunetable
+	nWindowID = FrontWindow()
+
+   Dim i as integer
+   Dim kommunenavn, kommunekode As Alias  
+   Dim _dropdown(50),_kommunekoder(50) as String   
+	Dim iSelection as Integer 
+	
+	Select kommune, kommunenummer from kommunetable into kommunelist
+	   
+	For i = 1 to SelectionInfo(SEL_INFO_NROWS)         
+       ReDim _dropdown(i)        
+       ReDim _kommunekoder(i)
+       Fetch rec i From kommunelist	
+		kommunenavn = kommunelist+ ".col1"        	
+		_dropdown(i) = kommunenavn  
+		kommunekode = kommunelist+ ".col2"
+		_kommunekoder(i) = kommunekode  
+   Next
+
+
+    DIALOG
+     POSITION 205, 150
+        WIDTH 110 HEIGHT 60
+        TITLE "Vælg en kommune"
+        CONTROL PopupMenu
+          POSITION 3, 15
+          WIDTH 90 HEIGHT 60
+          ID 2
+          TITLE from variable _dropdown
+			Into iSelection
+        CONTROL OKButton
+          POSITION 45, 40
+          WIDTH 38 HEIGHT 14
+          TITLE "OK"
+        CONTROL CancelButton
+          POSITION 5, 40
+          WIDTH 38 HEIGHT 14
+          TITLE "Cancel"
+          CALLING CancelButton			
+	
+	If CommandInfo(CMD_INFO_DLG_OK) then	'// Check that the OK button was clicked in dialog box		
+
+		Print "Finder nu BBR data for " & _dropdown(iSelection) &" med kommunenummer "& _kommunekoder(iSelection)	
+		call getBBR(_kommunekoder(iSelection))
+		
+	End If
+
+end sub
+
+
+Sub CancelButton
+End Sub

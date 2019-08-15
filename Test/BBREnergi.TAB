@@ -1,0 +1,34 @@
+﻿!table
+!version 1520
+!charset UTF-8
+
+Definition Table
+  File "BBREnergi.csv"
+  Type ASCII Delimiter ";" Titles Charset "UTF-8"
+  Fields 21
+    ﻿BBR! Smallint ;
+    Vejnavn Char (22) ;
+    Husnummer Char (4) ;
+    Matrikkelnummer Char (6) ;
+    Anv__klasse Smallint ;
+    Opvarmet_areal Integer ;
+    Bygningsår Smallint ;
+    Opvarmningsform Char (23) ;
+    Bygningstype Char (104) ;
+    Kategori Char (86) ;
+    Sektor Char (43) ;
+    SBi Char (10) ;
+    Enhedsvarmebehov_SBi_kWh_m² Float ;
+    Varmebehov_Sbi_MWh_år Float ;
+    VpD Char (9) ;
+    Enhedsvarmebehov_VpD_kWh_m² Float ;
+    Varmebehov_VpD_MWh_år Float ;
+    X Float ;
+    Y Float ;
+    Adressepunktsid Char (1) ;
+    Område Char (1) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "f457f4b0-3d83-4609-b67b-88b45c3108dd"
+end_metadata

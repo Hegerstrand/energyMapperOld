@@ -1,0 +1,218 @@
+!table
+!version 900
+!charset WindowsLatin1
+
+Definition Table
+  File "theme_pdk_lokalplan_vedtaget_v.xml"
+  Type WFS Charset "WindowsLatin1"
+  Fields 180
+    oid LargeInt ;
+    id Integer ;
+    planid Integer ;
+    komnr Integer ;
+    objektkode Integer ;
+    plantype Float ;
+    plannr Char (32) ;
+    plannavn Char (130) ;
+    anvgen Integer ;
+    datoforsl Integer ;
+    datovedt Integer ;
+    datoaflyst Integer ;
+    datoikraft Integer ;
+    datostart Integer ;
+    datoslut Integer ;
+    datoattr Integer ;
+    datogeom Integer ;
+    doklink Char (89) ;
+    distrikt Char (50) ;
+    zone Integer ;
+    bebygpct Integer ;
+    bebygpctaf Integer ;
+    bebygpctar Integer ;
+    m3_m2 Float ;
+    maxetager Float ;
+    maxbygnhjd Float ;
+    minmiljo Integer ;
+    maxmiljo Integer ;
+    bevarbest Char (254) ;
+    bebyggrad Integer ;
+    mingrund Integer ;
+    dataprod Char (40) ;
+    digigrundl Char (32) ;
+    digigrundd Integer ;
+    datooprt Char (32) ;
+    datoopdt Char (32) ;
+    anvendelsegenerel Char (32) ;
+    kommunenavn Char (32) ;
+    zonestatus Char (32) ;
+    planstatus Char (32) ;
+    megawatt Float ;
+    vvmredeg Logical ;
+    sforhold Char (254) ;
+    minuds Float ;
+    eareal Integer ;
+    earealh Integer ;
+    m3_m2h Integer ;
+    ianvreg Logical ;
+    izonereg Logical ;
+    iomfangreg Logical ;
+    iudstykreg Logical ;
+    kompleks Logical ;
+    kbeskriv Char (254) ;
+    vindbeskriv Char (254) ;
+    udstykforbud Logical ;
+    statsplan Logical ;
+    sforaktuel Logical ;
+    anvspec1 Integer ;
+    bygpct1 Integer ;
+    bygpcth1 Integer ;
+    eareal1 Integer ;
+    earealh1 Integer ;
+    m3_m21 Float ;
+    m3_m2h1 Integer ;
+    maxbhjd1 Float ;
+    maxetage1 Float ;
+    bygpctar1 Integer ;
+    minuds1 Float ;
+    udstykfb1 Logical ;
+    anvspec2 Integer ;
+    bygpct2 Integer ;
+    bygpcth2 Integer ;
+    eareal2 Integer ;
+    earealh2 Integer ;
+    m3_m22 Float ;
+    m3_m2h2 Integer ;
+    maxbhjd2 Float ;
+    maxetage2 Float ;
+    bygpctar2 Integer ;
+    minuds2 Float ;
+    udstykfb2 Logical ;
+    anvspec3 Integer ;
+    bygpct3 Integer ;
+    bygpcth3 Integer ;
+    eareal3 Integer ;
+    earealh3 Integer ;
+    m3_m23 Float ;
+    m3_m2h3 Integer ;
+    maxbhjd3 Float ;
+    maxetage3 Float ;
+    bygpctar3 Integer ;
+    minuds3 Float ;
+    udstykfb3 Logical ;
+    anvspec4 Integer ;
+    bygpct4 Integer ;
+    bygpcth4 Integer ;
+    eareal4 Integer ;
+    earealh4 Integer ;
+    m3_m24 Float ;
+    m3_m2h4 Integer ;
+    maxbhjd4 Float ;
+    maxetage4 Float ;
+    bygpctar4 Integer ;
+    minuds4 Float ;
+    udstykfb4 Logical ;
+    anvspec5 Integer ;
+    bygpct5 Integer ;
+    bygpcth5 Integer ;
+    eareal5 Integer ;
+    earealh5 Integer ;
+    m3_m25 Float ;
+    m3_m2h5 Integer ;
+    maxbhjd5 Float ;
+    maxetage5 Float ;
+    bygpctar5 Integer ;
+    minuds5 Float ;
+    udstykfb5 Logical ;
+    anvspec6 Integer ;
+    bygpct6 Integer ;
+    bygpcth6 Integer ;
+    eareal6 Integer ;
+    earealh6 Integer ;
+    m3_m26 Float ;
+    m3_m2h6 Integer ;
+    maxbhjd6 Float ;
+    maxetage6 Float ;
+    bygpctar6 Integer ;
+    minuds6 Float ;
+    udstykfb6 Logical ;
+    anvspec7 Integer ;
+    bygpct7 Integer ;
+    bygpcth7 Integer ;
+    eareal7 Integer ;
+    earealh7 Integer ;
+    m3_m27 Float ;
+    m3_m2h7 Integer ;
+    maxbhjd7 Float ;
+    maxetage7 Float ;
+    bygpctar7 Integer ;
+    minuds7 Float ;
+    udstykfb7 Logical ;
+    anvspec8 Integer ;
+    bygpct8 Integer ;
+    bygpcth8 Integer ;
+    eareal8 Integer ;
+    earealh8 Integer ;
+    m3_m28 Float ;
+    m3_m2h8 Integer ;
+    maxbhjd8 Float ;
+    maxetage8 Float ;
+    bygpctar8 Integer ;
+    minuds8 Float ;
+    udstykfb8 Logical ;
+    anvspec9 Integer ;
+    bygpct9 Integer ;
+    bygpcth9 Integer ;
+    eareal9 Integer ;
+    earealh9 Integer ;
+    m3_m29 Float ;
+    m3_m2h9 Integer ;
+    maxbhjd9 Float ;
+    maxetage9 Float ;
+    bygpctar9 Integer ;
+    minuds9 Float ;
+    udstykfb9 Logical ;
+    anvspec10 Integer ;
+    bygpct10 Integer ;
+    bygpcth10 Integer ;
+    eareal10 Integer ;
+    earealh10 Integer ;
+    m3_m210 Float ;
+    m3_m2h10 Integer ;
+    maxbhjd10 Float ;
+    maxetage10 Float ;
+    bygpctar10 Integer ;
+    minuds10 Float ;
+    udstykfb10 Logical ;
+    abestem1 Integer ;
+    abestem2 Integer ;
+    abestem3 Integer ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 8, 115, ""m"", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315)"
+"\DefaultStyles" = ""
+"\DefaultStyles\Symbol" = ""
+"\DefaultStyles\Symbol\Type" = "0"
+"\DefaultStyles\Symbol\Pointsize" = "9"
+"\DefaultStyles\Symbol\Color" = "32960"
+"\DefaultStyles\Symbol\Code" = "34"
+"\DefaultStyles\LinePen" = ""
+"\DefaultStyles\LinePen\LineWidth" = "2"
+"\DefaultStyles\LinePen\LineStyle" = "0"
+"\DefaultStyles\LinePen\Color" = "14680064"
+"\DefaultStyles\LinePen\Pattern" = "2"
+"\DefaultStyles\Pen" = ""
+"\DefaultStyles\Pen\LineWidth" = "2"
+"\DefaultStyles\Pen\LineStyle" = "0"
+"\DefaultStyles\Pen\Color" = "0"
+"\DefaultStyles\Pen\Pattern" = "2"
+"\DefaultStyles\Brush" = ""
+"\DefaultStyles\Brush\Pattern" = "1"
+"\DefaultStyles\Brush\Forecolor" = "16777215"
+"\DefaultStyles\Brush\Backcolor" = "16777215"
+"\DefaultStyles\Brush\Transparent" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "7557e030-f25c-4454-bf2c-50b0e7b2a7c2"
+end_metadata

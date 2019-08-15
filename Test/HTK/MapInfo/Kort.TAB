@@ -1,0 +1,14 @@
+!table
+!version 750
+!charset WindowsLatin1
+
+Definition Table
+  File "Kort.xml"
+  Type "WMS"
+  CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0
+ Charset "WindowsLatin1"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "700a25e6-247f-4089-bdbe-4a17a156d941"
+end_metadata
