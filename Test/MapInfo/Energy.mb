@@ -10,17 +10,18 @@ Sub main
 	Close All	
 	Dim nWindowID As Integer	
    
-	Register Table "C:\Users\JOLN\PycharmProjects\Test\kommunekoder.txt"  TYPE ASCII Delimiter 9 Titles Charset "WindowsLatin1" Into "C:\Users\JOLN\PycharmProjects\Test\kommunetable.TAB"
-	Open Table "C:\Users\JOLN\PycharmProjects\Test\kommunetable.TAB" Interactive
+	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\kommunekoder.txt"  TYPE ASCII Delimiter 9 Titles Charset "WindowsLatin1" Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\kommunetable.TAB"
+	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\kommunetable.TAB" Interactive
 	Browse * From kommunetable
 	nWindowID = FrontWindow()
+	set browse window nWindowID order by 2
 
    Dim i as integer
    Dim kommunenavn, kommunekode As Alias  
    Dim _dropdown(50),_kommunekoder(50) as String   
 	Dim iSelection as Integer 
 	
-	Select kommune, kommunenummer from kommunetable into kommunelist
+	Select kommune, kommunenummer from kommunetable into kommunelist order by kommune
 	   
 	For i = 1 to SelectionInfo(SEL_INFO_NROWS)         
        ReDim _dropdown(i)        

@@ -1,4 +1,4 @@
-cd C:\Users\JOLN\PycharmProjects\Test
+cd C:\Users\JOLN\Documents\GitHub\energyMapper\Test
 python EnergyPlanner.py %1
 @rem cd MapInfo
 @rem mapinfopro /k EnergyMapper.mbx
