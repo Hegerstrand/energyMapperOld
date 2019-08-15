@@ -1,7 +1,7 @@
 include "Worker.def"
 
 sub doWork(nWindowID as integer)	
-	Create Table "Omraader" (Id Integer,Områdenavn Char(32),Areal Float,Antal Integer,Varmebehov Float,Varmedensitet Float) file "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Omraader.TAB" TYPE NATIVE Charset "WindowsLatin1"
+	Create Table "Omraader" (Id Integer,Områdenavn Char(32),Areal Float,Antal Integer,Varmebehov Float,Varmedensitet Float) file "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Omraader.TAB" TYPE NATIVE Charset "WindowsLatin1"
 	Create Map For Omraader CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315)
 	Add Map Layer Omraader
 	Set Map Layer 1 Editable On
@@ -21,16 +21,17 @@ sub doWork(nWindowID as integer)
 	set legend window nWindowID layer prev display on shades on symbols off lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on  
 	Set Map Window nWindowID  Layer 2 FriendlyName "Opvarmningsform"
 
-	shade window nWindowID 3 with Sektor values  "Handel og servicevirksomheder" Symbol (45,0,10,"MapInfo Points of Interest",16,0) ,"Industri" Symbol (144,0,12,"MapInfo World POI",0,0) ,"Kommunale og andre offentlige institutioner" Symbol (56,0,14,"MapInfo Points of Interest",16,0) ,"Private husholdninger" Symbol (99,0,9,"MapInfo World POI",16,0) default Symbol (40,0,12) 
+	shade window nWindowID 3 with Sektor values  "Handel og servicevirksomheder" Symbol (45,0,9,"MapInfo Points of Interest",16,0) ,"Industri" Symbol (144,0,9,"MapInfo World POI",16,0) ,"Kommunale og andre offentlige institutioner" Symbol (56,0,14,"MapInfo Points of Interest",1,0) ,"Private husholdninger" Symbol (35,0,5,"Map Symbols",0,0) default Symbol (40,0,12)  
 	set legend window nWindowID layer prev display on shades off symbols on lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on  
+
 	Set Map Window nWindowID  Layer 3 FriendlyName "Sektors"
 	Set Map Window nWindowID  Layer 3 Display Off
 	Set Map Window nWindowID  Zoom Entire Layer 2
 
 
-	Set Map Window nWindowID  Layer 4 Alpha 153 Set Window 3364 Enhanced On 
-	Set Map Window nWindowID  Layer 3 Alpha 153 Set Window 3364 Enhanced On 
-	Set Map Window nWindowID  Layer 2 Alpha 153 Set Window 3364 Enhanced On 
+	Set Map Window nWindowID  Layer 4 Alpha 153 Set Window nWindowID Enhanced On 
+	Set Map Window nWindowID  Layer 3 Alpha 153 Set Window nWindowID Enhanced On 
+	Set Map Window nWindowID  Layer 2 Alpha 153 Set Window nWindowID Enhanced On 
 
 
 	Save Workspace As "Energikortlaegning.WOR"

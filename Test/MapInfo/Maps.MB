@@ -2,8 +2,8 @@ include "Maps.def"
 
 sub addMaps()
 	
-	Register Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kort.xml" Type "WMS" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Into "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kort.TAB"
-	Open Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kort.TAB" Interactive
+	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kort.xml" Type "WMS" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kort.TAB"
+	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kort.TAB" Interactive
 	Map From Kort	Dim 
 
 	nWindowID As Integer	
@@ -11,18 +11,18 @@ sub addMaps()
 
 	Set Map Window nWindowID Layer 1 Display Global contrast 50 brightness 50 alpha 219 transparency on color 16777215 grayscale on
 
-	Register Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kommuneinddeling.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kommuneinddeling.TAB"
-	Open Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\Kommuneinddeling.TAB" Interactive
+	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kommuneinddeling.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kommuneinddeling.TAB"
+	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kommuneinddeling.TAB" Interactive
 	Add Map Auto Layer Kommuneinddeling
 
 
-	Register Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\lokalplan_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\PycharmProjects\Test\MapInfo\lokalplan_vedtaget.TAB"
-	Open Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\lokalplan_vedtaget.TAB" Interactive
+	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\lokalplan_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\lokalplan_vedtaget.TAB"
+	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\lokalplan_vedtaget.TAB" Interactive
 	Add Map Auto Layer lokalplan_vedtaget
 	Set Map Window nWindowID Layer 1 Display Global  Global Pen (1,2,3158064)   Global Brush (1,16777215,16777215) 
 	
-	Register Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\forsyningomraade_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\PycharmProjects\Test\MapInfo\forsyningomraade_vedtaget.TAB"
-	Open Table "C:\Users\JOLN\PycharmProjects\Test\MapInfo\forsyningomraade_vedtaget.TAB" Interactive
+	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\forsyningomraade_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\forsyningomraade_vedtaget.TAB"
+	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\forsyningomraade_vedtaget.TAB" Interactive
 	Add Map Auto Layer forsyningomraade_vedtaget
    	Set Map Window nWindowID Layer 1 Display Global  Global Pen (2,1,0)   Global Brush (2,16777215,16777215)  
 	Set Map Window nWindowID Layer 1 Alpha 102 Set Window nWindowID Enhanced On   
@@ -33,7 +33,9 @@ sub addMaps()
 	Set Map Window nWindowID Layer 1 Label Auto Off
 	Set Map Window nWindowID Layer 2 Label Auto Off
 	Set Map Window nWindowID Layer 3 Label Auto Off
-
+	Set Map Window nWindowID Layer 1 Selectable Off
+	Set Map Window nWindowID Layer 2 Selectable Off
+	Set Map Window nWindowID Layer 3 Selectable Off
 	
 	
 end sub

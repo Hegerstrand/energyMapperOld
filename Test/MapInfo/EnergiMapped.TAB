@@ -28,7 +28,7 @@ Definition Table
     Område Char (1) ;
 begin_metadata
 "\MapInfo" = ""
-"\MapInfo\TableID" = "bc93f518-65f3-4617-a91a-c288b278a28a"
-"\MapInfo\ParentTableID" = "f457f4b0-3d83-4609-b67b-88b45c3108dd"
+"\MapInfo\TableID" = "5b85e855-4574-4c0e-85b3-69af936f2be0"
+"\MapInfo\ParentTableID" = "3b3ecde5-d4ea-4e83-9c50-f7838ff5beec"
 "\IsReadOnly" = "FALSE"
 end_metadata
