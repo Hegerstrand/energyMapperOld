@@ -7,11 +7,11 @@ Definition Table
   Type ASCII Delimiter ";" Titles Charset "UTF-8"
   Fields 21
     ﻿BBR! Smallint ;
-    Vejnavn Char (22) ;
+    Vejnavn Char (21) ;
     Husnummer Char (4) ;
     Matrikkelnummer Char (6) ;
     Anv__klasse Smallint ;
-    Opvarmet_areal Integer ;
+    Opvarmet_areal Smallint ;
     Bygningsår Smallint ;
     Opvarmningsform Char (23) ;
     Bygningstype Char (104) ;
@@ -25,10 +25,10 @@ Definition Table
     Varmebehov_VpD_MWh_år Float ;
     X Float ;
     Y Float ;
-    Adressepunktsid Char (1) ;
+    Adressepunktsid Char (36) ;
     Område Char (1) ;
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "3b3ecde5-d4ea-4e83-9c50-f7838ff5beec"
+"\MapInfo\TableID" = "edfa9203-2207-4763-9823-f17fe39d3917"
 end_metadata
