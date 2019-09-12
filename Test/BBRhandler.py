@@ -8,9 +8,9 @@ def calculateEnergyDemand(kommunekode):
     Filename = 'BBR'+kommunekode
     xlFilename = 'SBi'
 
-    #sql2csv.getBBRfromKommune(str(kommunekode), 'BBR.sql', Filename + '.csv', str(limit))
+    sql2csv.getBBRfromKommune(str(kommunekode), 'BBR.sql', Filename + '.csv', str(limit))
 
-    #csvHandler.csv2xl(Filename + '.csv', xlFilename, kommunekode)
+    csvHandler.csv2xl(Filename + '.csv', xlFilename, kommunekode)
 
     excelhandler.runMacro(xlFilename+kommunekode, 'copyThings')
 

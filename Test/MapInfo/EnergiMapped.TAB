@@ -5,12 +5,12 @@
 Definition Table
   Type NATIVEX Charset "UTF-8" Locale "da-DK"
   Fields 21
-    ﻿BBR! Smallint ;
+    ﻿BBR! Integer ;
     Vejnavn Char (21) ;
     Husnummer Char (4) ;
-    Matrikkelnummer Char (6) ;
+    Matrikkelnummer Char (7) ;
     Anv__klasse Smallint ;
-    Opvarmet_areal Smallint ;
+    Opvarmet_areal Integer ;
     Bygningsår Smallint ;
     Opvarmningsform Char (23) ;
     Bygningstype Char (104) ;
@@ -28,7 +28,7 @@ Definition Table
     Område Char (1) ;
 begin_metadata
 "\MapInfo" = ""
-"\MapInfo\TableID" = "0148b6b4-508d-4505-b165-d5280f270cf1"
-"\MapInfo\ParentTableID" = "edfa9203-2207-4763-9823-f17fe39d3917"
+"\MapInfo\TableID" = "420da28e-3d40-4a0d-9ba5-32d32756cb41"
+"\MapInfo\ParentTableID" = "bffb7f5c-7bbb-4669-a8a7-c844634d1a09"
 "\IsReadOnly" = "FALSE"
 end_metadata
