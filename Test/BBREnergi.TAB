@@ -11,18 +11,18 @@ Definition Table
     Husnummer Char (4) ;
     Matrikkelnummer Char (7) ;
     Anv__klasse Smallint ;
-    Opvarmet_areal Integer ;
+    Opvarmet_areal Smallint ;
     Bygningsår Smallint ;
     Opvarmningsform Char (23) ;
     Bygningstype Char (104) ;
     Kategori Char (86) ;
     Sektor Char (43) ;
     SBi Char (10) ;
-    Enhedsvarmebehov_SBi_kWh_m² Float ;
-    Varmebehov_Sbi_MWh_år Float ;
+    Enhedsvarmebehov_SBi_kWh_m² Char (5) ;
+    Varmebehov_Sbi_MWh_år Char (9) ;
     VpD Char (9) ;
-    Enhedsvarmebehov_VpD_kWh_m² Float ;
-    Varmebehov_VpD_MWh_år Float ;
+    Enhedsvarmebehov_VpD_kWh_m² Char (4) ;
+    Varmebehov_VpD_MWh_år Char (8) ;
     X Float ;
     Y Float ;
     Adressepunktsid Char (36) ;
@@ -30,5 +30,5 @@ Definition Table
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "bffb7f5c-7bbb-4669-a8a7-c844634d1a09"
+"\MapInfo\TableID" = "8c411e14-7cce-4676-819b-e429bc0a76e8"
 end_metadata

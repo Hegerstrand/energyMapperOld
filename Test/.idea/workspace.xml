@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/BBREnergi.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/BBREnergi.MAP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BBREnergi.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/BBREnergi.TAB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BBREnergi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BBREnergi.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBRhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/BBRhandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/EnergiMapped.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/EnergiMapped.DAT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/EnergiMapped.ID" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/EnergiMapped.ID" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/EnergiMapped.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/EnergiMapped.MAP" afterDir="false" />
@@ -21,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/MapInfo/Omraader.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/Omraader.TAB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.DAT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.ID" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.ID" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.IND" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.IND" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.MAP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/forsyningomraade_vedtaget.TAB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/kommunetable.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/kommunetable.TAB" afterDir="false" />
@@ -28,8 +28,6 @@
       <change beforePath="$PROJECT_DIR$/MapInfo/lokalplan_vedtaget.ID" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/lokalplan_vedtaget.ID" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/lokalplan_vedtaget.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/lokalplan_vedtaget.MAP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapInfo/lokalplan_vedtaget.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/lokalplan_vedtaget.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SBi.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/SBi190.xlsm" beforeDir="false" afterPath="$PROJECT_DIR$/old/SBi190.xlsm" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,31 +83,33 @@
     <session id="-1088495819">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="56" />
-          <entry key="py" value="452" />
+          <entry key="py" value="458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="508" />
+          <entry key="Python" value="514" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="py" value="1" />
+          <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Python" value="1" />
+          <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -131,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/excelhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="136">
+              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -165,6 +165,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BBR.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="35" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sql2csv.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -179,7 +188,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EnergyPlanner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="153">
               <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
@@ -226,10 +235,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1733" />
-    <option name="y" value="37" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-7" />
+    <option name="y" value="-7" />
+    <option name="width" value="1550" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -417,9 +426,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18018967" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -430,7 +439,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3275488" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.057483733" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" weight="0.3991323" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -573,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BBR.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BBRsum.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/excelhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="136">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -621,6 +623,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BBR.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sql2csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -633,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnergyPlanner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="153">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
