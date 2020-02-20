@@ -33,6 +33,4 @@ sub doWork(nWindowID as integer)
 	Set Map Window nWindowID  Layer 3 Alpha 153 Set Window nWindowID Enhanced On 
 	Set Map Window nWindowID  Layer 2 Alpha 153 Set Window nWindowID Enhanced On 
 
-
-	Save Workspace As "Energikortlaegning.WOR"
 end sub

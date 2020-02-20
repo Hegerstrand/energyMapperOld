@@ -1,6 +1,0 @@
-[link]
-Application = EnergyMapper.mbx
-module = Main.mbo
-module = External.mbo
-module = Local.mbo
-module = Worker.mbo

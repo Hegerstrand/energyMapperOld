@@ -6,10 +6,10 @@ Definition Table
   File "BBREnergi.csv"
   Type ASCII Delimiter ";" Titles Charset "UTF-8"
   Fields 21
-    ﻿BBR! Integer ;
+    ﻿BBR! Smallint ;
     Vejnavn Char (21) ;
     Husnummer Char (4) ;
-    Matrikkelnummer Char (7) ;
+    Matrikkelnummer Char (5) ;
     Anv__klasse Smallint ;
     Opvarmet_areal Smallint ;
     Bygningsår Smallint ;
@@ -18,11 +18,11 @@ Definition Table
     Kategori Char (86) ;
     Sektor Char (43) ;
     SBi Char (10) ;
-    Enhedsvarmebehov_SBi_kWh_m² Char (5) ;
-    Varmebehov_Sbi_MWh_år Char (9) ;
+    Enhedsvarmebehov_SBi_kWh_m² Float ;
+    Varmebehov_Sbi_MWh_år Float ;
     VpD Char (9) ;
-    Enhedsvarmebehov_VpD_kWh_m² Char (4) ;
-    Varmebehov_VpD_MWh_år Char (8) ;
+    Enhedsvarmebehov_VpD_kWh_m² Smallint ;
+    Varmebehov_VpD_MWh_år Float ;
     X Float ;
     Y Float ;
     Adressepunktsid Char (36) ;
@@ -30,5 +30,5 @@ Definition Table
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "8c411e14-7cce-4676-819b-e429bc0a76e8"
+"\MapInfo\TableID" = "21a8273e-df2d-4cc7-aeab-eeaea6992126"
 end_metadata
