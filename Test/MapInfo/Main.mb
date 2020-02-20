@@ -15,5 +15,6 @@ Sub main
 
 	call getEnergy(nWindowID)
 	call doWork(nWindowID)
+	call plotBuildings(nWindowID)
 	
 end sub

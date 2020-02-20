@@ -1,0 +1,69 @@
+!table
+!version 780
+!charset WindowsLatin1
+
+Definition Table
+  File "Bygning.xml"
+  Type WFS Charset "WindowsLatin1"
+  Fields 31
+    id_namespace Char (32) ;
+    id_lokalId Char (32) ;
+    tempID Char (32) ;
+    status Char (32) ;
+    geometristatus Char (32) ;
+    registreringsspecifikation Char (32) ;
+    dataansvar Char (32) ;
+    forretningshaendelse Char (32) ;
+    forretningsomraade Char (32) ;
+    forretningsproces Char (32) ;
+    registreringsaktoer Char (32) ;
+    registreringFra Char (32) ;
+    registreringTil Char (32) ;
+    virkningsaktoer Char (32) ;
+    virkningFra Char (32) ;
+    virkningTil Char (32) ;
+    planNoejagtighed Char (32) ;
+    planStedfaestelsesmetode Char (32) ;
+    vertikalNoejagtighed Char (32) ;
+    vertikalStedfaestelsesmetode Char (32) ;
+    applikation Char (50) ;
+    kommentar Char (32) ;
+    BBRUUID Char (36) ;
+    bygningstype Char (32) ;
+    maalestedBygning Char (32) ;
+    metode3D Char (32) ;
+    underMinimumBygning Logical ;
+    BBRaktion Char (32) ;
+    synligBygning Logical ;
+    overlapBygning Logical ;
+    BBR Char (32) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 8, 115, ""m"", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315)"
+"\DefaultStyles" = ""
+"\DefaultStyles\Symbol" = ""
+"\DefaultStyles\Symbol\Type" = "0"
+"\DefaultStyles\Symbol\Pointsize" = "9"
+"\DefaultStyles\Symbol\Color" = "32960"
+"\DefaultStyles\Symbol\Code" = "34"
+"\DefaultStyles\LinePen" = ""
+"\DefaultStyles\LinePen\LineWidth" = "2"
+"\DefaultStyles\LinePen\LineStyle" = "0"
+"\DefaultStyles\LinePen\Color" = "14680064"
+"\DefaultStyles\LinePen\Pattern" = "2"
+"\DefaultStyles\Pen" = ""
+"\DefaultStyles\Pen\LineWidth" = "1"
+"\DefaultStyles\Pen\LineStyle" = "0"
+"\DefaultStyles\Pen\Color" = "0"
+"\DefaultStyles\Pen\Pattern" = "2"
+"\DefaultStyles\Brush" = ""
+"\DefaultStyles\Brush\Pattern" = "1"
+"\DefaultStyles\Brush\Forecolor" = "16777215"
+"\DefaultStyles\Brush\Backcolor" = "16777215"
+"\DefaultStyles\Brush\Transparent" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "788564fa-84e5-498d-9e33-b1186561343d"
+end_metadata

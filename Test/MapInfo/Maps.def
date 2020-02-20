@@ -1,1 +1,2 @@
 declare sub addMaps() 
+declare sub plotBuildings(nWindowID as integer)

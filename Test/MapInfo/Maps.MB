@@ -35,7 +35,12 @@ sub addMaps()
 	Set Map Window nWindowID Layer 3 Label Auto Off
 	Set Map Window nWindowID Layer 1 Selectable Off
 	Set Map Window nWindowID Layer 2 Selectable Off
-	Set Map Window nWindowID Layer 3 Selectable Off
+	Set Map Window nWindowID Layer 3 Selectable Off	
 	
-	
+end sub
+
+sub plotBuildings(nWindowID as integer)
+	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Bygning.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (1,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Bygning.TAB"
+	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Bygning.TAB" Interactive
+	Add Map Auto Layer Bygning
 end sub
