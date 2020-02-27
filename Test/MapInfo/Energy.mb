@@ -10,8 +10,8 @@ Sub main
 	Close All	
 	Dim nWindowID As Integer	
    
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\kommunekoder.txt"  TYPE ASCII Delimiter 9 Titles Charset "WindowsLatin1" Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\kommunetable.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\kommunetable.TAB" Interactive
+	Register Table ApplicationDirectory$() + "\kommunekoder.txt"  TYPE ASCII Delimiter 9 Titles Charset "WindowsLatin1" Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\kommunetable.TAB"
+	Open Table ApplicationDirectory$() + "\kommunetable.TAB" Interactive
 	Browse * From kommunetable
 	nWindowID = FrontWindow()
 	set browse window nWindowID order by 2

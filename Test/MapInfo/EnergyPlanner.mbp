@@ -1,4 +1,4 @@
 [link]
 Application = EnergyPlanner.mbx
 module = Energy.mbo
-module = BBR.mbo
+module = External.mbo

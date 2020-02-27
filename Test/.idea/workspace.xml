@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/BBR155.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBR540.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BBR540.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBR540.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BBREnergi.ID" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BBREnergi.MAP" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BBREnergi.TAB" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBREnergi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BBREnergi.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBREnergi.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SBi155.xlsm" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SBi540.xlsm" beforeDir="false" afterPath="$PROJECT_DIR$/SBi540.xlsm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/csvHandler.py" afterDir="false" />
@@ -115,8 +115,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csvHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="493">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -625,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csvHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

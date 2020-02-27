@@ -3,7 +3,7 @@
 !charset WindowsLatin1
 
 Definition Table
-  File "kommunekoder.txt"
+  File "\kommunekoder.txt"
   Type ASCII Delimiter 09 Titles Charset "WindowsLatin1"
   Fields 2
     kommunenummer Smallint ;
@@ -11,5 +11,5 @@ Definition Table
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "5a8eb8e2-ef76-40a2-97ca-d906fd50fb2d"
+"\MapInfo\TableID" = "12dab249-5540-4037-9ddb-b6b00b69b4bb"
 end_metadata
