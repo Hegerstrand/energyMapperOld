@@ -4,17 +4,19 @@ import win32com.client
 
 def runMacro(FileName, macroname):
     os.listdir('.')
-    print('Running macro: ' + macroname)
-    if os.path.exists(FileName+'.xlsm'):
+    print("Running macro: " + macroname)
+    if os.path.exists("../"+FileName):
         xl = win32com.client.DispatchEx("Excel.Application")
-        wb = xl.Workbooks.Open(os.path.abspath(FileName+'.xlsm'))
-        xl.Application.Run(FileName+'.xlsm' + "!" + macroname)
+        wb = xl.Workbooks.Open(os.path.abspath("../"+FileName))
+        wb.Application.Run(FileName + "!" + macroname)
         wb.Save()
         xl.Visible = True
         wb.Close()
         xl.Application.Quit()
         del xl, wb
         print("Macro refresh completed!")
+    else:
+        print("Could not find " + FileName)
 
 
 
