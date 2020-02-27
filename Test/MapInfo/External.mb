@@ -1,7 +1,7 @@
 include "External.def"
 
 sub getBBR(kommunekode AS String)	
-	Dim commandLine As String
-	commandLine = "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\runbatch.bat "+kommunekode 
+	Dim commandLine As String	
+	commandLine = ApplicationDirectory$() + "\runbatch.bat "+kommunekode 
 	Run Program commandLine
 end sub

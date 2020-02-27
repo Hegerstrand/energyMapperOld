@@ -20,10 +20,10 @@ def csv2xl(csvFileName, xlFileName, kommunekode):
 
 
 def xl2csv(csvFileName, xlsxFileName, xlsxSheetName):
-    print("Writing "+xlsxFileName+" to "+csvFileName)
-    os.listdir('.')
+    print("Writing " + xlsxFileName + " to " + csvFileName)
+    os.listdir("./MapInfo")
     data_xls = pd.read_excel(xlsxFileName, xlsxSheetName, index_col=1, encoding='utf-8')
-    data_xls.to_csv(csvFileName, encoding='utf-8-sig', header=True, index=False, quotechar='"', sep=";")
+    data_xls.to_csv("MapInfo/" + csvFileName, encoding='utf-8-sig', header=True, index=False, quotechar='"', sep=";")
 
 
 
