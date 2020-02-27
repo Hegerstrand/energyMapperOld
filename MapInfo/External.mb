@@ -2,6 +2,6 @@ include "External.def"
 
 sub getBBR(kommunekode AS String)	
 	Dim commandLine As String	
-	commandLine = ApplicationDirectory$() + "\runbatch.bat "+kommunekode 
+	commandLine = ApplicationDirectory$() + "runbatch.bat "+kommunekode 
 	Run Program commandLine
 end sub
