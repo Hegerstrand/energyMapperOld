@@ -14,5 +14,5 @@ def calculateEnergyDemand(kommunekode):
 
     excelhandler.runMacro(xlFilename+kommunekode + ".xlsm", "copyThings")
 
-    #csvHandler.xl2csv("BBREnergi.csv", xlFilename+kommunekode + ".xlsm", "Energi")
+    csvHandler.xl2csv("BBREnergi.csv", xlFilename+kommunekode + ".xlsm", "Energi")
 

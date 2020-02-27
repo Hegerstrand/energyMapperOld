@@ -16,7 +16,7 @@ sub addMap()
 	Set Map Window nWindowID Layer 1 Display Global contrast 50 brightness 50 alpha 219 transparency on color 16777215 grayscale on
 
 	Register Table ApplicationDirectory$() + "\Kommuneinddeling.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into ApplicationDirectory$() + "\Kommuneinddeling.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kommuneinddeling.TAB" Interactive
+	Open Table ApplicationDirectory$() + "\Kommuneinddeling.TAB" Interactive
 	Add Map Auto Layer Kommuneinddeling
 end sub
 
