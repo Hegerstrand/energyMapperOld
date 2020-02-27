@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.ID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.MAP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.TAB" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergyMapper.MBX" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergyMapper.MBX" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.MAP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kort.BMP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kort.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kort.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Maps.MB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Maps.MB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Maps.MBO" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Maps.MBO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Skaermkort.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Skaermkort.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/kommunetable.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/kommunetable.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/runbatch.bat" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/runbatch.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBRhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/BBRhandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Intro.DOCX" beforeDir="false" afterPath="$PROJECT_DIR$/../Intro.DOCX" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SBi.xlsm" beforeDir="false" afterPath="$PROJECT_DIR$/SBi.xlsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR157.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR159.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR175.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR270.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR420.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR479.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR580.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR630.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/BBR740.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi175.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi190.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi270.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi320.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi479.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi580.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi630.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/SBi740.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SBi580.xlsm" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +112,7 @@
     <session id="-1313898271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="2" />
@@ -135,11 +142,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csvHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -147,11 +154,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BBRhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="272">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -413,7 +420,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -595,16 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csvHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/excelhandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -627,10 +623,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BBRhandler.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csvHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,3 +1,4 @@
-declare sub doWork(nWindowID as integer) 
+declare sub giveColors(nWindowID as integer) 
 declare sub hide(nWindowID as integer)
 declare sub print(nWindowID as integer)
+declare sub calculateAreas(nWindowID as integer)

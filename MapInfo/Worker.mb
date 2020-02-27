@@ -1,10 +1,34 @@
 include "Worker.def"
 
-sub doWork(nWindowID as integer)	
-	Create Table "Omraader" (Id Integer,Områdenavn Char(32),Areal Float,Antal Integer,Varmebehov Float,Varmedensitet Float) file ApplicationDirectory$() + "\Omraader.TAB" TYPE NATIVE Charset "WindowsLatin1"
-	Create Map For Omraader CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315)
-	Add Map Layer Omraader
-	Set Map Layer 1 Editable On
+sub giveColors(nWindowID as integer)	
+	shade window nWindowID 1 with Opvarmningsform values apply color  "Biomasse" Symbol (34,6332416,12) ,"Fjernvarme/ Blokvarme" Symbol (34,16728064,12) ,"Elvarme" Symbol (34,53456,12) ,"Ingen varmeinstallation" Symbol (34,16777215,12) ,"Naturgas" Symbol (34,16776960,12) ,"Olie" Symbol (40,0,12) ,"Varmepumpe" Symbol (34,3175935,12) default Symbol (34,8421504,12)  
+	set legend window nWindowID layer prev display on shades on symbols off lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on  
+	Set Map Window nWindowID  Layer 1 FriendlyName "Opvarmningsform"
+
+	shade window nWindowID 2 with Sektor values  "Handel og servicevirksomheder" Symbol (45,0,9,"MapInfo Points of Interest",16,0) ,"Industri" Symbol (144,0,9,"MapInfo World POI",16,0) ,"Kommunale og andre offentlige institutioner" Symbol (56,0,14,"MapInfo Points of Interest",1,0) ,"Private husholdninger" Symbol (35,0,5,"Map Symbols",0,0) default Symbol (40,0,12)  
+	set legend window nWindowID layer prev display on shades off symbols on lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on  
+
+	Set Map Window nWindowID  Layer 2 FriendlyName "Sektors"
+	Set Map Window nWindowID  Layer 2 Display Off
+	Set Map Window nWindowID  Zoom Entire Layer 1
+	Set Map Window nWindowID  Layer 1 Alpha 153 Set Window nWindowID  Enhanced On 
+end sub
+
+sub hide(nWindowID as integer)
+
+
+end sub
+
+sub print(nWindowID as integer)
+	Save Window nWindowID  As ApplicationDirectory$() + "\Kort.BMP" Type "BMP" Width 14.6579 Units "cm" Height 16.9598 Units "cm" Resolution 120
+end sub
+
+
+sub calculateAreas(nWindowID as integer)	
+	Open Table ApplicationDirectory$() + "\Omraader.TAB" Interactive
+	Pack Table Omraader Graphic Data Interactive
+	Add Map Auto Layer Omraader
+	Set Map Layer 4 Editable On
 
 	Update Omraader Set Id = Rowid DropIndex Auto
 	Update Omraader Set Områdenavn = "Omraade "+Id DropIndex Auto
@@ -13,34 +37,6 @@ sub doWork(nWindowID as integer)
 	Add Column "Omraader" (Varmebehov )From EnergiMapped Set To sum(Varmebehov_Sbi_MWh_år) Where within
 	Update Omraader Set Varmedensitet = Varmebehov/Areal DropIndex Auto
 	Commit Table Omraader Interactive
+	Browse * from Omraader
 
-	Set Map Window nWindowID Layer 1 Label Auto On
-	Set Map Window nWindowID Layer 3 Label Auto On
-
-	shade window nWindowID 2 with Opvarmningsform values apply color  "Biomasse" Symbol (34,6332416,12) ,"Fjernvarme/ Blokvarme" Symbol (34,16728064,12) ,"Elvarme" Symbol (34,53456,12) ,"Ingen varmeinstallation" Symbol (34,16777215,12) ,"Naturgas" Symbol (34,16776960,12) ,"Olie" Symbol (40,0,12) ,"Varmepumpe" Symbol (34,3175935,12) default Symbol (34,8421504,12)  
-	set legend window nWindowID layer prev display on shades on symbols off lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on  
-	Set Map Window nWindowID  Layer 2 FriendlyName "Opvarmningsform"
-
-	shade window nWindowID 3 with Sektor values  "Handel og servicevirksomheder" Symbol (45,0,9,"MapInfo Points of Interest",16,0) ,"Industri" Symbol (144,0,9,"MapInfo World POI",16,0) ,"Kommunale og andre offentlige institutioner" Symbol (56,0,14,"MapInfo Points of Interest",1,0) ,"Private husholdninger" Symbol (35,0,5,"Map Symbols",0,0) default Symbol (40,0,12)  
-	set legend window nWindowID layer prev display on shades off symbols on lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on  
-
-	Set Map Window nWindowID  Layer 3 FriendlyName "Sektors"
-	Set Map Window nWindowID  Layer 3 Display Off
-	Set Map Window nWindowID  Zoom Entire Layer 2
-	Set Map Window nWindowID  Layer 2 Alpha 153 Set Window nWindowID  Enhanced On 
-end sub
-
-sub hide(nWindowID as integer)
-	Set Map Window nWindowID  Layer 11 Display Off
-	Set Map Window nWindowID  Layer 9 Selectable Off
-	Set Map Window nWindowID  Layer 8 Selectable Off
-	Set Map Window nWindowID  Layer 7 Selectable Off
-	Set Map Window nWindowID  Layer 5 Selectable Off
-	Set Map Window nWindowID  Layer 4 Selectable Off
-	Set Map Window nWindowID  Layer 1 Editable Off Selectable Off
-
-end sub
-
-sub print(nWindowID as integer)
-	Save Window nWindowID  As ApplicationDirectory$() + "\Kort.BMP" Type "BMP" Width 14.6579 Units "cm" Height 16.9598 Units "cm" Resolution 120
 end sub

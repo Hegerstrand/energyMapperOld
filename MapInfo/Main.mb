@@ -14,10 +14,12 @@ Sub main
 	nWindowID = FrontWindow()
 
 	call getEnergy(nWindowID)
-	call doWork(nWindowID)	
+	call giveColors(nWindowID)	
 	call addPlans(nWindowID)		
 	call plotBuildings(nWindowID)	
 
 	call hide(nWindowID)		
 	call print(nWindowID)	
+
+	call calculateAreas(nWindowID)
 end sub

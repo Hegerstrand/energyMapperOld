@@ -30,16 +30,12 @@ sub addPlans(nWindowID as integer)
 	Open Table ApplicationDirectory$() + "\forsyningomraade_vedtaget.TAB" Interactive
 	Add Map Auto Layer forsyningomraade_vedtaget
 
-	shade window nWindowID 5 with vaerdi1203 values  "Anden" Brush (2,12632256,16777215) Pen (1,2,0) ,"Fjernvarme" Brush (2,14680064,16777215) ,"Fremtidigt uspecificeret forsyningsområde" Brush (2,16777215,16777215) Pen (1,2,0) ,"Individuel naturgasforsyning" Brush (2,15790080,16777215) Pen (1,2,0) default Brush (2,0,16777215)
+	shade window nWindowID 4 with vaerdi1203 values  "Anden" Brush (2,12632256,16777215) Pen (1,2,0) ,"Fjernvarme" Brush (2,14680064,16777215) ,"Fremtidigt uspecificeret forsyningsområde" Brush (2,16777215,16777215) Pen (1,2,0) ,"Individuel naturgasforsyning" Brush (2,15790080,16777215) Pen (1,2,0) default Brush (2,0,16777215)
 	set legend window nWindowID layer prev display on shades on symbols off lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on  
 	Create Designer Legend From Window nWindowID Behind Default Frame Style "#" Font ("Arial",0,8,0) Frame From Layer 5
-	Set Map Window nWindowID Layer 5 Alpha 102 Set Window nWindowID Enhanced On 
+	Set Map Window nWindowID Layer 4 Alpha 102 Set Window nWindowID Enhanced On 
 
-
-	Set Map Window nWindowID Layer 7 Display Global  Global Pen (1,2,0)   Global Brush (1,16777215,16777215)     
-
-	Set Map Window nWindowID Layer 8 Label Auto Off
-
+	Set Map Window nWindowID Layer 6 Display Global  Global Pen (1,2,0)   Global Brush (1,16777215,16777215)    
 end sub
 
 sub plotBuildings(nWindowID as integer)
