@@ -1,2 +1,3 @@
-declare sub addMaps() 
+declare sub addMap() 
+declare sub addPlans(nWindowID as integer)
 declare sub plotBuildings(nWindowID as integer)

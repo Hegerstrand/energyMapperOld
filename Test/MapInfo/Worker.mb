@@ -17,7 +17,7 @@ sub doWork(nWindowID as integer)
 	Set Map Window nWindowID Layer 1 Label Auto On
 	Set Map Window nWindowID Layer 3 Label Auto On
 
-	shade window nWindowID 2 with Opvarmningsform values apply color  "Biomasse" Symbol (34,6332416,12) ,"Fjernvarme/ Blokvarme" Symbol (34,16728064,12) ,"Elvarme" Symbol (34,53456,12) ,"Ingen varmeinstallation" Symbol (34,16777215,12) ,"Naturgas" Symbol (34,16776960,12) ,"Olie" Symbol (34,8421504,12) ,"Varmepumpe" Symbol (34,3175935,12) default Symbol (40,0,12)  
+	shade window nWindowID 2 with Opvarmningsform values apply color  "Biomasse" Symbol (34,6332416,12) ,"Fjernvarme/ Blokvarme" Symbol (34,16728064,12) ,"Elvarme" Symbol (34,53456,12) ,"Ingen varmeinstallation" Symbol (34,16777215,12) ,"Naturgas" Symbol (34,16776960,12) ,"Olie" Symbol (40,0,12) ,"Varmepumpe" Symbol (34,3175935,12) default Symbol (34,8421504,12)  
 	set legend window nWindowID layer prev display on shades on symbols off lines off count on title auto Font ("Arial",0,9,0) subtitle auto Font ("Arial",0,8,0) ascending on ranges Font ("Arial",0,8,0) auto display off ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on ,auto display on  
 	Set Map Window nWindowID  Layer 2 FriendlyName "Opvarmningsform"
 
@@ -27,10 +27,20 @@ sub doWork(nWindowID as integer)
 	Set Map Window nWindowID  Layer 3 FriendlyName "Sektors"
 	Set Map Window nWindowID  Layer 3 Display Off
 	Set Map Window nWindowID  Zoom Entire Layer 2
+	Set Map Window nWindowID  Layer 2 Alpha 153 Set Window nWindowID  Enhanced On 
+end sub
 
+sub hide(nWindowID as integer)
+	Set Map Window nWindowID  Layer 11 Display Off
+	Set Map Window nWindowID  Layer 9 Selectable Off
+	Set Map Window nWindowID  Layer 8 Selectable Off
+	Set Map Window nWindowID  Layer 7 Selectable Off
+	Set Map Window nWindowID  Layer 5 Selectable Off
+	Set Map Window nWindowID  Layer 4 Selectable Off
+	Set Map Window nWindowID  Layer 1 Editable Off Selectable Off
 
-	Set Map Window nWindowID  Layer 4 Alpha 153 Set Window nWindowID Enhanced On 
-	Set Map Window nWindowID  Layer 3 Alpha 153 Set Window nWindowID Enhanced On 
-	Set Map Window nWindowID  Layer 2 Alpha 153 Set Window nWindowID Enhanced On 
+end sub
 
+sub print(nWindowID as integer)
+	Save Window nWindowID  As "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\Kort.BMP" Type "BMP" Width 14.6579 Units "cm" Height 16.9598 Units "cm" Resolution 120
 end sub

@@ -1,0 +1,14 @@
+!table
+!version 750
+!charset WindowsLatin1
+
+Definition Table
+  File "Skaermkort.xml"
+  Type "WMS"
+  CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0
+ Charset "WindowsLatin1"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "3345a65f-6a6f-4ac9-bd6f-a10ed6208b07"
+end_metadata
