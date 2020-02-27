@@ -1,7 +1,7 @@
 include "Worker.def"
 
 sub doWork(nWindowID as integer)	
-	Create Table "Omraader" (Id Integer,Områdenavn Char(32),Areal Float,Antal Integer,Varmebehov Float,Varmedensitet Float) file "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Omraader.TAB" TYPE NATIVE Charset "WindowsLatin1"
+	Create Table "Omraader" (Id Integer,Områdenavn Char(32),Areal Float,Antal Integer,Varmebehov Float,Varmedensitet Float) file ApplicationDirectory$() + "\Omraader.TAB" TYPE NATIVE Charset "WindowsLatin1"
 	Create Map For Omraader CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315)
 	Add Map Layer Omraader
 	Set Map Layer 1 Editable On
@@ -42,5 +42,5 @@ sub hide(nWindowID as integer)
 end sub
 
 sub print(nWindowID as integer)
-	Save Window nWindowID  As "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\Kort.BMP" Type "BMP" Width 14.6579 Units "cm" Height 16.9598 Units "cm" Resolution 120
+	Save Window nWindowID  As ApplicationDirectory$() + "\Kort.BMP" Type "BMP" Width 14.6579 Units "cm" Height 16.9598 Units "cm" Resolution 120
 end sub

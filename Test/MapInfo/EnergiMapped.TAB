@@ -5,12 +5,12 @@
 Definition Table
   Type NATIVEX Charset "UTF-8" Locale "da-DK"
   Fields 21
-    ﻿BBR! Integer ;
-    Vejnavn Char (22) ;
+    ﻿BBR! Smallint ;
+    Vejnavn Char (21) ;
     Husnummer Char (4) ;
-    Matrikkelnummer Char (7) ;
+    Matrikkelnummer Char (5) ;
     Anv__klasse Smallint ;
-    Opvarmet_areal Integer ;
+    Opvarmet_areal Smallint ;
     Bygningsår Smallint ;
     Opvarmningsform Char (23) ;
     Bygningstype Char (104) ;
@@ -20,7 +20,7 @@ Definition Table
     Enhedsvarmebehov_SBi_kWh_m² Float ;
     Varmebehov_Sbi_MWh_år Float ;
     VpD Char (9) ;
-    Enhedsvarmebehov_VpD_kWh_m² Float ;
+    Enhedsvarmebehov_VpD_kWh_m² Smallint ;
     Varmebehov_VpD_MWh_år Float ;
     X Float ;
     Y Float ;
@@ -28,7 +28,7 @@ Definition Table
     Område Char (1) ;
 begin_metadata
 "\MapInfo" = ""
-"\MapInfo\TableID" = "dbe99095-3303-4ba5-8cb8-997a63fb9dbd"
-"\MapInfo\ParentTableID" = "d1eab9c5-ae65-4ff4-85a5-8ea3f6d8062f"
+"\MapInfo\TableID" = "347bb248-181a-4409-998c-8244df7182c9"
+"\MapInfo\ParentTableID" = "04e158c3-5a8f-4b5c-8b97-1d7a9af45cca"
 "\IsReadOnly" = "FALSE"
 end_metadata

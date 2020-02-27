@@ -1,14 +1,14 @@
 include "Local.def"
 
 sub getEnergy(nWindowID as integer)
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\BBREnergi.csv"  TYPE ASCII Delimiter 59 Titles Charset "UTF-8" Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\BBREnergi.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\BBREnergi.TAB" Interactive
+	Register Table ApplicationDirectory$() + "\BBREnergi.csv"  TYPE ASCII Delimiter 59 Titles Charset "UTF-8" Into ApplicationDirectory$() + "\BBREnergi.TAB"
+	Open Table ApplicationDirectory$() + "\BBREnergi.TAB" Interactive
 	Create Map For BBREnergi CoordSys Earth Projection 8, 115, 7, 9, 0, 0.9996, 500000, 0
 	Set coordsys table BBREnergi
 	UPDATE BBREnergi Set Obj = CreatePoint(X, Y)
 	Commit Table BBREnergi Interactive
-	Commit Table BBREnergi As "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\EnergiMapped.TAB" TYPE NATIVEX Charset "UTF-8" Locale "da-DK" Interactive
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\EnergiMapped.TAB" Interactive
+	Commit Table BBREnergi As ApplicationDirectory$() + "\EnergiMapped.TAB" TYPE NATIVEX Charset "UTF-8" Locale "da-DK" Interactive
+	Open Table ApplicationDirectory$() + "\EnergiMapped.TAB" Interactive
 	Add Map Auto Layer EnergiMapped
 
 end sub

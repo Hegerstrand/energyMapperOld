@@ -1,33 +1,33 @@
 include "Maps.def"
 
 sub addMap()	
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kort.xml" Type "WMS" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kort.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kort.TAB" Interactive
+	Register Table ApplicationDirectory$() + "\Kort.xml" Type "WMS" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Into ApplicationDirectory$() + "\Kort.TAB"
+	Open Table ApplicationDirectory$() + "\Kort.TAB" Interactive
 	Map From Kort	Dim 
 
 	nWindowID As Integer	
 	nWindowID = FrontWindow()
 
 
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Skaermkort.xml" Type "WMS" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Skaermkort.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Skaermkort.TAB" Interactive
+	Register Table ApplicationDirectory$() + "\Skaermkort.xml" Type "WMS" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Into ApplicationDirectory$() + "\Skaermkort.TAB"
+	Open Table ApplicationDirectory$() + "\Skaermkort.TAB" Interactive
 	Add Map Auto Layer Skaermkort
 
 	Set Map Window nWindowID Layer 1 Display Global contrast 50 brightness 50 alpha 219 transparency on color 16777215 grayscale on
 
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kommuneinddeling.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kommuneinddeling.TAB"
+	Register Table ApplicationDirectory$() + "\Kommuneinddeling.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into ApplicationDirectory$() + "\Kommuneinddeling.TAB"
 	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Kommuneinddeling.TAB" Interactive
 	Add Map Auto Layer Kommuneinddeling
 end sub
 
 sub addPlans(nWindowID as integer)	
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\lokalplan_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\lokalplan_vedtaget.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\lokalplan_vedtaget.TAB" Interactive
+	Register Table ApplicationDirectory$() + "\lokalplan_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into ApplicationDirectory$() + "\lokalplan_vedtaget.TAB"
+	Open Table ApplicationDirectory$() + "\lokalplan_vedtaget.TAB" Interactive
 	Add Map Auto Layer lokalplan_vedtaget
 	Set Map Window nWindowID Layer 1 Display Global  Global Pen (1,2,3158064)   Global Brush (1,16777215,16777215) 
 	
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\forsyningomraade_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\forsyningomraade_vedtaget.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\forsyningomraade_vedtaget.TAB" Interactive
+	Register Table ApplicationDirectory$() + "\forsyningomraade_vedtaget.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (2,2,0)  Brush (1,16777215,16777215)  Into ApplicationDirectory$() + "\forsyningomraade_vedtaget.TAB"
+	Open Table ApplicationDirectory$() + "\forsyningomraade_vedtaget.TAB" Interactive
 	Add Map Auto Layer forsyningomraade_vedtaget
 
 	shade window nWindowID 5 with vaerdi1203 values  "Anden" Brush (2,12632256,16777215) Pen (1,2,0) ,"Fjernvarme" Brush (2,14680064,16777215) ,"Fremtidigt uspecificeret forsyningsområde" Brush (2,16777215,16777215) Pen (1,2,0) ,"Individuel naturgasforsyning" Brush (2,15790080,16777215) Pen (1,2,0) default Brush (2,0,16777215)
@@ -43,7 +43,7 @@ sub addPlans(nWindowID as integer)
 end sub
 
 sub plotBuildings(nWindowID as integer)
-	Register Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Bygning.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (1,2,0)  Brush (1,16777215,16777215)  Into "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Bygning.TAB"
-	Open Table "C:\Users\JOLN\Documents\GitHub\energyMapper\Test\MapInfo\Bygning.TAB" Interactive
+	Register Table ApplicationDirectory$() + "\Bygning.xml" Type "WFS"  Charset "WindowsLatin1" CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0 Bounds (-7745844.29605, -9997964.94315) (8745844.29605, 9997964.94315) Symbol (34,32960,9) linestyle Pen (2,2,14680064) regionstyle Pen (1,2,0)  Brush (1,16777215,16777215)  Into ApplicationDirectory$() + "\Bygning.TAB"
+	Open Table ApplicationDirectory$() + "\Bygning.TAB" Interactive
 	Add Map Auto Layer Bygning
 end sub

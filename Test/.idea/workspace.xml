@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BBR155.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBR540.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBREnergi.ID" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBREnergi.MAP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBREnergi.TAB" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBREnergi.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SBi155.xlsm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SBi540.xlsm" beforeDir="false" afterPath="$PROJECT_DIR$/SBi540.xlsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/csvHandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runbatch.bat" beforeDir="false" afterPath="$PROJECT_DIR$/runbatch.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBR187.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kort.BMP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapInfo/Local.MBO" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/Local.MBO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapInfo/Local.mb" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/Local.mb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapInfo/Maps.MB" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/Maps.MB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapInfo/Maps.MBO" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/Maps.MBO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapInfo/Worker.MBO" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/Worker.MBO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapInfo/Worker.mb" beforeDir="false" afterPath="$PROJECT_DIR$/MapInfo/Worker.mb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SBi187.xlsm" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csvHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -206,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="y" value="-7" />
     <option name="width" value="1550" />
@@ -398,7 +397,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
@@ -625,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csvHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
