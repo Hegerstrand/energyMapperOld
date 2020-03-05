@@ -4,7 +4,7 @@ import excelhandler
 
 
 def calculateEnergyDemand(kommunekode):
-    limit = 100*1000
+    limit = 1000*1000
     Filename = "BBR" + kommunekode
     xlFilename = "SBi"
 

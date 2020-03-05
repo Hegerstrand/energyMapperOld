@@ -1,7 +1,6 @@
 cd %~dp0
-cd..
-cd Python
+cd../Python
 python EnergyPlanner.py %1
-cd ..
-cd MapInfo
+cd ../MapInfo
+pause
 EnergyMapper.MBX

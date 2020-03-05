@@ -9,13 +9,13 @@ Definition Table
     ﻿BBR! Smallint ;
     Vejnavn Char (20) ;
     Husnummer Char (4) ;
-    Matrikkelnummer Char (5) ;
+    Matrikkelnummer Char (6) ;
     Anv__klasse Smallint ;
-    Opvarmet_areal Integer ;
+    Opvarmet_areal Smallint ;
     Bygningsår Smallint ;
     Opvarmningsform Char (23) ;
     Bygningstype Char (104) ;
-    Kategori Char (85) ;
+    Kategori Char (86) ;
     Sektor Char (43) ;
     SBi Char (10) ;
     Enhedsvarmebehov_SBi_kWh_m² Float ;
@@ -30,5 +30,5 @@ Definition Table
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "75bb8176-212a-4bcb-a197-4bdf21056c0b"
+"\MapInfo\TableID" = "43e8ad68-0622-4045-8a36-96843aa6758b"
 end_metadata

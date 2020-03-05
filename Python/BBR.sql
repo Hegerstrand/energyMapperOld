@@ -1,10 +1,7 @@
-
 declare @kommunekode int
 declare @Max_BYG_ANVEND_KODE int
 set @kommunekode = _kommunekode
 set @Max_BYG_ANVEND_KODE = 600
-
-
 
 
 SELECT top(_top) Bygning.Bygning_id AS Bygningsid
