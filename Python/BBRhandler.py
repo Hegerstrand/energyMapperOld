@@ -12,7 +12,8 @@ def calculateEnergyDemand(kommunekode):
     Filename = "BBR" + kommunekode
     xlFilename = "SBi"
 
-    sql2csv.getBBRfromKommune(str(kommunekode), "BBR.sql", Filename + ".csv", str(limit))
+    #sql2csv.getBBRfromKommune(str(kommunekode), "BBR.sql", Filename + ".csv", str(limit))
+    datafordeleren.getBygninger(str(kommunekode), Filename + ".csv")
 
     csvHandler.csv2xl(Filename + ".csv", xlFilename, kommunekode)
 

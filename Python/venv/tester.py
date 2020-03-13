@@ -1,3 +1,3 @@
 import datafordeleren
-datafordeleren.getBygninger("306")
+datafordeleren.getBygninger("306", "BBRTester.csv")
 

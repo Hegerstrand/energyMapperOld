@@ -2,8 +2,7 @@ import httplib2 as http
 import json
 import csv
 
-def getBygninger(kommunekode):
-    filename = "BBR" + kommunekode + ".csv"
+def getBygninger(kommunekode, filename):
     try:
         from urlparse import urlparse
     except ImportError:
@@ -38,26 +37,27 @@ def getBygninger(kommunekode):
 
         if response.status == 200:
             data = json.loads(content)
-            print('Number of ' + path + ': ' + str(len(data)))
+            print('printing ' + str(len(data)) + "buildings to: " + filename)
 
-            print('printing to: ' + filename)
-            # now we will open a file for writing
             data_file = open(filename, 'w')
-            # create the csv writer object
             csv_writer = csv.writer(data_file, delimiter=';', lineterminator='\n')
-            # Counter variable used for writing
-            # headers to the CSV file
-            for bygning in data:
-                # Writing he    aders of CSV file
-                #header = bygning.keys()
-                header = ["id_lokalId", "param2"]
-                csv_writer.writerow(header)
 
+            headers = ["id_lokalId", "husnummer", "jordstykke", "byg021BygningensAnvendelse"
+                , "byg038SamletBygningsareal", "byg039BygningensSamledeBoligAreal", "byg040BygningensSamledeErhvervsAreal", "placehodlerForKælder"
+                , "byg026Opførelsesår", "byg027OmTilbygningsår", "byg056Varmeinstallation", "byg057Opvarmningsmiddel", "byg058SupplerendeVarme", "byg404Koordinat"
+                , "byg406Koordinatsystem", "status"]
+            csv_writer.writerow(headers)
+
+            for bygning in data:
+                if int(bygning["byg021BygningensAnvendelse"]) > 600:
+                    continue
                 params = []
-                if "id_lokalId" in header:
-                    params.append(bygning["id_lokalId"])
-                    csv_writer.writerow(params)
-                #csv_writer.writerow(header)
+                for headning in headers:
+                    if headning in bygning:
+                        params.append(bygning[headning])
+                    else:
+                        params.append("")
+                csv_writer.writerow(params)
                 #csv_writer.writerow(bygning.values())
 
             data_file.close()
