@@ -1,6 +1,10 @@
 import sql2csv
 import csvHandler
 import excelhandler
+import datafordeleren
+
+def testApi():
+    datafordeleren.getBygninger("306")
 
 
 def calculateEnergyDemand(kommunekode):
