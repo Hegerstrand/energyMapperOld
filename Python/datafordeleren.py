@@ -1,13 +1,16 @@
 import httplib2 as http
 import json
+import csv
 
 def getBygninger(kommunekode):
     filename = "BBR" + kommunekode + ".csv"
     try:
         from urlparse import urlparse
     except ImportError:
-        print("urlparse failed")
-        from urllib.parse import urlparse
+        try:
+            from urllib.parse import urlparse
+        except ImportError:
+            print("urlparse failed")
 
     headers = {
         'Accept': 'application/json',
@@ -25,18 +28,46 @@ def getBygninger(kommunekode):
 
     h = http.Http()
     print('getting ' + path + ' where ' + request + ' from ' + uri)
-    response, content = h.request(
-            target.geturl(),
-            method,
-            body,
-            headers)
 
-    if response.status == 200:
-        data = json.loads(content)
-        print('Number of ' + path + ': ' + str(len(data)))
-        print('printing to: ' + filename)
-    else:
-        print("status not OK")
+    try:
+        response, content = h.request(
+                target.geturl(),
+                method,
+                body,
+                headers)
+
+        if response.status == 200:
+            data = json.loads(content)
+            print('Number of ' + path + ': ' + str(len(data)))
+
+            print('printing to: ' + filename)
+            # now we will open a file for writing
+            data_file = open(filename, 'w')
+            # create the csv writer object
+            csv_writer = csv.writer(data_file, delimiter=';', lineterminator='\n')
+            # Counter variable used for writing
+            # headers to the CSV file
+            for bygning in data:
+                # Writing he    aders of CSV file
+                #header = bygning.keys()
+                header = ["id_lokalId", "param2"]
+                csv_writer.writerow(header)
+
+                params = []
+                if "id_lokalId" in header:
+                    params.append(bygning["id_lokalId"])
+                    csv_writer.writerow(params)
+                #csv_writer.writerow(header)
+                #csv_writer.writerow(bygning.values())
+
+            data_file.close()
+
+        else:
+            print("status not OK")
+    except response.content as msg:
+        print(msg)
+
+
 
 ############################################################################
 def getDar():
