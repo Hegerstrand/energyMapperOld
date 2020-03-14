@@ -1,8 +1,9 @@
 import httplib2 as http
 import json
 import csv
+import numpy
 
-def getBygninger(kommunekode, filename):
+def getBygninger(kommunekode, filename, limit):
     try:
         from urlparse import urlparse
     except ImportError:
@@ -20,8 +21,6 @@ def getBygninger(kommunekode, filename):
     path = "bygning"
     request = "kommunekode=0" + kommunekode
     user = "username=AYWWPEBUAL&password=Login4Kort&format=json"
-
-    target = urlparse(uri + path + '?' + request + '&' + user)
     method = 'GET'
     body = ''
 
@@ -29,15 +28,19 @@ def getBygninger(kommunekode, filename):
     print('getting ' + path + ' where ' + request + ' from ' + uri)
 
     try:
-        response, content = h.request(
-                target.geturl(),
-                method,
-                body,
-                headers)
+        target = urlparse(uri + path + '?' + request + '&' + user)
+        response, content = h.request(target.geturl(), method, body, headers)
 
         if response.status == 200:
             data = json.loads(content)
-            print('printing ' + str(len(data)) + "buildings to: " + filename)
+            i = 1
+            while len(data) == 100*i & len(data) < limit:
+                target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
+                response, content = h.request(target.geturl(), method, body, headers)
+                data = numpy.append(data, json.loads(content))
+                i += 1
+
+            print('printing ' + str(len(data)) + " buildings to: " + filename)
 
             data_file = open(filename, 'w')
             csv_writer = csv.writer(data_file, delimiter=';', lineterminator='\n')
