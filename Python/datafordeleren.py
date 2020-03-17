@@ -17,9 +17,9 @@ def getBygninger(kommunekode, filename, limit):
         'Content-Type': 'application/json; charset=UTF-8'
     }
 
-    uri = 'https://services.datafordeler.dk/BBR/BBRPublic/1/REST/'
+    uri = 'https://services.datafordeler.dk/BBR/BBRPublic/1/REST//'
     path = "bygning"
-    request = "kommunekode=0" + kommunekode
+    request = "kommunekode=0" + str(kommunekode)
     user = "username=AYWWPEBUAL&password=Login4Kort&format=json"
     method = 'GET'
     body = ''
@@ -29,19 +29,21 @@ def getBygninger(kommunekode, filename, limit):
 
     try:
         target = urlparse(uri + path + '?' + request + '&' + user)
+        #print(target.geturl())
         response, content = h.request(target.geturl(), method, body, headers)
 
         if response.status == 200:
             data = json.loads(content)
             i = 1
-            while len(data) == 100*i & len(data) < limit:
-                print('Page ' + str(i))
-                target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
-                response, content = h.request(target.geturl(), method, body, headers)
-                data = numpy.append(data, json.loads(content))
-                i += 1
+            if len(data) == 100:
+                while len(data) == 100*i & len(data) < limit:
+                    target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
+                    response, content = h.request(target.geturl(), method, body, headers)
+                    data = numpy.append(data, json.loads(content))
+                    i += 1
+                    print(str(len(json.loads(content))) + ' buldings in page ' + str(i), end="\r")
 
-            print('Got ' + str(len(data)) + " buildings from Datafrodeleren")
+            print('Got ' + str(len(data)) + " buildings from " + str(i) + " pages på Datafrodeleren")
 
             data_file = open(filename, 'w')
             csv_writer = csv.writer(data_file, delimiter=';', lineterminator='\n')
@@ -54,17 +56,17 @@ def getBygninger(kommunekode, filename, limit):
 
             j = 0
             for bygning in data:
-                if int(bygning["byg021BygningensAnvendelse"]) > 600:
-                    continue
-                params = []
-                for headning in headers:
-                    if headning in bygning:
-                        params.append(bygning[headning])
-                    else:
-                        params.append("")
-                csv_writer.writerow(params)
-                j += 1
-                #csv_writer.writerow(bygning.values())
+                if "byg021BygningensAnvendelse" in bygning:
+                    if int(bygning["byg021BygningensAnvendelse"]) > 600:
+                        continue
+                    params = []
+                    for headning in headers:
+                        if headning in bygning:
+                            params.append(bygning[headning])
+                        else:
+                            params.append("")
+                    csv_writer.writerow(params)
+                    j += 1
 
             print('Printed ' + str(j) + " buildings to: " + filename)
             data_file.close()

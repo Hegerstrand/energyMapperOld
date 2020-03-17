@@ -5,7 +5,7 @@ import shutil
 
 def csv2xl(csvFileName, xlFileName, kommunekode):
     os.listdir('.')
-    FileName = "../" +xlFileName+kommunekode
+    FileName = "../" +xlFileName + str(kommunekode)
     print("Writing " + csvFileName + " to " + FileName+'.xlsm')
     shutil.copyfile(xlFileName+'.xlsm',  FileName+'.xlsm')
     data = pd.read_csv(csvFileName, encoding='latin1', header=0, quotechar='"', delimiter=";")
