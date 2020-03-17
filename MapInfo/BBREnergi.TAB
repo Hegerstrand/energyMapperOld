@@ -10,7 +10,7 @@ Definition Table
     Husnummer Char (36) ;
     Jordstykke Integer ;
     Anv__klasse Smallint ;
-    Opvarmet_areal Smallint ;
+    Opvarmet_areal Integer ;
     Bygningsår Smallint ;
     Varmeinstallation Char (68) ;
     Opvarmnignsmiddel Char (61) ;
@@ -27,10 +27,10 @@ Definition Table
     Varmebehov_VpD_MWh_år Float ;
     X Float ;
     Y Float ;
-    Adressepunkt Char (27) ;
+    Adressepunkt Char (40) ;
     Område Char (1) ;
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "1b92e26b-107b-454f-a3ac-06605f7651e3"
+"\MapInfo\TableID" = "0805b95d-3c4f-44cc-b98d-68abc8e25e45"
 end_metadata
