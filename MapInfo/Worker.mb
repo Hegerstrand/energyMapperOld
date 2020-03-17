@@ -15,8 +15,10 @@ sub giveColors(nWindowID as integer)
 end sub
 
 sub hide(nWindowID as integer)
-
-
+	Set Map Window nWindowID Layer 7 Selectable Off
+	Set Map Window nWindowID Layer 8 Selectable Off
+	Set Map Window nWindowID Layer 9 Selectable Off
+	Set Map Window nWindowID Layer 11 Display Off
 end sub
 
 sub print(nWindowID as integer)
