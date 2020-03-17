@@ -25,7 +25,7 @@ def getBygninger(kommunekode, filename, limit):
     body = ''
 
     h = http.Http()
-    print('getting ' + path + ' where ' + request + ' from ' + uri)
+    print('Getting ' + path + ' where ' + request + ' from ' + uri)
 
     try:
         target = urlparse(uri + path + '?' + request + '&' + user)
@@ -35,12 +35,13 @@ def getBygninger(kommunekode, filename, limit):
             data = json.loads(content)
             i = 1
             while len(data) == 100*i & len(data) < limit:
+                print('Page ' + str(i))
                 target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
                 response, content = h.request(target.geturl(), method, body, headers)
                 data = numpy.append(data, json.loads(content))
                 i += 1
 
-            print('printing ' + str(len(data)) + " buildings to: " + filename)
+            print('Got ' + str(len(data)) + " buildings from Datafrodeleren")
 
             data_file = open(filename, 'w')
             csv_writer = csv.writer(data_file, delimiter=';', lineterminator='\n')
@@ -51,6 +52,7 @@ def getBygninger(kommunekode, filename, limit):
                 , "byg406Koordinatsystem", "status"]
             csv_writer.writerow(headers)
 
+            j = 0
             for bygning in data:
                 if int(bygning["byg021BygningensAnvendelse"]) > 600:
                     continue
@@ -61,8 +63,10 @@ def getBygninger(kommunekode, filename, limit):
                     else:
                         params.append("")
                 csv_writer.writerow(params)
+                j += 1
                 #csv_writer.writerow(bygning.values())
 
+            print('Printed ' + str(j) + " buildings to: " + filename)
             data_file.close()
 
         else:
