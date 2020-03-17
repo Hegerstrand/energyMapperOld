@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BBR185.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBR450.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBRhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/BBRhandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnergyPlanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/EnergyPlanner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csvHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/csvHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBR187.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BBR187.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datafordeleren.py" beforeDir="false" afterPath="$PROJECT_DIR$/datafordeleren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,14 +103,14 @@
         <counts>
           <entry key="Python Console" value="25" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="2167" />
+          <entry key="py" value="2303" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="2192" />
+          <entry key="Python" value="2328" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -172,11 +167,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datafordeleren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+            <state relative-caret-position="272">
+              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1584442228316" expanded="true" signature="108:2999" ph="..." />
+                <marker date="1584444909844" expanded="true" signature="108:3145" ph="..." />
               </folding>
             </state>
           </provider>
@@ -666,11 +661,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datafordeleren.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        <state relative-caret-position="272">
+          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1584442228316" expanded="true" signature="108:2999" ph="..." />
+            <marker date="1584444909844" expanded="true" signature="108:3145" ph="..." />
           </folding>
         </state>
       </provider>

@@ -56,8 +56,9 @@ def getBygninger(kommunekode, filename, limit):
 
             j = 0
             for bygning in data:
-                if "byg021BygningensAnvendelse" in bygning:
-                    if int(bygning["byg021BygningensAnvendelse"]) > 600:
+                if "byg021BygningensAnvendelse" in bygning and "status" in bygning:
+                    status = int(bygning["status"])
+                    if int(bygning["byg021BygningensAnvendelse"]) > 600 or status < 5 or status > 9 or "byg406Koordinatsystem" not in bygning:
                         continue
                     params = []
                     for headning in headers:
