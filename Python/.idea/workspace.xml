@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BBR187.csv" beforeDir="false" afterPath="$PROJECT_DIR$/BBR187.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafordeleren.py" beforeDir="false" afterPath="$PROJECT_DIR$/datafordeleren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBRhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/BBRhandler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,14 +102,14 @@
         <counts>
           <entry key="Python Console" value="25" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="2303" />
+          <entry key="py" value="2307" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="2328" />
+          <entry key="Python" value="2332" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -130,14 +129,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BBRhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1584439778914" expanded="true" signature="75:77" ph="..." />
+                <marker date="1584447376445" expanded="true" signature="75:77" ph="..." />
               </folding>
             </state>
           </provider>
@@ -164,11 +163,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datafordeleren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="60" column="131" lean-forward="true" selection-start-line="60" selection-start-column="131" selection-end-line="60" selection-end-column="131" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1584444909844" expanded="true" signature="108:3145" ph="..." />
@@ -221,10 +220,10 @@
         <option value="$PROJECT_DIR$/BBR.sql" />
         <option value="$PROJECT_DIR$/getDar.py" />
         <option value="$PROJECT_DIR$/venv/tester.py" />
-        <option value="$PROJECT_DIR$/BBRhandler.py" />
         <option value="$PROJECT_DIR$/csvHandler.py" />
         <option value="$PROJECT_DIR$/EnergyPlanner.py" />
         <option value="$PROJECT_DIR$/datafordeleren.py" />
+        <option value="$PROJECT_DIR$/BBRhandler.py" />
       </list>
     </option>
   </component>
@@ -628,27 +627,6 @@
     <entry file="file://$PROJECT_DIR$/BBR.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/csvHandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BBRhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1584439778914" expanded="true" signature="75:77" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EnergyPlanner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -661,11 +639,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datafordeleren.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        <state relative-caret-position="255">
+          <caret line="60" column="131" lean-forward="true" selection-start-line="60" selection-start-column="131" selection-end-line="60" selection-end-column="131" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1584444909844" expanded="true" signature="108:3145" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csvHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBRhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1584447376445" expanded="true" signature="75:77" ph="..." />
           </folding>
         </state>
       </provider>
