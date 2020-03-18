@@ -29,7 +29,6 @@ def getBygninger(kommunekode, filename, limit):
 
     try:
         target = urlparse(uri + path + '?' + request + '&' + user)
-        #print(target.geturl())
         response, content = h.request(target.geturl(), method, body, headers)
 
         if response.status == 200:
@@ -41,7 +40,7 @@ def getBygninger(kommunekode, filename, limit):
                     response, content = h.request(target.geturl(), method, body, headers)
                     data = numpy.append(data, json.loads(content))
                     i += 1
-                    print(str(len(json.loads(content))) + ' buldings in page ' + str(i), end="\r")
+                    print(str(len(json.loads(content))) + ' buildings in page ' + str(i), end="\r")
 
             print('Got ' + str(len(data)) + " buildings from " + str(i) + " pages på Datafrodeleren")
 
@@ -73,7 +72,7 @@ def getBygninger(kommunekode, filename, limit):
             data_file.close()
 
         else:
-            print("status not OK")
+            print(uri + " returned status not OK")
     except response.content as msg:
         print(msg)
 
@@ -118,13 +117,4 @@ def getDar():
     else :
         print('getcall returned statuscode' + response['status'])
 
-############################################################################
-
-
-
-
-
-
-############################################################################
-############################################################################
 ############################################################################

@@ -5,7 +5,7 @@
 Definition Table
   Type NATIVEX Charset "UTF-8" Locale "da-DK"
   Fields 23
-    ﻿BBR! Smallint ;
+    ﻿BBR! Integer ;
     Husnummer Char (36) ;
     Jordstykke Integer ;
     Anv__klasse Smallint ;
@@ -26,11 +26,11 @@ Definition Table
     Varmebehov_VpD_MWh_år Float ;
     X Float ;
     Y Float ;
-    Adressepunkt Char (27) ;
+    Adressepunkt Char (40) ;
     Område Char (1) ;
 begin_metadata
 "\MapInfo" = ""
-"\MapInfo\TableID" = "c0a1d063-6b0c-4bd3-98a4-1b51463a27fa"
-"\MapInfo\ParentTableID" = "d826bbb1-ae81-45c6-b98d-03c4e2f3556d"
+"\MapInfo\TableID" = "cfcf6768-9e49-4f46-8b52-a1943443846d"
+"\MapInfo\ParentTableID" = "327084cb-9e76-4857-bd62-fdf4ee15520b"
 "\IsReadOnly" = "FALSE"
 end_metadata

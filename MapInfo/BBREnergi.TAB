@@ -6,7 +6,7 @@ Definition Table
   File "BBREnergi.csv"
   Type ASCII Delimiter ";" Titles Charset "UTF-8"
   Fields 23
-    ﻿BBR! Smallint ;
+    ﻿BBR! Integer ;
     Husnummer Char (36) ;
     Jordstykke Integer ;
     Anv__klasse Smallint ;
@@ -27,10 +27,10 @@ Definition Table
     Varmebehov_VpD_MWh_år Float ;
     X Float ;
     Y Float ;
-    Adressepunkt Char (27) ;
+    Adressepunkt Char (40) ;
     Område Char (1) ;
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "d826bbb1-ae81-45c6-b98d-03c4e2f3556d"
+"\MapInfo\TableID" = "327084cb-9e76-4857-bd62-fdf4ee15520b"
 end_metadata
