@@ -18,8 +18,7 @@ Sub main
 	call addPlans(nWindowID)		
 	call plotBuildings(nWindowID)	
 
-	call hide(nWindowID)		
 	call print(nWindowID)	
-
 	call calculateAreas(nWindowID)
+	call hide(nWindowID)	
 end sub
