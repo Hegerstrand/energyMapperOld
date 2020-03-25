@@ -30,7 +30,7 @@ Definition Table
     Område Char (1) ;
 begin_metadata
 "\MapInfo" = ""
-"\MapInfo\TableID" = "cfcf6768-9e49-4f46-8b52-a1943443846d"
-"\MapInfo\ParentTableID" = "327084cb-9e76-4857-bd62-fdf4ee15520b"
+"\MapInfo\TableID" = "815ebed8-d199-410a-a423-c7c07c11d2f2"
+"\MapInfo\ParentTableID" = "960876fa-b205-41a3-8322-1cfd66bc24e7"
 "\IsReadOnly" = "FALSE"
 end_metadata
