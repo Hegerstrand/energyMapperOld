@@ -4,7 +4,7 @@ import csv
 import numpy
 import pandas as pd
 
-def getAdresser(xlfilename, csvfilename):
+def getAdresser(xlfilename, sheetname, csvfilename):
     try:
         from urlparse import urlparse
     except ImportError:
@@ -13,7 +13,7 @@ def getAdresser(xlfilename, csvfilename):
         except ImportError:
             print("urlparse failed")
 
-    exceldata = pd.read_excel(xlfilename, "Udvalgte", encoding='utf-8')
+    exceldata = pd.read_excel(xlfilename, sheetname, encoding='utf-8')
 
     headers = {
         'Accept': 'application/json',
@@ -73,10 +73,6 @@ def getAdresser(xlfilename, csvfilename):
     print("Printed " + str(j) + " adresser for " + str(i) + " husnummer")
     data_file.close()
 
-
-
-
-
 def getHusnummer(postnummer, filename, limit):
     try:
         from urlparse import urlparse
@@ -124,7 +120,7 @@ def getHusnummer(postnummer, filename, limit):
                 , "navngivenVej", "husnummertekst", "postnummer", "adgangsadressebetegnelse"
                 , "kommuneinddeling"
                 , "adgangspunkt", "status"]
-            csv_writer.writerow(headers)
+            csv_writer.writerow(headings)
 
             dictionary = {'postnummer': 'postnr'
                 ,"navngivenVej": "vejadresseringsnavn"
@@ -165,7 +161,6 @@ def getHusnummer(postnummer, filename, limit):
             print(uri + " returned status not " + response['status'])
     except response.content as msg:
         print(msg)
-
 
 def getBygninger(kommunekode, filename, limit):
     try:
@@ -215,7 +210,7 @@ def getBygninger(kommunekode, filename, limit):
                 , "byg038SamletBygningsareal", "byg039BygningensSamledeBoligAreal", "byg040BygningensSamledeErhvervsAreal", "placehodlerForKælder"
                 , "byg026Opførelsesår", "byg027OmTilbygningsår", "byg056Varmeinstallation", "byg057Opvarmningsmiddel", "byg058SupplerendeVarme", "byg404Koordinat"
                 , "byg406Koordinatsystem", "status"]
-            csv_writer.writerow(headers)
+            csv_writer.writerow(headings)
 
             j = 0
             for bygning in data:
@@ -239,7 +234,3 @@ def getBygninger(kommunekode, filename, limit):
             print(uri + " returned status not " + response['status'])
     except response.content as msg:
         print(msg)
-
-
-
-############################################################################
