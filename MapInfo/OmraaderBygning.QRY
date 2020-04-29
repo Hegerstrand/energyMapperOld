@@ -1,0 +1,7 @@
+Fields {Omraader.Id, EnergiMapped.Sektor,  Count(*),  Sum(EnergiMapped.Varmebehov_Sbi_MWh_år)}
+Tables {Omraader, EnergiMapped}
+Where {EnergiMapped.obj Within Omraader.obj}
+Group {EnergiMapped.Sektor,  Omraader.Id}
+Order {}
+Into {Selection}
+Browse

@@ -207,7 +207,7 @@ def getBygninger(kommunekode, filename, limit):
             csv_writer = csv.writer(data_file, delimiter=';', lineterminator='\n')
 
             headings = ["id_lokalId", "husnummer", "jordstykke", "byg021BygningensAnvendelse"
-                , "byg038SamletBygningsareal", "byg039BygningensSamledeBoligAreal", "byg040BygningensSamledeErhvervsAreal", "placehodlerForKælder"
+                , "byg038SamletBygningsareal", "byg039BygningensSamledeBoligAreal", "byg040BygningensSamledeErhvervsAreal", "eta022Kælderareal"
                 , "byg026Opførelsesår", "byg027OmTilbygningsår", "byg056Varmeinstallation", "byg057Opvarmningsmiddel", "byg058SupplerendeVarme", "byg404Koordinat"
                 , "byg406Koordinatsystem", "status"]
             csv_writer.writerow(headings)
@@ -220,8 +220,11 @@ def getBygninger(kommunekode, filename, limit):
                         continue
                     params = []
                     for heading in headings:
-                        if heading in bygning:
-                            params.append(bygning[heading])
+                        if(heading == "eta022Kælderareal"):
+                            eta022Kælderareal = getEta022Kælderareal(bygning["etageList"])
+                            params.append(eta022Kælderareal)
+                        elif heading in bygning:
+                                params.append(bygning[heading])
                         else:
                             params.append("")
                     csv_writer.writerow(params)
@@ -234,3 +237,11 @@ def getBygninger(kommunekode, filename, limit):
             print(uri + " returned status not " + response['status'])
     except response.content as msg:
         print(msg)
+
+def getEta022Kælderareal(etageList):
+    areal = 0
+    for etage in etageList:
+        etagedata = etage["etage"]
+        if "eta022Kælderareal" in etagedata and int(etagedata["status"]) == 6:
+            areal += int(etagedata["eta022Kælderareal"])
+    return str(areal)

@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.ID" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.MAP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Bygning.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Bygning.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Bygning.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Bygning.MAP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Bygning.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Bygning.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.ID" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.MAP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kort.BMP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kort.BMP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Kort.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kort.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Omraader.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Omraader.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Omraader.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Omraader.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/Skaermkort.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Skaermkort.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.ID" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.MAP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/kommunetable.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/kommunetable.TAB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.DAT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.ID" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.MAP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.TAB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BBR740.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/datafordeleren.py" beforeDir="false" afterPath="$PROJECT_DIR$/datafordeleren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Adresser.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Adresser.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/BBR740.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/BBRTester.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Husnummer.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/tester.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SBi740 ny.xlsm" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,25 +93,25 @@
     <session id="-1313898271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="8" />
+          <entry key="project.open.time.4" value="9" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="25" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="4007" />
+          <entry key="py" value="4294" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="4032" />
+          <entry key="Python" value="4319" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -167,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BBRhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="289">
               <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -177,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/tester.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -201,15 +168,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datafordeleren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="1072">
+              <caret line="244" column="78" lean-forward="true" selection-start-line="244" selection-start-column="78" selection-end-line="244" selection-end-column="78" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#2451#5866#0" />
-                <element signature="e#5920#8952#0" />
+                <element signature="e#138#2408#0" />
+                <element signature="e#2461#5877#0" />
+                <element signature="e#3038#5822#0" />
+                <marker date="1588158590199" expanded="true" signature="9216:9217" ph="..." />
+                <marker date="1588158590199" expanded="true" signature="9216:9221" ph="..." />
               </folding>
             </state>
           </provider>
@@ -266,7 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +252,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,6 +458,11 @@
           <line>1638</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datafordeleren.py</url>
+          <line>246</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -519,6 +494,31 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>areal</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>int(etagedata[&quot;eta025Etagetype&quot;])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>etagedata[&quot;eta025Etagetype&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>etagedata</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>etage[&quot;etage&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>exceldata.get_values()[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -535,31 +535,6 @@
       </expression>
       <expression>
         <expression-string>str(husnummer[0])</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>str(husnummer)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>husnummer</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>husnummerlist</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>husnummerlist.get_values().tolist()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>husnummerlist.get_values()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -655,7 +630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BBRhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="289">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -674,24 +649,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datafordeleren.py">
+    <entry file="file://$PROJECT_DIR$/venv/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#2451#5866#0" />
-            <element signature="e#5920#8952#0" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/tester.py">
+    <entry file="file://$PROJECT_DIR$/datafordeleren.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="1072">
+          <caret line="244" column="78" lean-forward="true" selection-start-line="244" selection-start-column="78" selection-end-line="244" selection-end-column="78" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#138#2408#0" />
+            <element signature="e#2461#5877#0" />
+            <element signature="e#3038#5822#0" />
+            <marker date="1588158590199" expanded="true" signature="9216:9217" ph="..." />
+            <marker date="1588158590199" expanded="true" signature="9216:9221" ph="..." />
           </folding>
         </state>
       </provider>
