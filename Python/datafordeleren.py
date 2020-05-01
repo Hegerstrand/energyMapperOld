@@ -220,7 +220,7 @@ def getBygninger(kommunekode, filename, limit):
                         continue
                     params = []
                     for heading in headings:
-                        if(heading == "eta022Kælderareal"):
+                        if heading == "eta022Kælderareal" and "etageList" in bygning:
                             eta022Kælderareal = getEta022Kælderareal(bygning["etageList"])
                             params.append(eta022Kælderareal)
                         elif heading in bygning:
