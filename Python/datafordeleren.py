@@ -241,7 +241,8 @@ def getBygninger(kommunekode, filename, limit):
 def getEta022Kælderareal(etageList):
     areal = 0
     for etage in etageList:
-        etagedata = etage["etage"]
-        if "eta022Kælderareal" in etagedata and int(etagedata["status"]) == 6:
-            areal += int(etagedata["eta022Kælderareal"])
+        if "etage" in etage:
+            etagedata = etage["etage"]
+            if "eta022Kælderareal" in etagedata and int(etagedata["status"]) == 6:
+                areal += int(etagedata["eta022Kælderareal"])
     return str(areal)
