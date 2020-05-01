@@ -5,11 +5,11 @@
 Definition Table
   Type NATIVEX Charset "UTF-8" Locale "da-DK"
   Fields 23
-    ﻿BBR! Integer ;
+    ﻿BBR! Smallint ;
     Husnummer Char (36) ;
     Jordstykke Integer ;
     Anv__klasse Smallint ;
-    Opvarmet_areal Smallint ;
+    Opvarmet_areal Float ;
     Bygningsår Smallint ;
     Varmeinstallation Char (68) ;
     Opvarmnignsmiddel Char (61) ;
@@ -30,7 +30,7 @@ Definition Table
     Område Char (1) ;
 begin_metadata
 "\MapInfo" = ""
-"\MapInfo\TableID" = "8c0a87b8-49ff-4ac2-b827-3f0d7f30263d"
-"\MapInfo\ParentTableID" = "fe9ff6ae-acce-4c18-8122-83a4bc3cdcc3"
+"\MapInfo\TableID" = "9c0957ea-038f-4cb5-a0c3-a842c28bd093"
+"\MapInfo\ParentTableID" = "e3a3bb61-9248-4053-a57c-ad1b42b75cdb"
 "\IsReadOnly" = "FALSE"
 end_metadata

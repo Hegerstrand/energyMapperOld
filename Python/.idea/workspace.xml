@@ -2,7 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.ID" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.MAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Bygning.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Bygning.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Bygning.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Bygning.ID" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Bygning.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Bygning.MAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Bygning.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Bygning.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.ID" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.MAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/EnergiMapped.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/EnergiMapped.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.ID" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.MAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kommuneinddeling.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Kort.BMP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kort.BMP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Kort.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Kort.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Omraader.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Omraader.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Omraader.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Omraader.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/Skaermkort.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/Skaermkort.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.ID" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.MAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/forsyningomraade_vedtaget.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/kommunetable.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/kommunetable.TAB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.DAT" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.DAT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.ID" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.MAP" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/lokalplan_vedtaget.TAB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BBRhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/BBRhandler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datafordeleren.py" beforeDir="false" afterPath="$PROJECT_DIR$/datafordeleren.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/tester.py" afterDir="false" />
     </list>
@@ -93,25 +124,25 @@
     <session id="-1313898271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="9" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.4" value="10" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="25" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="4294" />
+          <entry key="py" value="4393" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="4319" />
+          <entry key="Python" value="4418" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -131,14 +162,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BBRhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1585225428021" expanded="true" signature="75:77" ph="..." />
+                <marker date="1588329515845" expanded="true" signature="75:77" ph="..." />
               </folding>
             </state>
           </provider>
@@ -148,7 +179,7 @@
         <entry file="file://$PROJECT_DIR$/venv/tester.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -168,18 +199,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datafordeleren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1072">
-              <caret line="244" column="78" lean-forward="true" selection-start-line="244" selection-start-column="78" selection-end-line="244" selection-end-column="78" />
+            <state>
+              <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#138#2408#0" />
                 <element signature="e#2461#5877#0" />
                 <element signature="e#3038#5822#0" />
-                <marker date="1588158590199" expanded="true" signature="9216:9217" ph="..." />
-                <marker date="1588158590199" expanded="true" signature="9216:9221" ph="..." />
+                <marker date="1588332673036" expanded="true" signature="9242:9243" ph="..." />
+                <marker date="1588332673036" expanded="true" signature="9242:9247" ph="..." />
               </folding>
             </state>
           </provider>
@@ -225,7 +256,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1396" />
+    <option name="x" value="1727" />
     <option name="y" value="-1440" />
     <option name="width" value="1734" />
     <option name="height" value="1407" />
@@ -421,7 +452,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1396" y="-1440" width="1734" height="1407" extended-state="0" />
+    <frame x="1727" y="-1440" width="1734" height="1407" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16037735" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -457,11 +488,6 @@
           <url>file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py</url>
           <line>1638</line>
           <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/datafordeleren.py</url>
-          <line>246</line>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -628,17 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BBRhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1585225428021" expanded="true" signature="75:77" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csvHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -649,27 +664,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/datafordeleren.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#138#2408#0" />
+            <element signature="e#2461#5877#0" />
+            <element signature="e#3038#5822#0" />
+            <marker date="1588332673036" expanded="true" signature="9242:9243" ph="..." />
+            <marker date="1588332673036" expanded="true" signature="9242:9247" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/tester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datafordeleren.py">
+    <entry file="file://$PROJECT_DIR$/BBRhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1072">
-          <caret line="244" column="78" lean-forward="true" selection-start-line="244" selection-start-column="78" selection-end-line="244" selection-end-column="78" />
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#138#2408#0" />
-            <element signature="e#2461#5877#0" />
-            <element signature="e#3038#5822#0" />
-            <marker date="1588158590199" expanded="true" signature="9216:9217" ph="..." />
-            <marker date="1588158590199" expanded="true" signature="9216:9221" ph="..." />
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1588329515845" expanded="true" signature="75:77" ph="..." />
           </folding>
         </state>
       </provider>

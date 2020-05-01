@@ -26,7 +26,7 @@ Definition Table
     planStedfaestelsesmetode Char (32) ;
     vertikalNoejagtighed Char (32) ;
     vertikalStedfaestelsesmetode Char (32) ;
-    applikation Char (50) ;
+    applikation Char (32) ;
     kommentar Char (32) ;
     BBRUUID Char (36) ;
     bygningstype Char (32) ;
@@ -65,5 +65,5 @@ begin_metadata
 "\DefaultStyles\Brush\Backcolor" = "16777215"
 "\DefaultStyles\Brush\Transparent" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "c964cb11-7148-4369-910c-5e335d863839"
+"\MapInfo\TableID" = "208b46e2-8d14-4c08-952a-c9af14f713a4"
 end_metadata
