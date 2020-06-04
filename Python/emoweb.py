@@ -6,7 +6,11 @@ import csv
 import numpy
 import pandas as pd
 
-def getEnergyLabelForBulding(municipality, property, building):
+headers = {
+    'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
+}
+
+def getLabelSerialIdentifierForBulding(municipality, property, building):
     try:
         from urlparse import urlparse
     except ImportError:
@@ -15,10 +19,30 @@ def getEnergyLabelForBulding(municipality, property, building):
         except ImportError:
             print("urlparse failed")
 
+    try:
+        r = requests.get(url="https://emoweb.dk/EMOData/EMOData.svc/Ping", headers=headers)
+        if r.status_code == 200:
+            SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
+            bygning = str(municipality) + "/" + str(property) + "/" + str(building)
+            BBRSearchResponse = requests.get(url=SearchEnergyLabelBBR + bygning, headers=headers)
+            BBRcontent = json.loads(BBRSearchResponse.content)
+            SearchResults = BBRcontent["SearchResults"]
+            LabelSerialIdentifier = SearchResults[0]["EnergyLabelSerialIdentifier"]
 
-    headers = {
-        'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
-    }
+        return LabelSerialIdentifier
+
+    except ImportError:
+        print("Ping failed")
+
+def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifier):
+    try:
+        from urlparse import urlparse
+    except ImportError:
+        try:
+            from urllib.parse import urlparse
+        except ImportError:
+            print("urlparse failed")
+
     ProposalCalculationHeadings = {
         "AdditionalHeat",
         "AdditionalHeatCost",
@@ -57,22 +81,15 @@ def getEnergyLabelForBulding(municipality, property, building):
     try:
         r = requests.get(url="https://emoweb.dk/EMOData/EMOData.svc/Ping", headers=headers)
         if r.status_code == 200:
-            SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
-            bygning = str(municipality) + "/" + str(property) + "/" + str(building)
-            BBRSearchResponse = requests.get(url=SearchEnergyLabelBBR + bygning, headers=headers)
-            BBRcontent = json.loads(BBRSearchResponse.content)
-            SearchResults = BBRcontent["SearchResults"]
-            EnergimaerkeNr = SearchResults[0]["EnergyLabelSerialIdentifier"]
-
             FetchEnergyLabelDetails = "https://emoweb.dk/EMOData/EMOData.svc/FetchEnergyLabelDetails/"
-            EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(EnergimaerkeNr), headers=headers)
+            EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(LabelSerialIdentifier), headers=headers)
             EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
             if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3:
 
                 Headings = []
                 Headings.append("Nummer")
                 Summary = []
-                Summary.append(str(EnergimaerkeNr))
+                Summary.append(str(LabelSerialIdentifier))
 
                 ProposalOverview = EnergyLabelDetails["ProposalOverview"]
                 for heading in ProposalCalculationHeadings :
@@ -87,7 +104,7 @@ def getEnergyLabelForBulding(municipality, property, building):
                 Summary_writer.writerow(Headings)
                 Summary_writer.writerow(Summary)
 
-                Proposal_csv_file = open(str(EnergimaerkeNr) + ".csv", 'w')
+                Proposal_csv_file = open(str(LabelSerialIdentifier) + ".csv", 'w')
                 Proposal_writer = csv.writer(Proposal_csv_file, delimiter=';', lineterminator='\n')
                 Proposal_writer.writerow(ProposalHeadings)
 
@@ -99,24 +116,4 @@ def getEnergyLabelForBulding(municipality, property, building):
                     Proposal_writer.writerow(ProposalCalculation)
 
     except ImportError:
-        print("2")
-    #response, content = h.request(target.geturl(), method, body, headers)
-
-
-
-    # https://emoweb.dk/EMOData/EMOData.svc/Ping
-
-        #https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/573/112576/0
-        #https://emoweb.dk/emodata/emodata.svc/FetchEnergyLabelDetails/311022216/Investment=All,TL,BA
-
-    # GET /FetchEnergyLabelDetails/{EntityIdentifier}
-    #GET SearchEnergyLabelBBR/{municipality}/{property}/{building}
-
-
-    #GET /EMOData/EMOData.svc/SearchEnergyLabelUID/{UID}
-    #GET /EMOData/EMOData.svc/FetchEnergyLabelDetailsMultipleBuildings/{EntityIdentifier}
-
-
-# /EMOData/EMOData.svc/
-# http://energisparebygning.dk:8001/DIADEMService/DIADEMService.svc
-# https://emoweb.dk/emodata/emodata.svc/
+        print("Ping failed")
