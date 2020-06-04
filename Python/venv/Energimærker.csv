@@ -1,2 +1,8 @@
-Nummer;TotalProfitableInvestment;HeatSupply;AdditionalHeat;FixedCharge;CalculatedEmission;CalculatedEnergySavings;AdditionalHeatCost;CalculatedConsumption;CalculatedEnergyConsumption;ElectricityPrice;CalculatedEmissionLowering;HeatSupplyCost;ExtraCostPrYear;TotalProfitableInvestment;PossibleEnergyLabelForAllProposals;TotalRecommendedInvestment;ExtraCostPrYearForRecommendedProposals;ExtraCostPrYearForAllProposals;PossibleEnergyLabelForAllProfitableProposals;ExtraCostPrYear
-311212937;Kan ikke beregnes;DistrictHeat;Ingen;167215,86;89212200;216700;0;586000;632800;2;53639600;661,81;202700;1261000;A2010;0;0;202700;B;96700
+Nummer;CalculatedEnergyConsumption;AdditionalHeatCost;ElectricityPrice;CalculatedEmissionLowering;HeatSupply;HeatSupplyCost;CalculatedEmission;CalculatedEnergySavings;AdditionalHeat;TotalProfitableInvestment;ExtraCostPrYear;FixedCharge;CalculatedConsumption;PossibleEnergyLabelForAllProposals;ExtraCostPrYearForRecommendedProposals;TotalRecommendedInvestment;TotalProfitableInvestment;ExtraCostPrYearForAllProposals;ExtraCostPrYear;PossibleEnergyLabelForAllProfitableProposals
+311441550;21500;0;2,2;1861200;NaturalGas;519,090909090909;4382000;9100;Ingen;Kan ikke beregnes;4800;0;11200;C;0;0;68900;4800;2100;D
+311441551;15600;0;2,1;742000;NaturalGas;610;3178400;3700;Ingen;Kan ikke beregnes;2200;0;9600;C;0;0;0;2200;0;D
+311441552;11800;0;2,1;340600;DistrictHeat;686,25;765700;2700;Ingen;Kan ikke beregnes;3600;1927,5;10100;A2010;0;0;33000;3600;800;B
+311441553;24700;0;0;267100;DistrictHeat;440;1603600;4100;Ingen;Kan ikke beregnes;1800;3052;14000;C;0;0;6700;1800;800;C
+311441554;12900;0;2,2;124200;DistrictHeat;550;836600;2000;Ingen;Kan ikke beregnes;1000;7850;15000;C;0;0;0;1000;0;C
+311441556;46900;0;2,33;-1261200;WoodPellets;525,773195876289;167500;39700;Ingen;Kan ikke beregnes;15800;0;26200;B;0;0;106400;15800;9900;D
+311441557;34200;0;2,2;5923200;NaturalGas;519,090909090909;6958500;28900;Ingen;Kan ikke beregnes;10800;0;17800;B;0;0;0;10800;0;E
