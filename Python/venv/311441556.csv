@@ -1,5 +1,5 @@
-SeebClassification;ProposalID;Investment;Savings;Recommended;Profitable;SeebClassificationDescription;ProposalHeadline
-2-2-3-0;494208;9200;2300;False;True;Varmefordelingspumper;Montering af ny varmefordelingspumper på varmeanlæg.
-2-1-1-0;494207;88000;-670;False;False;Varmeanlæg;Kedlen nedtages og der installeres en luft/vand-baseret varmepumpe, til rumopvarmning via centralvarmeanlæg samt opvarmning af varmtvandsbeholder.
-1-2-2-0;494167;97200;7800;False;True;Massive ydervægge;Efterisolering af massiv ydervæg.
-1-1-1-0;494184;121000;900;False;False;Loft;Efterisolering af skråvægge og skunke.
+ProposalID;SeebClassificationDescription;Savings;Recommended;Investment;Profitable;ProposalHeadline;SeebClassification
+494208;Varmefordelingspumper;2300;False;9200;True;Montering af ny varmefordelingspumper på varmeanlæg.;2-2-3-0
+494207;Varmeanlæg;-670;False;88000;False;Kedlen nedtages og der installeres en luft/vand-baseret varmepumpe, til rumopvarmning via centralvarmeanlæg samt opvarmning af varmtvandsbeholder.;2-1-1-0
+494167;Massive ydervægge;7800;False;97200;True;Efterisolering af massiv ydervæg.;1-2-2-0
+494184;Loft;900;False;121000;False;Efterisolering af skråvægge og skunke.;1-1-1-0

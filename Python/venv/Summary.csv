@@ -1,0 +1,5 @@
+Nummer;ExtraCostPrYear;CalculatedEnergySavings;AdditionalHeatCost;HeatSupply;CalculatedEnergyConsumption;FixedCharge;AdditionalHeat;HeatSupplyCost;TotalProfitableInvestment;CalculatedEmission;CalculatedEmissionLowering;CalculatedConsumption;ElectricityPrice;PossibleEnergyLabelForAllProfitableProposals;ExtraCostPrYear;ExtraCostPrYearForRecommendedProposals;TotalProfitableInvestment;PossibleEnergyLabelForAllProposals;TotalRecommendedInvestment;ExtraCostPrYearForAllProposals
+311441556;15800;39700;0;WoodPellets;46900;0;Ingen;525,773195876289;Kan ikke beregnes;167500;-1261200;26200;2,33;D;9900;0;106400;B;0;15800
+311441557;10800;28900;0;NaturalGas;34200;0;Ingen;519,090909090909;Kan ikke beregnes;6958500;5923200;17800;2,2;E;0;0;0;B;0;10800
+311441559;2400;1300;0;DistrictHeat;7400;1968,75;Ingen;580;Kan ikke beregnes;479700;230600;6300;2,1;A2010;0;0;0;A2015;0;2400
+311441563;9000;24700;0;DistrictHeat;84100;19547,5;Ingen;365,72;Kan ikke beregnes;5461300;1601600;50300;2,2;B;0;0;0;A2010;0;9000

@@ -82,43 +82,44 @@ def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLab
     try:
         r = requests.get(url="https://emoweb.dk/EMOData/EMOData.svc/Ping", headers=headers)
         if r.status_code == 200:
-            LabelSerialIdentifier = FromLabelSerialIdentifier
 
             SummaryHeadings = ["Nummer"]
             SummaryHeadings.extend(ProposalCalculationHeadings)
             SummaryHeadings.extend(ProposalOverviewHeadings)
-            SummaryFile = open("Energimærker.csv", 'w')
+            SummaryFile = open("Summary.csv", 'w')
             Summary_writer = csv.writer(SummaryFile, delimiter=';', lineterminator='\n')
             Summary_writer.writerow(SummaryHeadings)
 
-            while LabelSerialIdentifier <= ToLabelSerialIdentifier:
-                FetchEnergyLabelDetails = "https://emoweb.dk/EMOData/EMOData.svc/FetchEnergyLabelDetails/"
-                EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(LabelSerialIdentifier), headers=headers)
-                EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
-                if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3 and int(EnergyLabelDetails["ProposalCalculation"]["CalculatedEnergySavings"]) > 0:
+            for LabelSerialIdentifier in range(FromLabelSerialIdentifier, ToLabelSerialIdentifier):
+                try:
+                    print("Getting energy label for bulding woth LabelSerialIdentifier: " + str(LabelSerialIdentifier))
+                    FetchEnergyLabelDetails = "https://emoweb.dk/EMOData/EMOData.svc/FetchEnergyLabelDetails/"
+                    EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(LabelSerialIdentifier), headers=headers)
+                    EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
+                    if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3 and int(EnergyLabelDetails["ProposalCalculation"]["CalculatedEnergySavings"]) > 0:
 
-                    Summary = []
-                    Summary.append(str(LabelSerialIdentifier))
+                        Summary = []
+                        Summary.append(str(LabelSerialIdentifier))
 
-                    ProposalOverview = EnergyLabelDetails["ProposalOverview"]
-                    for heading in ProposalCalculationHeadings:
-                        Summary.append(EnergyLabelDetails["ProposalCalculation"][heading])
-                    for heading in ProposalOverviewHeadings :
-                        Summary.append(ProposalOverview[heading])
+                        ProposalOverview = EnergyLabelDetails["ProposalOverview"]
+                        for heading in ProposalCalculationHeadings:
+                            Summary.append(EnergyLabelDetails["ProposalCalculation"][heading])
+                        for heading in ProposalOverviewHeadings:
+                            Summary.append(ProposalOverview[heading])
 
-                    Summary_writer.writerow(Summary)
+                        Summary_writer.writerow(Summary)
 
-                    Proposal_csv_file = open(str(LabelSerialIdentifier) + ".csv", 'w')
-                    Proposal_writer = csv.writer(Proposal_csv_file, delimiter=';', lineterminator='\n')
-                    Proposal_writer.writerow(ProposalHeadings)
+                        Proposal_csv_file = open(str(LabelSerialIdentifier) + ".csv", 'w')
+                        Proposal_writer = csv.writer(Proposal_csv_file, delimiter=';', lineterminator='\n')
+                        Proposal_writer.writerow(ProposalHeadings)
 
-                    ProposalCalculation = []
-                    for proposal in ProposalOverview["Proposals"]:
-                        ProposalCalculation = []
-                        for heading in ProposalHeadings:
-                            ProposalCalculation.append(proposal[heading])
-                        Proposal_writer.writerow(ProposalCalculation)
+                        for proposal in ProposalOverview["Proposals"]:
+                            ProposalCalculation = []
+                            for heading in ProposalHeadings:
+                                ProposalCalculation.append(proposal[heading])
+                            Proposal_writer.writerow(ProposalCalculation)
 
-                LabelSerialIdentifier += 1
+                except ImportError:
+                    print("Getting energy label failed")
     except ImportError:
         print("Ping failed")

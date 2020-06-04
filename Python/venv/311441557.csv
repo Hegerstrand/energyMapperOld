@@ -1,11 +1,11 @@
-SeebClassification;ProposalID;Investment;Savings;Recommended;Profitable;SeebClassificationDescription;ProposalHeadline
-1-3-3-0;1;18100;600;False;False;Yderdøre;Udskiftning af massive uisolerede entrédøre.
-1-3-3-0;4;18600;400;False;False;Yderdøre;Udskiftning af eksisterende terrassedøre.
-1-1-1-0;3;56400;900;False;False;Loft;Efterisolering af loftsrum med 200 mm isolering
-1-3-1-0;2;77300;1700;False;False;Vinduer;Udskiftning af eksisterende vinduer med 2 lags termorude
-2-1-5-0;5;232000;6100;False;False;Varmepumper;"Konvertering til varmepumpe.
+ProposalID;SeebClassificationDescription;Savings;Recommended;Investment;Profitable;ProposalHeadline;SeebClassification
+1;Yderdøre;600;False;18100;False;Udskiftning af massive uisolerede entrédøre.;1-3-3-0
+4;Yderdøre;400;False;18600;False;Udskiftning af eksisterende terrassedøre.;1-3-3-0
+3;Loft;900;False;56400;False;Efterisolering af loftsrum med 200 mm isolering;1-1-1-0
+2;Vinduer;1700;False;77300;False;Udskiftning af eksisterende vinduer med 2 lags termorude;1-3-1-0
+5;Varmepumper;6100;False;232000;False;"Konvertering til varmepumpe.
 Eksisterende varmesystem fjernes.
 Installation af ny luft/vand varmepumpe.
 Etablering af nyt varmefordelingsanlæg til radiatorer.
-Installation af ny varmtvandsbeholder."
-1-4-1-0;0;381200;1600;False;False;Terrændæk;Ophugning af eksisterende terrændæk og støbning af nyt med 400 mm mineraluld eller polystyrenplader
+Installation af ny varmtvandsbeholder.";2-1-5-0
+0;Terrændæk;1600;False;381200;False;Ophugning af eksisterende terrændæk og støbning af nyt med 400 mm mineraluld eller polystyrenplader;1-4-1-0

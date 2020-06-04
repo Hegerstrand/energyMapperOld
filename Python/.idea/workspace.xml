@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/emoweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/emoweb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/210.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311022216.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311212937.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Adresser.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/BBR630.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Energimærker.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Energimærker.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/TVISCO2.xlsm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test101.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441550.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441551.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441552.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441553.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441554.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441556.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/311441556.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441557.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/311441557.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Energimærker.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +100,7 @@
     <session id="-1313898271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="11" />
           <entry key="project.open.time.5" value="2" />
@@ -111,26 +111,26 @@
         <counts>
           <entry key="Python Console" value="48" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="5790" />
+          <entry key="py" value="5915" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="5838" />
+          <entry key="Python" value="5963" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="17" />
+          <entry key="py" value="18" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="17" />
+          <entry key="Python" value="18" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -141,8 +141,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emoweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+            <state relative-caret-position="517">
+              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -153,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="73" lean-forward="true" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -417,14 +417,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14330874" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4262473" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4262473" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -473,11 +472,6 @@
           <line>1638</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/emoweb.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -508,6 +502,11 @@
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>EnergyLabelDetails[&quot;ResponseStatus&quot;][&quot;StatusCode&quot;] == 3 and int(EnergyLabelDetails[&quot;ProposalCalculation&quot;][&quot;CalculatedEnergySavings&quot;]) &gt; 0</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>int(EnergyLabelDetails[&quot;ProposalCalculation&quot;][&quot;CalculatedEnergySavings&quot;]) &gt; 0</expression-string>
         <language-id>Python</language-id>
@@ -545,11 +544,6 @@
       </expression>
       <expression>
         <expression-string>SearchResults[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>SearchResults(0)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -688,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="73" lean-forward="true" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -698,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emoweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="90" column="7" lean-forward="true" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
+        <state relative-caret-position="517">
+          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
