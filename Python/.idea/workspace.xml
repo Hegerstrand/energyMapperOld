@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/emoweb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.ID" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.ID" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.MAP" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.MAP" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../MapInfo/BBREnergi.TAB" beforeDir="false" afterPath="$PROJECT_DIR$/../MapInfo/BBREnergi.TAB" afterDir="false" />
@@ -171,8 +170,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emoweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="279">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -184,7 +183,7 @@
         <entry file="file://$PROJECT_DIR$/venv/tester.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -246,8 +245,8 @@
         <option value="$PROJECT_DIR$/EnergyPlanner.py" />
         <option value="$PROJECT_DIR$/BBRhandler.py" />
         <option value="$PROJECT_DIR$/datafordeleren.py" />
-        <option value="$PROJECT_DIR$/emoweb.py" />
         <option value="$PROJECT_DIR$/venv/tester.py" />
+        <option value="$PROJECT_DIR$/emoweb.py" />
       </list>
     </option>
   </component>
@@ -698,7 +697,7 @@
     <entry file="file://$PROJECT_DIR$/venv/tester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -707,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emoweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="279">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

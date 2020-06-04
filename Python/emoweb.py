@@ -85,7 +85,7 @@ def getEnergyLabelForBulding(municipality, property, building):
                 csv_file = open("Energimærker.csv", 'w')
                 Summary_writer = csv.writer(csv_file, delimiter=';', lineterminator='\n')
                 Summary_writer.writerow(Headings)
-                Summary_writer.wr iterow(Summary)
+                Summary_writer.writerow(Summary)
 
                 Proposal_csv_file = open(str(EnergimaerkeNr) + ".csv", 'w')
                 Proposal_writer = csv.writer(Proposal_csv_file, delimiter=';', lineterminator='\n')
