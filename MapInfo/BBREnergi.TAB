@@ -6,7 +6,7 @@ Definition Table
   File "BBREnergi.csv"
   Type ASCII Delimiter ";" Titles Charset "UTF-8"
   Fields 23
-    ﻿BBR! Smallint ;
+    ﻿BBR! Integer ;
     Husnummer Char (36) ;
     Jordstykke Integer ;
     Anv__klasse Smallint ;
@@ -32,5 +32,5 @@ Definition Table
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "e3a3bb61-9248-4053-a57c-ad1b42b75cdb"
+"\MapInfo\TableID" = "3a093805-24d1-4ce5-873d-309eca52f340"
 end_metadata

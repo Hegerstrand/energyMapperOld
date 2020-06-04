@@ -1,0 +1,29 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "BBR580.csv"
+  Type ASCII Delimiter ";" Titles Charset "WindowsLatin1"
+  Fields 16
+    id_lokalId Char (36) ;
+    husnummer Char (36) ;
+    jordstykke Integer ;
+    byg021BygningensAnvendelse Smallint ;
+    byg038SamletBygningsareal Smallint ;
+    byg039BygningensSamledeBoligAre Smallint ;
+    byg040BygningensSamledeErhvervs Integer ;
+    placehodlerForKælder Char (1) ;
+    byg026Opførelsesår Smallint ;
+    byg027OmTilbygningsår Smallint ;
+    byg056Varmeinstallation Smallint ;
+    byg057Opvarmningsmiddel Smallint ;
+    byg058SupplerendeVarme Smallint ;
+    byg404Koordinat Char (40) ;
+    byg406Koordinatsystem Smallint ;
+    status Smallint ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "c1defdcf-0ae8-4122-a328-cc4ec8122bf3"
+end_metadata

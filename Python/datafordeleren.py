@@ -246,3 +246,4 @@ def getEta022Kælderareal(etageList):
             if "eta022Kælderareal" in etagedata and int(etagedata["status"]) == 6:
                 areal += int(etagedata["eta022Kælderareal"])
     return str(areal)
+

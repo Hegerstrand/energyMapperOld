@@ -1,0 +1,14 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  File "BBR201.csv"
+  Type ASCII Delimiter "_" Titles Charset "WindowsLatin1"
+  Fields 1
+    id_lokalId_husnummer_jordstykke Char (157) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "c2cfccc9-7701-44c6-bdc1-e9dd304b3c9d"
+end_metadata

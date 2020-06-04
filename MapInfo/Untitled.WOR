@@ -11,13 +11,13 @@ Open Table "\forsyningomraade_vedtaget" As forsyningomraade_vedtaget Interactive
 Open Table "\Bygning" As Bygning Interactive
 Open Table "\Omraader" As Omraader Interactive
 Map From EnergiMapped,Omraader,Bygning,forsyningomraade_vedtaget,lokalplan_vedtaget,Kommuneinddeling,Skaermkort,Kort
-  Position (14.875,-13.125) Units "in"
-  Width 17.2708 Units "in" Height 6.40625 Units "in" 
+  Position (0.447917,-13.1042) Units "in"
+  Width 8.92708 Units "in" Height 6.375 Units "in" 
 Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On
 Set Map
   CoordSys Earth Projection 8, 115, "m", 9, 0, 0.9996, 500000, 0
-  Center (534053.2013,6226213.142)
-  Zoom 116.5433322 Units "km"
+  Center (704195.4993,6172483.544)
+  Zoom 12.4749995 Units "km"
   Preserve Zoom Display Zoom
   Distance Units "km" Area Units "sq km" XY Units "m"
 shade 4 with vaerdi1203 values 
@@ -178,7 +178,7 @@ Set Window FrontWindow() Printer
  Name "Bluebeam PDF" Orientation Portrait Copies 1
  Papersize 32534
 Create Designer Legend
-  Position (32.8021,0.21875) Units "in"
+  Position (14.8333,0.21875) Units "in"
   Width 2.80208 Units "in" Height 5 Units "in" 
   Portrait
   Default Frame Style "#" Font ("Arial",0,8,0)
@@ -194,8 +194,8 @@ Set Window FrontWindow() Printer
  Name "Bluebeam PDF" Orientation Portrait Copies 1
  Papersize 32534
 Browse * From Omraader
-  Position (15.0938,-12.8438) Units "in"
-  Width 17.2708 Units "in" Height 6.40625 Units "in" 
+  Position (0.666667,-12.8229) Units "in"
+  Width 8.92708 Units "in" Height 6.375 Units "in" 
 set window FrontWindow() Font ("Segoe UI",0,9,0)
 Set Window FrontWindow() Printer
  Name "Bluebeam PDF" Orientation Portrait Copies 1

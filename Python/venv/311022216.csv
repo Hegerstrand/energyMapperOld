@@ -1,0 +1,17 @@
+Profitable;ProposalID;Recommended;Savings;ProposalHeadline;Investment;SeebClassification;SeebClassificationDescription
+True;64670;True;500;Isolering af tilslutningsrør til varmtvandsbeholder med 30 mm;200;3-1-3-0;Varmtvandsrør
+True;64671;True;7000;Udskiftning til ny kondenserende gaskedel (Energimærke A);7000;2-1-1-0;Varmeanlæg
+True;64669;False;15500;"Isolering af varmefordelingsrør til gulvvarmen  med 30 mm
+
+Isolering af varmefordelingsrør med 50 mm";14700;2-2-2-0;Varmerør
+True;64673;False;3300;Montage af automatik for central styring (udetemperaturkompensering).;15000;2-2-4-0;Automatik
+True;64674;True;3100;Etablering af luft/luft-varmepumpe;18000;2-1-5-0;Varmepumper
+False;64678;False;400;Efterisolering af let ydervæg;30400;1-2-3-0;Lette ydervægge
+False;64684;False;1300;Lagerhal: Nye vinduer med 3 lags energirude.;52400;1-3-1-0;Vinduer
+False;64668;False;1800;"Kontorbygning: Ny yderdør og terrassedør med 3-lags energirude
+
+Lagerhal: Ny dør med energirude.";61000;1-3-3-0;Yderdøre
+False;64667;False;2100;Kontorbygning: Nye vindue med 3 lags energirude;88200;1-3-1-0;Vinduer
+True;64672;False;10300;Etablering af solceller;105000;4-1-3-0;Solceller
+False;64680;False;6200;Efterisolering af skrå lofter i lagerhallen;299300;1-1-1-0;Loft
+False;64685;False;1700;Nye ovenlys med 2 lags energirude.;317400;1-3-1-0;Vinduer

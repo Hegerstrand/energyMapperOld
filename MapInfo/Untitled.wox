@@ -30,7 +30,7 @@
       <CanClose>true</CanClose>
       <IsSelectedTab>false</IsSelectedTab>
       <IsActiveWindow>false</IsActiveWindow>
-      <WindowRect>1428,-1260,1670.4,648</WindowRect>
+      <WindowRect>43,-1258,869,645</WindowRect>
       <TabGroupName />
       <IsTabGroupOwner>false</IsTabGroupOwner>
       <SideTabOrder>0</SideTabOrder>
@@ -101,8 +101,8 @@
       <SideFloating>Left</SideFloating>
       <TargetDocked />
       <TargetFloating />
-      <DesiredWidthInDockedMode>286.53063551109852</DesiredWidthInDockedMode>
-      <DesiredHeightInDockedMode>1231</DesiredHeightInDockedMode>
+      <DesiredWidthInDockedMode>269.08899107290006</DesiredWidthInDockedMode>
+      <DesiredHeightInDockedMode>1225</DesiredHeightInDockedMode>
       <DesiredWidthInFloatingMode>400</DesiredWidthInFloatingMode>
       <DesiredHeightInFloatingMode>400</DesiredHeightInFloatingMode>
       <NoDock>false</NoDock>
@@ -110,7 +110,7 @@
       <CanClose>true</CanClose>
       <IsSelectedTab>false</IsSelectedTab>
       <IsActiveWindow>false</IsActiveWindow>
-      <WindowRect>3149,21,281,513</WindowRect>
+      <WindowRect>1424,21,281,513</WindowRect>
       <TabGroupName />
       <IsTabGroupOwner>false</IsTabGroupOwner>
       <SideTabOrder>0</SideTabOrder>
@@ -148,8 +148,8 @@
       <FixedHeight>0</FixedHeight>
       <FixedWidth>0</FixedWidth>
       <ContainerSize>
-        <Width>3439</Width>
-        <Height>1231</Height>
+        <Width>1714</Width>
+        <Height>1225</Height>
       </ContainerSize>
       <PreviousHostWidth>90</PreviousHostWidth>
       <PreviousHostHeight>90</PreviousHostHeight>
@@ -190,7 +190,7 @@
       <CanClose>true</CanClose>
       <IsSelectedTab>false</IsSelectedTab>
       <IsActiveWindow>false</IsActiveWindow>
-      <WindowRect>1449,-1233,1670.4,648</WindowRect>
+      <WindowRect>64,-1231,869,645</WindowRect>
       <TabGroupName />
       <IsTabGroupOwner>false</IsTabGroupOwner>
       <SideTabOrder>0</SideTabOrder>

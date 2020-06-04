@@ -5,7 +5,7 @@
 Definition Table
   Type NATIVEX Charset "UTF-8" Locale "da-DK"
   Fields 23
-    ﻿BBR! Smallint ;
+    ﻿BBR! Integer ;
     Husnummer Char (36) ;
     Jordstykke Integer ;
     Anv__klasse Smallint ;
@@ -30,7 +30,7 @@ Definition Table
     Område Char (1) ;
 begin_metadata
 "\MapInfo" = ""
-"\MapInfo\TableID" = "9c0957ea-038f-4cb5-a0c3-a842c28bd093"
-"\MapInfo\ParentTableID" = "e3a3bb61-9248-4053-a57c-ad1b42b75cdb"
+"\MapInfo\TableID" = "a6976c62-4f27-4e21-a2ab-acddb4a2daeb"
+"\MapInfo\ParentTableID" = "3a093805-24d1-4ce5-873d-309eca52f340"
 "\IsReadOnly" = "FALSE"
 end_metadata
