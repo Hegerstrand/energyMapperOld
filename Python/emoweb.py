@@ -6,11 +6,46 @@ import csv
 import numpy
 import pandas as pd
 
+import datafordeleren
+
 headers = {
     'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
 }
 
-def getLabelSerialIdentifierForBulding(municipality, property, building):
+BBRHeadings = {
+    'EnergyLabelSerialIdentifier',
+    'BBRUseCode',
+    'BuildingNumber',
+    'CityName',
+    'DEMOLink',
+    'EnergyLabelClassification',
+    'EnergyLabelTypeBasedOn',
+    'EnergyLabelTypeUsage',
+    'EntityIdentifier',
+    'HasPdf',
+    'HasXML',
+    'HeatSupply',
+    'HouseNumber',
+    'IsHidden',
+    'IsMixedUsage',
+    'LabelStatus',
+    'LabelStatusCode',
+    'MunicipalityNumber',
+    'PropertyNumber',
+    'SchemaVersion',
+    'StreetName',
+    'SubmitterCompanyIdentifier',
+    'SubmitterCompanyName',
+    'SubmitterConsultantName',
+    'ValidFrom',
+    'ValidTo',
+    'Wgs84Latitude',
+    'Wgs84Longitude',
+    'YearOfConstruction',
+    'ZipCode'
+}
+
+def getAllBuildingsInKommune(kommuneNummer):
     try:
         from urlparse import urlparse
     except ImportError:
@@ -22,20 +57,54 @@ def getLabelSerialIdentifierForBulding(municipality, property, building):
     try:
         r = requests.get(url="https://emoweb.dk/EMOData/EMOData.svc/Ping", headers=headers)
         if r.status_code == 200:
-            SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
-            bygning = str(municipality) + "/" + str(property) + "/" + str(building)
-            BBRSearchResponse = requests.get(url=SearchEnergyLabelBBR + bygning, headers=headers)
-            BBRcontent = json.loads(BBRSearchResponse.content)
-            SearchResults = BBRcontent["SearchResults"]
-            LabelSerialIdentifier = SearchResults[0]["EnergyLabelSerialIdentifier"]
+            LabelSerialIdentifierList = []
+            buildingInfo = []
 
-        return LabelSerialIdentifier
+            bygningsList = datafordeleren.getBygningsList(kommuneNummer)
+            print("Going through list of " + str(len(bygningsList)) + " buildings")
 
+            kommune_csv_file = open(str(kommuneNummer) + ".csv", 'w')
+            kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
+            kommune_writer.writerow(BBRHeadings)
+            for bygningsID in bygningsList:
+                EjendomsNummer = datafordeleren.getEjendomsNummerOfBygning(bygningsID)
+                if EjendomsNummer == None: continue
+
+                building = getBulding(kommuneNummer, EjendomsNummer, 0)
+                if building == None: continue
+
+                for heading in BBRHeadings:
+                    buildingInfo.append(building[heading])
+                kommune_writer.writerow(buildingInfo)
+                LabelSerialIdentifierList.append(building["EnergyLabelSerialIdentifier"])
+
+        print("Collected EnergyLabelForLabelSerialIdentifier for " + str(len(LabelSerialIdentifierList)) + " buildings")
+        getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList)
     except ImportError:
         print("Ping failed")
 
-def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLabelSerialIdentifier):
 
+
+def getBulding(municipality, property, building):
+    try:
+        SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
+        query = str(municipality) + "/" + property + "/" + str(building)
+        BBRSearchResponse = requests.get(url=SearchEnergyLabelBBR + query, headers=headers)
+        if BBRSearchResponse.status_code == 200:
+            BBRcontent = json.loads(BBRSearchResponse.content)
+            searchResults = BBRcontent["SearchResults"]
+
+            if len(searchResults) > 0:
+                building = searchResults[0]
+                return building
+    except ImportError:
+        print("getBulding failed")
+
+def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLabelSerialIdentifier):
+    LabelSerialIdentifierList = range(FromLabelSerialIdentifier, ToLabelSerialIdentifier)
+    getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList)
+
+def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
     try:
         from urlparse import urlparse
     except ImportError:
@@ -90,13 +159,20 @@ def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLab
             Summary_writer = csv.writer(SummaryFile, delimiter=';', lineterminator='\n')
             Summary_writer.writerow(SummaryHeadings)
 
-            for LabelSerialIdentifier in range(FromLabelSerialIdentifier, ToLabelSerialIdentifier):
+            for LabelSerialIdentifier in LabelSerialIdentifierList:
                 try:
-                    print("Getting energy label for bulding woth LabelSerialIdentifier: " + str(LabelSerialIdentifier))
+                    print("Getting energy label for building with LabelSerialIdentifier: " + str(LabelSerialIdentifier))
                     FetchEnergyLabelDetails = "https://emoweb.dk/EMOData/EMOData.svc/FetchEnergyLabelDetails/"
                     EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(LabelSerialIdentifier), headers=headers)
-                    EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
-                    if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3 and int(EnergyLabelDetails["ProposalCalculation"]["CalculatedEnergySavings"]) > 0:
+                    try:
+                        EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
+                    except:
+                        continue
+                    try:
+                        CalculatedEnergySavings = int(EnergyLabelDetails["ProposalCalculation"]["CalculatedEnergySavings"])
+                    except:
+                        CalculatedEnergySavings = 0
+                    if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3 and CalculatedEnergySavings > 0:
 
                         Summary = []
                         Summary.append(str(LabelSerialIdentifier))
@@ -108,6 +184,7 @@ def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLab
                             Summary.append(ProposalOverview[heading])
 
                         Summary_writer.writerow(Summary)
+                        print("Wrote " + str(LabelSerialIdentifier) + ".csv  with " + str(len(ProposalOverview)) + " proposals.")
 
                         Proposal_csv_file = open(str(LabelSerialIdentifier) + ".csv", 'w')
                         Proposal_writer = csv.writer(Proposal_csv_file, delimiter=';', lineterminator='\n')
@@ -119,7 +196,17 @@ def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLab
                                 ProposalCalculation.append(proposal[heading])
                             Proposal_writer.writerow(ProposalCalculation)
 
+                        print(str(LabelSerialIdentifier) + "written to Summary.csv.")
+                    else:
+                        print("Status: " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
+
+                        if "ResponseStatus" in EnergyLabelDetails:
+                            print(EnergyLabelDetails["ResponseStatus"]["StatusMessage"])
+
                 except ImportError:
                     print("Getting energy label failed")
+
+            SummaryFile.close()
+
     except ImportError:
         print("Ping failed")

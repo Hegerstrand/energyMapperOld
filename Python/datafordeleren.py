@@ -1,8 +1,14 @@
 import httplib2 as http
 import json
+import requests
 import csv
 import numpy
 import pandas as pd
+
+headers = {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json; charset=UTF-8'
+}
 
 def getAdresser(xlfilename, sheetname, csvfilename):
     try:
@@ -14,11 +20,6 @@ def getAdresser(xlfilename, sheetname, csvfilename):
             print("urlparse failed")
 
     exceldata = pd.read_excel(xlfilename, sheetname, encoding='utf-8')
-
-    headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json; charset=UTF-8'
-    }
 
     uri = 'https://services.datafordeler.dk/DAR/DAR/1/REST/'
     path = "adresse"
@@ -81,11 +82,6 @@ def getHusnummer(postnummer, filename, limit):
             from urllib.parse import urlparse
         except ImportError:
             print("urlparse failed")
-
-    headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json; charset=UTF-8'
-    }
 
     uri = 'https://services.datafordeler.dk/DAR/DAR/1/REST/'
     path = "husnummer"
@@ -171,11 +167,6 @@ def getBygninger(kommunekode, filename, limit):
         except ImportError:
             print("urlparse failed")
 
-    headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json; charset=UTF-8'
-    }
-
     uri = 'https://services.datafordeler.dk/BBR/BBRPublic/1/REST//'
     path = "bygning"
     request = "kommunekode=0" + str(kommunekode)
@@ -247,3 +238,58 @@ def getEta022Kælderareal(etageList):
                 areal += int(etagedata["eta022Kælderareal"])
     return str(areal)
 
+def getBygningsList(kommunekode):
+    try:
+        from urlparse import urlparse
+    except ImportError:
+        try:
+            from urllib.parse import urlparse
+        except ImportError:
+            print("urlparse failed")
+
+    uri = 'https://services.datafordeler.dk/BBR/BBRPublic/1/REST//'
+    path = "bygning"
+    request = "kommunekode=0" + str(kommunekode)
+    user = "username=AYWWPEBUAL&password=Login4Kort&format=json"
+    method = 'GET'
+    body = ''
+
+    h = http.Http()
+    print('Getting ' + path + ' where ' + request + ' from ' + uri)
+
+    try:
+        target = urlparse(uri + path + '?' + request + '&' + user)
+        response, content = h.request(target.geturl(), method, body, headers)
+        bygningsList = []
+
+        if response.status == 200:
+            data = json.loads(content)
+            i = 1
+            if len(data) == 100:
+                while len(data) == 100*i and len(data) < 384:
+                    target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
+                    response, content = h.request(target.geturl(), method, body, headers)
+                    data = numpy.append(data, json.loads(content))
+                    i += 1
+
+            print("Found " + str(len(data)) + " bygnigner in " + str(i) + " pages")
+            for bygning in data:
+                bygningsList.append(bygning["id_lokalId"])
+        else:
+            print("getBygningsList failed")
+
+        return bygningsList
+
+    except response.content as msg:
+        print(msg)
+
+
+def getEjendomsNummerOfBygning(bygnignID):
+    SearchEnergyLabelBBR = "https://dawa.aws.dk/bbrlight/"
+    query = "bygninger?id=" + bygnignID
+    BBRSearchResponse = requests.get(url=SearchEnergyLabelBBR + query, headers=headers)
+    BBRcontent = json.loads(BBRSearchResponse.content)
+
+    if len(BBRcontent) > 0:
+        searchResults = BBRcontent[0]
+        return searchResults["ESREjdNr"]

@@ -1,0 +1,13 @@
+Investment;ProposalHeadline;Savings;Profitable;Recommended;ProposalID;SeebClassification;SeebClassificationDescription
+4500;Montering af ny cirkulationspumpe på varmeanlæg, som Alpha2 på 22 W;1000;True;True;7;2-2-3-0;Varmefordelingspumper
+5000;Montering af ny cirkulationspumpe på varmeanlæg, som Alpha2 på 32 W;900;True;False;6;2-2-3-0;Varmefordelingspumper
+12600;Isolering af loft mod uopvarmet tagrum til i alt 300 mm.;400;True;False;11;1-1-1-0;Loft
+13200;Udskiftning af tagvinduer til nye med energiglas.;600;True;False;9;1-3-2-0;Ovenlys
+14300;Isolering af vandret skunk til i alt 300 mm. ;1400;True;True;0;1-1-1-0;Loft
+14300;Isolering af lodret skunk til i alt 300 mm. ;1400;True;False;1;1-1-1-0;Loft
+20000;Udskiftning til 20 kW kondenserende oliekedel (Energimærke A);9000;True;False;5;2-1-2-0;Kedler
+24400;Isolering af hanebåndsloft til i alt 300 mm.;1400;True;False;2;1-1-1-0;Loft
+28200;Isolering af skråvægge til i alt 300 mm. ;2700;True;False;10;1-1-1-0;Loft
+111200;Montage af nye solceller, Monokrystaliske silicium, 6 kW;14800;True;True;8;4-1-3-0;Solceller
+181000;Udskiftning af døre og vinduer til nye med energiglas.;9000;True;False;4;1-3-1-0;Vinduer
+314600;Udførelse af terrændæk i kælder og krybekælder;39500;True;False;3;1-4-3-0;Krybekælder

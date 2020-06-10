@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datafordeleren.py" beforeDir="false" afterPath="$PROJECT_DIR$/datafordeleren.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emoweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/emoweb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441550.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441551.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441552.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441553.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441554.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441556.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/311441556.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441557.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/311441557.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Energimærker.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441556.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441557.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441559.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311441563.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Summary.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Summary.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,37 +99,37 @@
     <session id="-1313898271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="11" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="48" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="5915" />
+          <entry key="py" value="7084" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="5963" />
+          <entry key="Python" value="7132" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="18" />
+          <entry key="py" value="21" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="18" />
+          <entry key="Python" value="21" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -141,10 +140,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emoweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="337">
+              <caret line="208" column="31" lean-forward="true" selection-start-line="208" selection-start-column="31" selection-end-line="208" selection-end-column="31" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <marker date="1591792719938" expanded="true" signature="207:208" ph="..." />
+                <marker date="1591792719938" expanded="true" signature="931:2509" ph="..." />
+                <marker date="1591792719938" expanded="true" signature="3360:3432" ph="..." />
+                <marker date="1591792719938" expanded="true" signature="3502:3503" ph="..." />
               </folding>
             </state>
           </provider>
@@ -153,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="204">
+              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -165,15 +168,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datafordeleren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1567">
-              <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+            <state relative-caret-position="150">
+              <caret line="274" column="48" selection-start-line="274" selection-start-column="48" selection-end-line="274" selection-end-column="48" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#138#2408#0" />
                 <element signature="e#9293#9496#0" />
-                <marker date="1591266051395" expanded="false" signature="9242:9243" ph="..." />
-                <marker date="1591266051395" expanded="true" signature="9242:9247" ph="..." />
-                <marker date="1591266051395" expanded="true" signature="9519:9520" ph="..." />
+                <marker date="1591792139891" expanded="false" signature="9004:9005" ph="..." />
+                <marker date="1591792139891" expanded="true" signature="9004:9009" ph="..." />
+                <marker date="1591792139891" expanded="true" signature="9315:10811" ph="..." />
               </folding>
             </state>
           </provider>
@@ -192,6 +195,7 @@
     <findStrings>
       <find>writing</find>
       <find>while</find>
+      <find>headers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,8 +218,8 @@
         <option value="$PROJECT_DIR$/csvHandler.py" />
         <option value="$PROJECT_DIR$/EnergyPlanner.py" />
         <option value="$PROJECT_DIR$/BBRhandler.py" />
-        <option value="$PROJECT_DIR$/datafordeleren.py" />
         <option value="$PROJECT_DIR$/venv/tester.py" />
+        <option value="$PROJECT_DIR$/datafordeleren.py" />
         <option value="$PROJECT_DIR$/emoweb.py" />
       </list>
     </option>
@@ -417,14 +421,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4262473" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39804772" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37744033" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" visible="true" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
@@ -503,27 +508,37 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>EnergyLabelDetails[&quot;ResponseStatus&quot;][&quot;StatusCode&quot;] == 3 and int(EnergyLabelDetails[&quot;ProposalCalculation&quot;][&quot;CalculatedEnergySavings&quot;]) &gt; 0</expression-string>
+        <expression-string>building != None</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>int(EnergyLabelDetails[&quot;ProposalCalculation&quot;][&quot;CalculatedEnergySavings&quot;]) &gt; 0</expression-string>
+        <expression-string>building == None</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>int(EnergyLabelDetails[&quot;ProposalCalculation&quot;][&quot;CalculatedEnergySavings&quot;])</expression-string>
+        <expression-string>building is not</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>EnergyLabelDetails[&quot;ProposalCalculation&quot;][&quot;CalculatedEnergySavings&quot;]</expression-string>
+        <expression-string>building</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>EnergyLabelDetails[&quot;ProposalCalculation&quot;]</expression-string>
+        <expression-string>&quot;BuildingNumber&quot; in building</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(data)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>EnergyLabelDetails[&quot;ResponseStatus&quot;][&quot;StatusMessage&quot;]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -534,16 +549,6 @@
       </expression>
       <expression>
         <expression-string>EnergyLabelDetails</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>SearchResults[0][&quot;PropertyNumber&quot;]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>SearchResults[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -641,10 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1588329515845" expanded="true" signature="75:77" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -659,31 +660,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/datafordeleren.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1567">
-          <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        <state relative-caret-position="150">
+          <caret line="274" column="48" selection-start-line="274" selection-start-column="48" selection-end-line="274" selection-end-column="48" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#138#2408#0" />
             <element signature="e#9293#9496#0" />
-            <marker date="1591266051395" expanded="false" signature="9242:9243" ph="..." />
-            <marker date="1591266051395" expanded="true" signature="9242:9247" ph="..." />
-            <marker date="1591266051395" expanded="true" signature="9519:9520" ph="..." />
+            <marker date="1591792139891" expanded="false" signature="9004:9005" ph="..." />
+            <marker date="1591792139891" expanded="true" signature="9004:9009" ph="..." />
+            <marker date="1591792139891" expanded="true" signature="9315:10811" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="336" selection-start-line="336" selection-end-line="336" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -692,10 +697,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emoweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="337">
+          <caret line="208" column="31" lean-forward="true" selection-start-line="208" selection-start-column="31" selection-end-line="208" selection-end-column="31" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+            <marker date="1591792719938" expanded="true" signature="207:208" ph="..." />
+            <marker date="1591792719938" expanded="true" signature="931:2509" ph="..." />
+            <marker date="1591792719938" expanded="true" signature="3360:3432" ph="..." />
+            <marker date="1591792719938" expanded="true" signature="3502:3503" ph="..." />
           </folding>
         </state>
       </provider>
