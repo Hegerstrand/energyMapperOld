@@ -67,6 +67,7 @@ def getAllBuildingsInKommune(kommuneNummer):
             kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
             kommune_writer.writerow(BBRHeadings)
             for bygningsID in bygningsList:
+                buildingInfo = []
                 EjendomsNummer = datafordeleren.getEjendomsNummerOfBygning(bygningsID)
                 if EjendomsNummer == None: continue
 
@@ -167,12 +168,10 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
                     try:
                         EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
                     except:
+                        print(str(LabelSerialIdentifier) + "did not return JSON format")
                         continue
-                    try:
-                        CalculatedEnergySavings = int(EnergyLabelDetails["ProposalCalculation"]["CalculatedEnergySavings"])
-                    except:
-                        CalculatedEnergySavings = 0
-                    if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3 and CalculatedEnergySavings > 0:
+
+                    if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3:
 
                         Summary = []
                         Summary.append(str(LabelSerialIdentifier))
@@ -196,9 +195,9 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
                                 ProposalCalculation.append(proposal[heading])
                             Proposal_writer.writerow(ProposalCalculation)
 
-                        print(str(LabelSerialIdentifier) + "written to Summary.csv.")
+                        print(str(LabelSerialIdentifier) + " written to Summary.csv.")
                     else:
-                        print("Status: " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
+                        print("Could not write " + str(LabelSerialIdentifier) + " with status kode : " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
 
                         if "ResponseStatus" in EnergyLabelDetails:
                             print(EnergyLabelDetails["ResponseStatus"]["StatusMessage"])
@@ -208,5 +207,7 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
 
             SummaryFile.close()
 
+        else:
+            print("getEnergyLabelForLabelSerialIdentifier failed at ping")
     except ImportError:
         print("Ping failed")

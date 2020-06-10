@@ -1,8 +1,0 @@
-Nummer;HeatSupply;AdditionalHeat;CalculatedEmission;ExtraCostPrYear;CalculatedEmissionLowering;TotalProfitableInvestment;CalculatedEnergyConsumption;FixedCharge;HeatSupplyCost;ElectricityPrice;AdditionalHeatCost;CalculatedEnergySavings;CalculatedConsumption;ExtraCostPrYear;TotalProfitableInvestment;PossibleEnergyLabelForAllProfitableProposals;PossibleEnergyLabelForAllProposals;ExtraCostPrYearForAllProposals;ExtraCostPrYearForRecommendedProposals;TotalRecommendedInvestment
-311008313;FuelGasOil;Electricity;23154300;80000;19580600;743100;65000;0;1141,58415841584;2,6;2600;49500;95800;80000;0;B;B;80000;0;130000
-311127793;FuelGasOil;Ingen;7469300;22300;5981000;Kan ikke beregnes;28100;0;970,29702970297;2,2;0;19200;27300;19900;0;D;C;22300;0;0
-311145544;DistrictHeat;Ingen;3147200;6100;1898100;Kan ikke beregnes;22500;6075;337,5;0;0;9400;13700;2100;0;C;C;6100;0;0
-311027949;FuelGasOil;Ingen;9227600;24700;5551500;Kan ikke beregnes;34700;0;1166,33663366337;1,95;0;21400;40500;23200;0;C;C;24700;0;43200
-311268320;NaturalGas;Ingen;3408900;4400;1436900;Kan ikke beregnes;16800;0;572,727272727273;2,2;0;4100;9600;800;20500;C;B;4400;0;0
-311008313;FuelGasOil;Electricity;23154300;80000;19580600;743100;65000;0;1141,58415841584;2,6;2600;49500;95800;80000;0;B;B;80000;0;130000
-311127793;FuelGasOil;Ingen;7469300;22300;5981000;Kan ikke beregnes;28100;0;970,29702970297;2,2;0;19200;27300;19900;0;D;C;22300;0;0

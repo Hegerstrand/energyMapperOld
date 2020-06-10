@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datafordeleren.py" beforeDir="false" afterPath="$PROJECT_DIR$/datafordeleren.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emoweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/emoweb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441556.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441557.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441559.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/311441563.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Summary.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Summary.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/tester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311008313.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311027949.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311127793.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311145544.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/311268320.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/573.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/573.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Summary.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,14 +110,14 @@
         <counts>
           <entry key="Python Console" value="48" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="7084" />
+          <entry key="py" value="7211" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="7132" />
+          <entry key="Python" value="7259" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -140,14 +140,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emoweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="208" column="31" lean-forward="true" selection-start-line="208" selection-start-column="31" selection-end-line="208" selection-end-column="31" />
+            <state relative-caret-position="328">
+              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1591792719938" expanded="true" signature="207:208" ph="..." />
-                <marker date="1591792719938" expanded="true" signature="931:2509" ph="..." />
-                <marker date="1591792719938" expanded="true" signature="3360:3432" ph="..." />
-                <marker date="1591792719938" expanded="true" signature="3502:3503" ph="..." />
+                <marker date="1591795362082" expanded="true" signature="207:208" ph="..." />
+                <marker date="1591795362082" expanded="true" signature="931:2543" ph="..." />
+                <marker date="1591795362082" expanded="true" signature="3394:3466" ph="..." />
+                <marker date="1591795362082" expanded="true" signature="3536:3537" ph="..." />
               </folding>
             </state>
           </provider>
@@ -156,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="85">
+              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -196,6 +196,8 @@
       <find>writing</find>
       <find>while</find>
       <find>headers</find>
+      <find>writt</find>
+      <find>collecte</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -477,6 +479,11 @@
           <line>1638</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/emoweb.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -687,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="85">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -697,14 +704,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emoweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="208" column="31" lean-forward="true" selection-start-line="208" selection-start-column="31" selection-end-line="208" selection-end-column="31" />
+        <state relative-caret-position="328">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1591792719938" expanded="true" signature="207:208" ph="..." />
-            <marker date="1591792719938" expanded="true" signature="931:2509" ph="..." />
-            <marker date="1591792719938" expanded="true" signature="3360:3432" ph="..." />
-            <marker date="1591792719938" expanded="true" signature="3502:3503" ph="..." />
+            <marker date="1591795362082" expanded="true" signature="207:208" ph="..." />
+            <marker date="1591795362082" expanded="true" signature="931:2543" ph="..." />
+            <marker date="1591795362082" expanded="true" signature="3394:3466" ph="..." />
+            <marker date="1591795362082" expanded="true" signature="3536:3537" ph="..." />
           </folding>
         </state>
       </provider>
