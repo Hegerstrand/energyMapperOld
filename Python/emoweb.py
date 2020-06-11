@@ -12,6 +12,7 @@ headers = {
     'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
 }
 
+
 BBRHeadings = {
     'EnergyLabelSerialIdentifier',
     'BBRUseCode',
@@ -63,7 +64,7 @@ def getAllBuildingsInKommune(kommuneNummer):
             bygningsList = datafordeleren.getBygningsList(kommuneNummer)
             print("Going through list of " + str(len(bygningsList)) + " buildings")
 
-            kommune_csv_file = open(str(kommuneNummer) + ".csv", 'w')
+            kommune_csv_file = open("BBRBygninger" + str(kommuneNummer) + ".csv", 'w')
             kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
             kommune_writer.writerow(BBRHeadings)
             for bygningsID in bygningsList:
@@ -90,7 +91,11 @@ def getBulding(municipality, property, building):
     try:
         SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
         query = str(municipality) + "/" + property + "/" + str(building)
-        BBRSearchResponse = requests.get(url=SearchEnergyLabelBBR + query, headers=headers)
+        url = SearchEnergyLabelBBR + query + "/TL,BA"
+
+        print(url)
+        BBRSearchResponse = requests.get(url=url, headers=headers)
+
         if BBRSearchResponse.status_code == 200:
             BBRcontent = json.loads(BBRSearchResponse.content)
             searchResults = BBRcontent["SearchResults"]
@@ -99,11 +104,13 @@ def getBulding(municipality, property, building):
                 building = searchResults[0]
                 return building
     except ImportError:
-        print("getBulding failed")
+        print("getBulding " + query + " failed")
+
 
 def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLabelSerialIdentifier):
     LabelSerialIdentifierList = range(FromLabelSerialIdentifier, ToLabelSerialIdentifier)
     getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList)
+
 
 def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
     try:
@@ -164,11 +171,17 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
                 try:
                     print("Getting energy label for building with LabelSerialIdentifier: " + str(LabelSerialIdentifier))
                     FetchEnergyLabelDetails = "https://emoweb.dk/EMOData/EMOData.svc/FetchEnergyLabelDetails/"
-                    EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(LabelSerialIdentifier), headers=headers)
                     try:
-                        EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
+                        EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(LabelSerialIdentifier), headers=headers)
                     except:
-                        print(str(LabelSerialIdentifier) + "did not return JSON format")
+                        continue
+                    if EnergyLabelDetailsResponse.status_code == 200:
+                        try:
+                            EnergyLabelDetails = json.loads(EnergyLabelDetailsResponse.content)
+                        except ImportError:
+                            print(str(LabelSerialIdentifier) + " did not return JSON format")
+                            continue
+                    else:
                         continue
 
                     if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3:
@@ -197,7 +210,7 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
 
                         print(str(LabelSerialIdentifier) + " written to Summary.csv.")
                     else:
-                        print("Could not write " + str(LabelSerialIdentifier) + " with status kode : " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
+                        print("Could not write " + str(LabelSerialIdentifier) + " with status code : " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
 
                         if "ResponseStatus" in EnergyLabelDetails:
                             print(EnergyLabelDetails["ResponseStatus"]["StatusMessage"])

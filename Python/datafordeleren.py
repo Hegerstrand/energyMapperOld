@@ -247,6 +247,12 @@ def getBygningsList(kommunekode):
         except ImportError:
             print("urlparse failed")
 
+    headings = ["id_lokalId", "husnummer", "byg021BygningensAnvendelse"
+        , "byg038SamletBygningsareal", "byg039BygningensSamledeBoligAreal", "byg040BygningensSamledeErhvervsAreal"
+        , "byg026Opførelsesår", "byg027OmTilbygningsår", "byg056Varmeinstallation", "byg057Opvarmningsmiddel"
+        , "byg058SupplerendeVarme", "byg404Koordinat"
+        , "byg406Koordinatsystem", "status"]
+
     uri = 'https://services.datafordeler.dk/BBR/BBRPublic/1/REST//'
     path = "bygning"
     request = "kommunekode=0" + str(kommunekode)
@@ -262,11 +268,15 @@ def getBygningsList(kommunekode):
         response, content = h.request(target.geturl(), method, body, headers)
         bygningsList = []
 
+        kommune_csv_file = open(str(kommunekode) + ".csv", 'w')
+        kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
+        kommune_writer.writerow(headings)
+
         if response.status == 200:
             data = json.loads(content)
             i = 1
             if len(data) == 100:
-                while len(data) == 100*i and len(data) < 384:
+                while len(data) == 100*i and i < 10:
                     target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
                     response, content = h.request(target.geturl(), method, body, headers)
                     data = numpy.append(data, json.loads(content))
@@ -275,6 +285,12 @@ def getBygningsList(kommunekode):
             print("Found " + str(len(data)) + " bygnigner in " + str(i) + " pages")
             for bygning in data:
                 bygningsList.append(bygning["id_lokalId"])
+                Bygningsdata = []
+                for heading in headings:
+                    if heading in bygning:
+                        Bygningsdata.append(bygning[heading])
+
+                kommune_writer.writerow(Bygningsdata)
         else:
             print("getBygningsList failed")
 
@@ -287,8 +303,10 @@ def getBygningsList(kommunekode):
 def getEjendomsNummerOfBygning(bygnignID):
     SearchEnergyLabelBBR = "https://dawa.aws.dk/bbrlight/"
     query = "bygninger?id=" + bygnignID
-    BBRSearchResponse = requests.get(url=SearchEnergyLabelBBR + query, headers=headers)
-    BBRcontent = json.loads(BBRSearchResponse.content)
+    try:
+        BBRcontent = requests.get(url=SearchEnergyLabelBBR + query, headers=headers).json()
+    except:
+        return
 
     if len(BBRcontent) > 0:
         searchResults = BBRcontent[0]
