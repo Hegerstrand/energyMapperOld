@@ -1,0 +1,6 @@
+Profitable;ProposalID;Savings;SeebClassification;Investment;Recommended;SeebClassificationDescription;ProposalHeadline
+True;5;300;1-3-3-0;6100;False;Yderdøre;Ny yderdør / yderdøre
+False;2;700;1-4-3-0;29600;False;Krybekælder;Efterisolering af gulv mod krybekælder med 250 mm isolering.
+False;6;800;2-1-6-0;32000;False;Solvarme;Etablering af solvarme
+False;1;3800;4-1-3-0;77000;False;Solceller;Etablering af solceller
+False;3;1600;1-1-2-0;111200;False;Fladt tag;Efterisolering af fladt tag med 200 mm isolering, så den samlede isolering udgør 300 mm 

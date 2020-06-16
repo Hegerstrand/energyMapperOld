@@ -276,7 +276,7 @@ def getBygningsList(kommunekode):
             data = json.loads(content)
             i = 1
             if len(data) == 100:
-                while len(data) == 100*i and i < 10:
+                while len(data) == 100*i and i < 1:
                     target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
                     response, content = h.request(target.geturl(), method, body, headers)
                     data = numpy.append(data, json.loads(content))
@@ -289,6 +289,8 @@ def getBygningsList(kommunekode):
                 for heading in headings:
                     if heading in bygning:
                         Bygningsdata.append(bygning[heading])
+                    else:
+                        Bygningsdata.append("")
 
                 kommune_writer.writerow(Bygningsdata)
         else:
@@ -300,14 +302,13 @@ def getBygningsList(kommunekode):
         print(msg)
 
 
-def getEjendomsNummerOfBygning(bygnignID):
+def getDawaBygning(bygnignID):
     SearchEnergyLabelBBR = "https://dawa.aws.dk/bbrlight/"
     query = "bygninger?id=" + bygnignID
     try:
-        BBRcontent = requests.get(url=SearchEnergyLabelBBR + query, headers=headers).json()
+        DawaBygning = requests.get(url=SearchEnergyLabelBBR + query, headers=headers).json()
     except:
         return
 
-    if len(BBRcontent) > 0:
-        searchResults = BBRcontent[0]
-        return searchResults["ESREjdNr"]
+    if len(DawaBygning) > 0:
+        return DawaBygning[0]

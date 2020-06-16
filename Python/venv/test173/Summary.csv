@@ -1,0 +1,20 @@
+Nummer;CalculatedEnergyConsumption;AdditionalHeat;CalculatedEmissionLowering;CalculatedEmission;FixedCharge;ExtraCostPrYear;TotalProfitableInvestment;HeatSupplyCost;CalculatedEnergySavings;HeatSupply;ElectricityPrice;CalculatedConsumption;AdditionalHeatCost;PossibleEnergyLabelForAllProfitableProposals;ExtraCostPrYear;PossibleEnergyLabelForAllProposals;TotalProfitableInvestment;TotalRecommendedInvestment;ExtraCostPrYearForAllProposals;ExtraCostPrYearForRecommendedProposals
+311166406;29400;Ingen;1943000;5983400;0;6100;Kan ikke beregnes;640,909090909091;9500;NaturalGas;2,3;18800;0;D;3000;D;56600;0;6100;0
+311103830;24100;Ingen;4348300;4916400;0;18100;Kan ikke beregnes;840,909090909091;22200;NaturalGas;2,28;20300;0;A2020;15000;A2020;0;0;18100;0
+311227415;32800;Wood;2155700;6679000;0;6500;Kan ikke beregnes;572,727272727273;7300;NaturalGas;2,2;18800;0;E;200;D;6100;0;6500;0
+311152768;22000;Ingen;1345300;4475800;0;5600;Kan ikke beregnes;681,818181818182;9300;NaturalGas;2,03;15000;0;C;4400;B;0;0;5600;0
+311088952;19100;Ingen;3223100;3892400;1000;12800;Kan ikke beregnes;818,181818181818;15100;NaturalGas;2;16700;0;C;8500;A2010;0;0;12800;0
+100080384;Er ikke beregnet;;Er ikke beregnet;Er ikke beregnet;0;Er ikke beregnet;800;827,272727272727;Er ikke beregnet;NaturalGas;2;Er ikke beregnet;0;D;2300;;800;;2300;
+311103830;24100;Ingen;4348300;4916400;0;18100;Kan ikke beregnes;840,909090909091;22200;NaturalGas;2,28;20300;0;A2020;15000;A2020;0;0;18100;0
+311227415;32800;Wood;2155700;6679000;0;6500;Kan ikke beregnes;572,727272727273;7300;NaturalGas;2,2;18800;0;E;200;D;6100;0;6500;0
+311152768;22000;Ingen;1345300;4475800;0;5600;Kan ikke beregnes;681,818181818182;9300;NaturalGas;2,03;15000;0;C;4400;B;0;0;5600;0
+311088952;19100;Ingen;3223100;3892400;1000;12800;Kan ikke beregnes;818,181818181818;15100;NaturalGas;2;16700;0;C;8500;A2010;0;0;12800;0
+100080384;Er ikke beregnet;;Er ikke beregnet;Er ikke beregnet;0;Er ikke beregnet;800;827,272727272727;Er ikke beregnet;NaturalGas;2;Er ikke beregnet;0;D;2300;;800;;2300;
+311436888;15200;Ingen;1812600;2979500;0;15300;Kan ikke beregnes;1705;9200;Electricity;1,705;25800;0;C;13100;C;202800;161800;15300;0
+914283;Er ikke beregnet;;Er ikke beregnet;Er ikke beregnet;0;Er ikke beregnet;1300;681,818181818182;Er ikke beregnet;NaturalGas;2;Er ikke beregnet;0;C2;8100;;1300;;8100;
+100124807;Er ikke beregnet;;Er ikke beregnet;Er ikke beregnet;0;Er ikke beregnet;Er ikke beregnet;712,871287128713;Er ikke beregnet;FuelGasOil;2;Er ikke beregnet;0;D;0;;0;;5100;
+200053239;Er ikke beregnet;;Er ikke beregnet;Er ikke beregnet;0;Er ikke beregnet;Er ikke beregnet;750;Er ikke beregnet;NaturalGas;2,0308;Er ikke beregnet;0;B;685900;;5388100;;997200;
+310037779;11400;Ingen;583100;2323600;0;2200;Kan ikke beregnes;776,363636363636;2800;NaturalGas;2;8900;0;D;0;C;0;117800;2200;0
+311061184;18000;Ingen;2051400;2773700;2940;9300;Kan ikke beregnes;884,73;8200;DistrictHeat;1,78;19300;0;C;3400;B;0;0;9300;0
+100061618;Er ikke beregnet;;Er ikke beregnet;Er ikke beregnet;0;Er ikke beregnet;Er ikke beregnet;760,909090909091;Er ikke beregnet;NaturalGas;2;Er ikke beregnet;0;D;12400;;9400;;16500;
+200043765;Er ikke beregnet;;Er ikke beregnet;Er ikke beregnet;0;Er ikke beregnet;Er ikke beregnet;750;Er ikke beregnet;NaturalGas;2;Er ikke beregnet;0;B;208900;;2143100;;245000;

@@ -1,0 +1,8 @@
+Recommended;Profitable;Investment;Savings;SeebClassificationDescription;ProposalID;ProposalHeadline;SeebClassification
+False;True;9200;400;Hule ydervægge;1;Efterisolering af hule ydervægge iht. krav jævnfør kap. 11 (§279) i Bygningsreglementet.;1-2-1-0
+False;False;31300;400;Lette ydervægge;0;Indvendig efterisolering af træskeletvæg til en samlet isoleringsmængde på 250 mm;1-2-3-0
+False;True;36000;1300;Vinduer;4;Udskiftning af vinduer med nye energivinduer (BR18 krav);1-3-1-0
+False;True;60000;6600;Varmepumper;5;Konvertering til opvarmning via varmepumpe og Installation af en luft-luft varmepumpe med 5 indblæsningsenheder (multi-splitanlæg);2-1-5-0
+False;False;60000;2300;Solceller;6;Montering af et solcelleanlæg på 20 m²;4-1-3-0
+False;False;133600;1700;Loft;3;Efterisolering af skråvægge;1-1-1-0
+False;False;166400;1800;Terrændæk;2;Efterisolering af terrændæk iht. krav jævnfør kap. 11 (§279) i Bygningsreglementet.;1-4-1-0

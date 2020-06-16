@@ -1,0 +1,19 @@
+Profitable;ProposalID;Savings;SeebClassification;Investment;Recommended;SeebClassificationDescription;ProposalHeadline
+True;20;200;1-3-1-0;2500;False;Vinduer;Udskiftning af vindue i badeværelse 1. sal 
+True;10;200;1-1-1-0;2600;False;Loft;Efterisolering af kvisttag
+True;4;400;1-4-2-0;4100;False;Etageadskillelse;Efterisolering af bjælkelag mod kælder 
+True;5;300;1-1-1-0;4400;False;Loft;"Efterisolering af loft mod uopvarmet tagrum, baghus
+"
+True;13;400;1-1-1-0;5600;False;Loft;Efterisolering af skunkvæg
+True;14;400;1-1-1-0;5600;False;Loft;Efterisolering af gulv i skunkrum
+True;15;600;1-2-2-0;6200;False;Massive ydervægge;Isolering af ydervæg bag radiatorer
+False;21;300;2-2-2-0;7900;False;Varmerør;Efterisolering af varmerør i kælder
+False;12;200;1-1-1-0;8400;False;Loft;"Efterisolering af loft mod uopvarmet tagrum
+"
+True;24;400;1-3-1-0;9000;False;Vinduer;Udskiftning af kældervinduer 
+False;11;200;1-1-1-0;10000;False;Loft;Efterisolering af kvistfront og flunke 
+False;19;200;1-3-1-0;10500;False;Vinduer;Udskiftning af tagvinduer i baghus og i badeværelse
+True;3;600;1-2-2-0;16800;False;Massive ydervægge;Udvendig efterisolering af ydervæg, toiletrum i baghus
+False;17;600;1-3-3-0;30300;False;Yderdøre;Udskiftning af massive yderdøre 
+False;16;900;1-1-1-0;76300;False;Loft;Efterisolering af skråvægge
+False;18;1100;1-3-1-0;78500;False;Vinduer;Udskiftning af vinduer 

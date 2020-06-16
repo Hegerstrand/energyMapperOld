@@ -1,0 +1,9 @@
+Profitable;ProposalID;Savings;SeebClassification;Investment;Recommended;SeebClassificationDescription;ProposalHeadline
+True;0;600;2-2-4-0;1500;False;Automatik;Montage af termostatventiler
+True;2;300;1-1-1-0;2900;False;Loft;Efterisolering af loftrum 
+True;1;1200;1-2-2-0;11100;False;Massive ydervægge;Indvendig efterisolering af massive betonydervægge mellem bad og garage
+True;7;1500;1-2-2-0;12300;False;Massive ydervægge;Indvendig efterisolering af massive betonydervægge mod garage
+False;3;300;1-3-3-0;19800;False;Yderdøre;Udskiftning til ny glasdør med trelags energirude
+False;5;1400;2-1-6-0;32000;False;Solvarme;Opsætning af solvarmeanlæg til varmt brugsvand
+False;6;3500;4-1-3-0;77000;False;Solceller;Montering af solceller
+False;4;1500;1-3-1-0;149000;False;Vinduer;Udskiftning af vindue til tolags energirude

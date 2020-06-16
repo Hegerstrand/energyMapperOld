@@ -5,6 +5,7 @@ import json
 import csv
 import numpy
 import pandas as pd
+import time
 
 import datafordeleren
 
@@ -12,8 +13,18 @@ headers = {
     'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
 }
 
+DawaHeadings = {
+    "Bygning_id",
+    "BYG_ANVEND_KODE",
+    "OPFOERELSE_AAR",
+    "OMBYG_AAR",
+    "BYG_ARL_SAML",
+    "BYG_BOLIG_ARL_SAML",
+    "ERHV_ARL_SAML",
+    "ESREjdNr"
+}
 
-BBRHeadings = {
+EmoDataHeadings = {
     'EnergyLabelSerialIdentifier',
     'BBRUseCode',
     'BuildingNumber',
@@ -46,6 +57,9 @@ BBRHeadings = {
     'ZipCode'
 }
 
+# For et kommunekode findes samtlige bygninger fra BBR. For hver bygning findes ESR ejendomsnr (ESREjdNr).
+# ESR ejendomsnr og kommunekode benyttes sammen til findes LabelSerialIdentifier ved /SearchEnergyLabelBBR
+# LabelSerialIdentifier bruges til at hente /FetchEnergyLabelDetails
 def getAllBuildingsInKommune(kommuneNummer):
     try:
         from urlparse import urlparse
@@ -66,19 +80,28 @@ def getAllBuildingsInKommune(kommuneNummer):
 
             kommune_csv_file = open("BBRBygninger" + str(kommuneNummer) + ".csv", 'w')
             kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
-            kommune_writer.writerow(BBRHeadings)
+            allHeadings = []
+            allHeadings.extend(DawaHeadings)
+            allHeadings.extend(EmoDataHeadings)
+            kommune_writer.writerow(allHeadings)
             for bygningsID in bygningsList:
+                time.sleep(6)
                 buildingInfo = []
-                EjendomsNummer = datafordeleren.getEjendomsNummerOfBygning(bygningsID)
-                if EjendomsNummer == None: continue
+                DawaBygning = datafordeleren.getDawaBygning(bygningsID)
+                if DawaBygning == None or DawaBygning["BYG_ANVEND_KODE"] >= 600: continue
 
-                building = getBulding(kommuneNummer, EjendomsNummer, 0)
-                if building == None: continue
+                EjendomsNummer = DawaBygning["ESREjdNr"]
+                SearchforEnergyLabel = getLabelSerialIdentifier(kommuneNummer, EjendomsNummer, 0)
+                if SearchforEnergyLabel == None: continue
 
-                for heading in BBRHeadings:
-                    buildingInfo.append(building[heading])
+                for heading in DawaHeadings:
+                    buildingInfo.append(DawaBygning[heading])
+
+                for heading in EmoDataHeadings:
+                    buildingInfo.append(SearchforEnergyLabel[heading])
+
                 kommune_writer.writerow(buildingInfo)
-                LabelSerialIdentifierList.append(building["EnergyLabelSerialIdentifier"])
+                LabelSerialIdentifierList.append(SearchforEnergyLabel["EnergyLabelSerialIdentifier"])
 
         print("Collected EnergyLabelForLabelSerialIdentifier for " + str(len(LabelSerialIdentifierList)) + " buildings")
         getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList)
@@ -87,13 +110,13 @@ def getAllBuildingsInKommune(kommuneNummer):
 
 
 
-def getBulding(municipality, property, building):
+# kommunekode og ESR ejendomsnr (property) benyttes sammen til findes LabelSerialIdentifier ved /SearchEnergyLabelBBR
+def getLabelSerialIdentifier(municipality, property, building):
     try:
         SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
         query = str(municipality) + "/" + property + "/" + str(building)
         url = SearchEnergyLabelBBR + query + "/TL,BA"
 
-        print(url)
         BBRSearchResponse = requests.get(url=url, headers=headers)
 
         if BBRSearchResponse.status_code == 200:
@@ -107,11 +130,13 @@ def getBulding(municipality, property, building):
         print("getBulding " + query + " failed")
 
 
+# LabelSerialIdentifier fra/til bruges til at hente /FetchEnergyLabelDetails
 def getEnergyLabelForLabelSerialIdentifierFromTo(FromLabelSerialIdentifier,ToLabelSerialIdentifier):
     LabelSerialIdentifierList = range(FromLabelSerialIdentifier, ToLabelSerialIdentifier)
     getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList)
 
 
+# En liste af LabelSerialIdentifier bruges til at hente /FetchEnergyLabelDetails
 def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
     try:
         from urlparse import urlparse

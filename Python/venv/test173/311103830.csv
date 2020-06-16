@@ -1,0 +1,10 @@
+Profitable;ProposalID;Savings;SeebClassification;Investment;Recommended;SeebClassificationDescription;ProposalHeadline
+True;1;60;1-1-1-0;1200;False;Loft;Udskiftning af loftslem til ny med 60 mm isolering
+True;8;400;1-3-3-0;7900;False;Yderdøre;Montage af ny massiv, isoleret yderdør
+True;3;1400;1-3-1-0;24800;False;Vinduer;Udskiftning af vindue med 1 lag glas til trelags energirude
+False;0;200;1-1-2-0;31800;False;Fladt tag;Udskiftning  af loftisolering.
+False;7;1200;2-1-6-0;40000;False;Solvarme;Montering af solfanger, vakumrør  til brugsvand
+True;2;2300;1-2-4-0;55400;False;Kælder ydervægge;Udvendig efterisolering af kælderydervægge  med 200 mm.
+True;5;4800;4-1-3-0;79300;False;Solceller;Montage af nye solceller, Monokrystaliske silicium, 4 kW
+True;6;8300;2-1-5-0;140000;False;Varmepumper;Installation af nyt jordvarmeanlæg, Danfoss - DHP-H Opti PRO 12
+False;4;4700;1-3-1-0;173900;False;Vinduer;Udskiftning af vindue med 2 lags termoruder til trelags energirude

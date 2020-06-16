@@ -7,7 +7,7 @@ import emoweb
 #datafordeleren.getBygninrger(210, "210.csv", 900000)
 #datafordeleren.getHusnummer(3310, "Ølsted.csv", 100*1000)
 #datafordeleren.getAdres    ser("Ølsted.xlx½sx", "Husnummer", "Adresser.csv")
-#emoweb.getBulding(emoweb.getLabelSerialIdentifierForBulding(101, 574938, 0))
 
-#emoweb.getEnergyLabelForLabelSerialIdentifierFromTo(111441569, 311441566)
-emoweb.getAllBuildingsInKommune(573)
+#emoweb.getBulding(emoweb.getLabelSerialIdentifierForBulding(101, 574938, 0))
+#emoweb.getEnergyLabelForLabelSerialIdentifierFromTo(310441266, 310441566)
+emoweb.getAllBuildingsInKommune(173)
