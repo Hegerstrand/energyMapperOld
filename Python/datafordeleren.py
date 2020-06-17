@@ -268,7 +268,7 @@ def getBygningsList(kommunekode):
         response, content = h.request(target.geturl(), method, body, headers)
         bygningsList = []
 
-        kommune_csv_file = open(str(kommunekode) + ".csv", 'w')
+        kommune_csv_file = open("BBR" + str(kommunekode) + ".csv", 'w')
         kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
         kommune_writer.writerow(headings)
 
@@ -282,7 +282,7 @@ def getBygningsList(kommunekode):
                     data = numpy.append(data, json.loads(content))
                     i += 1
 
-            print("Found " + str(len(data)) + " bygnigner in " + str(i) + " pages")
+            print("Found " + str(len(data)) + " bygninger in " + str(i) + " pages")
             for bygning in data:
                 bygningsList.append(bygning["id_lokalId"])
                 Bygningsdata = []

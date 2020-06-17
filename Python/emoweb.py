@@ -6,8 +6,10 @@ import csv
 import numpy
 import pandas as pd
 import time
-
 import datafordeleren
+import requests
+import xml.etree.ElementTree as ET
+
 
 headers = {
     'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
@@ -57,6 +59,43 @@ EmoDataHeadings = {
     'ZipCode'
 }
 
+ProposalCalculationHeadings = {
+    "AdditionalHeat",
+    "AdditionalHeatCost",
+    "CalculatedConsumption",
+    "CalculatedEmission",
+    "CalculatedEmissionLowering",
+    "CalculatedEnergyConsumption",
+    "CalculatedEnergySavings",
+    "ElectricityPrice",
+    "ExtraCostPrYear",
+    "FixedCharge",
+    "HeatSupply",
+    "HeatSupplyCost",
+    "TotalProfitableInvestment"
+}
+ProposalOverviewHeadings = {
+    "ExtraCostPrYear",
+    "ExtraCostPrYearForAllProposals",
+    "ExtraCostPrYearForRecommendedProposals",
+    "PossibleEnergyLabelForAllProfitableProposals",
+    "PossibleEnergyLabelForAllProposals",
+    "TotalProfitableInvestment",
+    "TotalRecommendedInvestment"
+}
+
+ProposalHeadings = {
+    "Investment",
+    "Profitable",
+    "ProposalHeadline",
+    "ProposalID",
+    "Recommended",
+    "Savings",
+    "SeebClassification",
+    "SeebClassificationDescription",
+}
+
+
 # For et kommunekode findes samtlige bygninger fra BBR. For hver bygning findes ESR ejendomsnr (ESREjdNr).
 # ESR ejendomsnr og kommunekode benyttes sammen til findes LabelSerialIdentifier ved /SearchEnergyLabelBBR
 # LabelSerialIdentifier bruges til at hente /FetchEnergyLabelDetails
@@ -78,7 +117,7 @@ def getAllBuildingsInKommune(kommuneNummer):
             bygningsList = datafordeleren.getBygningsList(kommuneNummer)
             print("Going through list of " + str(len(bygningsList)) + " buildings")
 
-            kommune_csv_file = open("BBRBygninger" + str(kommuneNummer) + ".csv", 'w')
+            kommune_csv_file = open("BygningInfo" + str(kommuneNummer) + ".csv", 'w')
             kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
             allHeadings = []
             allHeadings.extend(DawaHeadings)
@@ -88,7 +127,8 @@ def getAllBuildingsInKommune(kommuneNummer):
                 time.sleep(6)
                 buildingInfo = []
                 DawaBygning = datafordeleren.getDawaBygning(bygningsID)
-                if DawaBygning == None or DawaBygning["BYG_ANVEND_KODE"] >= 600: continue
+                if DawaBygning == None or DawaBygning["BYG_ANVEND_KODE"] >= 600 or "ESREjdNr" not in DawaBygning:
+                    continue
 
                 EjendomsNummer = DawaBygning["ESREjdNr"]
                 SearchforEnergyLabel = getLabelSerialIdentifier(kommuneNummer, EjendomsNummer, 0)
@@ -146,41 +186,6 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
         except ImportError:
             print("urlparse failed")
 
-    ProposalCalculationHeadings = {
-        "AdditionalHeat",
-        "AdditionalHeatCost",
-        "CalculatedConsumption",
-        "CalculatedEmission",
-        "CalculatedEmissionLowering",
-        "CalculatedEnergyConsumption",
-        "CalculatedEnergySavings",
-        "ElectricityPrice",
-        "ExtraCostPrYear",
-        "FixedCharge",
-        "HeatSupply",
-        "HeatSupplyCost",
-        "TotalProfitableInvestment"
-    }
-    ProposalOverviewHeadings = {
-        "ExtraCostPrYear",
-        "ExtraCostPrYearForAllProposals",
-        "ExtraCostPrYearForRecommendedProposals",
-        "PossibleEnergyLabelForAllProfitableProposals",
-        "PossibleEnergyLabelForAllProposals",
-        "TotalProfitableInvestment",
-        "TotalRecommendedInvestment"
-    }
-
-    ProposalHeadings = {
-        "Investment",
-        "Profitable",
-        "ProposalHeadline",
-        "ProposalID",
-        "Recommended",
-        "Savings",
-        "SeebClassification",
-        "SeebClassificationDescription",
-    }
     try:
         r = requests.get(url="https://emoweb.dk/EMOData/EMOData.svc/Ping", headers=headers)
         if r.status_code == 200:
@@ -210,30 +215,12 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
                         continue
 
                     if EnergyLabelDetails["ResponseStatus"]["StatusCode"] == 3:
-
-                        Summary = []
-                        Summary.append(str(LabelSerialIdentifier))
-
                         ProposalOverview = EnergyLabelDetails["ProposalOverview"]
-                        for heading in ProposalCalculationHeadings:
-                            Summary.append(EnergyLabelDetails["ProposalCalculation"][heading])
-                        for heading in ProposalOverviewHeadings:
-                            Summary.append(ProposalOverview[heading])
 
-                        Summary_writer.writerow(Summary)
-                        print("Wrote " + str(LabelSerialIdentifier) + ".csv  with " + str(len(ProposalOverview)) + " proposals.")
+                        saveProposalOverviewInSummary(Summary_writer, LabelSerialIdentifier, EnergyLabelDetails, ProposalOverview)
+                        saveProposalsAsCsv(LabelSerialIdentifier, ProposalOverview)
+                        saveProposalsAsXml(LabelSerialIdentifier)
 
-                        Proposal_csv_file = open(str(LabelSerialIdentifier) + ".csv", 'w')
-                        Proposal_writer = csv.writer(Proposal_csv_file, delimiter=';', lineterminator='\n')
-                        Proposal_writer.writerow(ProposalHeadings)
-
-                        for proposal in ProposalOverview["Proposals"]:
-                            ProposalCalculation = []
-                            for heading in ProposalHeadings:
-                                ProposalCalculation.append(proposal[heading])
-                            Proposal_writer.writerow(ProposalCalculation)
-
-                        print(str(LabelSerialIdentifier) + " written to Summary.csv.")
                     else:
                         print("Could not write " + str(LabelSerialIdentifier) + " with status code : " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
 
@@ -249,3 +236,40 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
             print("getEnergyLabelForLabelSerialIdentifier failed at ping")
     except ImportError:
         print("Ping failed")
+
+
+def saveProposalOverviewInSummary(Summary_writer, LabelSerialIdentifier,EnergyLabelDetails, ProposalOverview):
+
+    Summary = []
+    Summary.append(str(LabelSerialIdentifier))
+    for heading in ProposalCalculationHeadings:
+        Summary.append(EnergyLabelDetails["ProposalCalculation"][heading])
+    for heading in ProposalOverviewHeadings:
+        Summary.append(ProposalOverview[heading])
+
+    Summary_writer.writerow(Summary)
+    print(str(LabelSerialIdentifier) + " written to Summary.csv.")
+
+def saveProposalsAsCsv(LabelSerialIdentifier, ProposalOverview):
+    Proposal_csv_file = open(str(LabelSerialIdentifier) + ".csv", 'w')
+    Proposal_writer = csv.writer(Proposal_csv_file, delimiter=';', lineterminator='\n')
+    Proposal_writer.writerow(ProposalHeadings)
+
+    for proposal in ProposalOverview["Proposals"]:
+        ProposalCalculation = []
+        for heading in ProposalHeadings:
+            ProposalCalculation.append(proposal[heading])
+        Proposal_writer.writerow(ProposalCalculation)
+    print("Wrote " + str(LabelSerialIdentifier) + ".csv  with " + str(len(ProposalOverview)) + " proposals.")
+
+def saveProposalsAsXml(LabelSerialIdentifier):
+    FetchEnergyLabelXmlRaw = "https://emoweb.dk/emodata/emodata.svc/FetchEnergyLabelXmlRaw/"
+    try:
+        EnergyLabelXmlResponse = requests.get(
+            url=FetchEnergyLabelXmlRaw + str(LabelSerialIdentifier), headers=headers)
+    except:
+        return
+    xmlRoot = ET.fromstring(EnergyLabelXmlResponse.text)
+    xmlTree = ET.ElementTree(xmlRoot)
+    xmlTree.write(str(LabelSerialIdentifier) + ".xml")
+    print(str(LabelSerialIdentifier) + ".xml saved.")
