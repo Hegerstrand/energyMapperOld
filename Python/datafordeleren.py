@@ -276,7 +276,7 @@ def getBygningsList(kommunekode):
             data = json.loads(content)
             i = 1
             if len(data) == 100:
-                while len(data) == 100*i and i < 1:
+                while len(data) == 100*i:
                     target = urlparse(uri + path + '?' + request + '&' + user + "&page=" + str(i))
                     response, content = h.request(target.geturl(), method, body, headers)
                     data = numpy.append(data, json.loads(content))

@@ -9,6 +9,7 @@ import time
 import datafordeleren
 import requests
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 
 headers = {
@@ -100,6 +101,7 @@ ProposalHeadings = {
 # ESR ejendomsnr og kommunekode benyttes sammen til findes LabelSerialIdentifier ved /SearchEnergyLabelBBR
 # LabelSerialIdentifier bruges til at hente /FetchEnergyLabelDetails
 def getAllBuildingsInKommune(kommuneNummer):
+
     try:
         from urlparse import urlparse
     except ImportError:
@@ -113,18 +115,23 @@ def getAllBuildingsInKommune(kommuneNummer):
         if r.status_code == 200:
             LabelSerialIdentifierList = []
             buildingInfo = []
+            csvFileName = 'BBR' + str(kommuneNummer) + '.csv'
+            if Path(csvFileName).is_file():
+                bygnignsData = pd.read_csv(csvFileName, encoding='latin1', header=0, quotechar='"', delimiter=";")
+                bygningsList = bygnignsData["id_lokalId"]
 
-            bygningsList = datafordeleren.getBygningsList(kommuneNummer)
+            else:
+                bygningsList = datafordeleren.getBygningsList(kommuneNummer)
+
             print("Going through list of " + str(len(bygningsList)) + " buildings")
 
-            kommune_csv_file = open("BygningInfo" + str(kommuneNummer) + ".csv", 'w')
-            kommune_writer = csv.writer(kommune_csv_file, delimiter=';', lineterminator='\n')
+            bygnigner_csv_file = open("BygningInfo" + str(kommuneNummer) + ".csv", 'w')
+            bygning_writer = csv.writer(bygnigner_csv_file, delimiter=';', lineterminator='\n')
             allHeadings = []
             allHeadings.extend(DawaHeadings)
             allHeadings.extend(EmoDataHeadings)
-            kommune_writer.writerow(allHeadings)
+            bygning_writer.writerow(allHeadings)
             for bygningsID in bygningsList:
-                time.sleep(6)
                 buildingInfo = []
                 DawaBygning = datafordeleren.getDawaBygning(bygningsID)
                 if DawaBygning == None or DawaBygning["BYG_ANVEND_KODE"] >= 600 or "ESREjdNr" not in DawaBygning:
@@ -140,7 +147,7 @@ def getAllBuildingsInKommune(kommuneNummer):
                 for heading in EmoDataHeadings:
                     buildingInfo.append(SearchforEnergyLabel[heading])
 
-                kommune_writer.writerow(buildingInfo)
+                bygning_writer.writerow(buildingInfo)
                 LabelSerialIdentifierList.append(SearchforEnergyLabel["EnergyLabelSerialIdentifier"])
 
         print("Collected EnergyLabelForLabelSerialIdentifier for " + str(len(LabelSerialIdentifierList)) + " buildings")
@@ -156,9 +163,9 @@ def getLabelSerialIdentifier(municipality, property, building):
         SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
         query = str(municipality) + "/" + property + "/" + str(building)
         url = SearchEnergyLabelBBR + query + "/TL,BA"
+        time.sleep(6)
 
         BBRSearchResponse = requests.get(url=url, headers=headers)
-
         if BBRSearchResponse.status_code == 200:
             BBRcontent = json.loads(BBRSearchResponse.content)
             searchResults = BBRcontent["SearchResults"]
@@ -168,6 +175,7 @@ def getLabelSerialIdentifier(municipality, property, building):
                 return building
     except ImportError:
         print("getBulding " + query + " failed")
+        return
 
 
 # LabelSerialIdentifier fra/til bruges til at hente /FetchEnergyLabelDetails
