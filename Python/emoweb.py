@@ -10,7 +10,7 @@ import datafordeleren
 import requests
 import xml.etree.ElementTree as ET
 from pathlib import Path
-
+import logging
 
 headers = {
     'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
@@ -164,8 +164,13 @@ def getLabelSerialIdentifier(municipality, property, building):
         query = str(municipality) + "/" + property + "/" + str(building)
         url = SearchEnergyLabelBBR + query + "/TL,BA"
         time.sleep(6)
+        try:
+            BBRSearchResponse = requests.get(url=url, headers=headers)
+        except:
+            logging.warning("getLabelSerialIdentifier: SearchEnergyLabelBBR " + query + " failed")
+            print("getLabelSerialIdentifier: SearchEnergyLabelBBR " + query + " failed")
+            return
 
-        BBRSearchResponse = requests.get(url=url, headers=headers)
         if BBRSearchResponse.status_code == 200:
             BBRcontent = json.loads(BBRSearchResponse.content)
             searchResults = BBRcontent["SearchResults"]
@@ -174,7 +179,8 @@ def getLabelSerialIdentifier(municipality, property, building):
                 building = searchResults[0]
                 return building
     except ImportError:
-        print("getBulding " + query + " failed")
+        logging.warning("getLabelSerialIdentifier: SearchEnergyLabelBBR " + query + " failed")
+        print("getLabelSerialIdentifier: SearchEnergyLabelBBR " + query + " failed")
         return
 
 
@@ -212,6 +218,7 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
                     try:
                         EnergyLabelDetailsResponse = requests.get(url=FetchEnergyLabelDetails + str(LabelSerialIdentifier), headers=headers)
                     except:
+                        logging.warning("getEnergyLabelForLabelSerialIdentifier: FetchEnergyLabelDetails " + str(LabelSerialIdentifier) + " failed")
                         continue
                     if EnergyLabelDetailsResponse.status_code == 200:
                         try:
@@ -231,12 +238,14 @@ def getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList):
 
                     else:
                         print("Could not write " + str(LabelSerialIdentifier) + " with status code : " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
+                        logging.info("Could not write " + str(LabelSerialIdentifier) + " with status code : " + str(EnergyLabelDetails["ResponseStatus"]["StatusCode"]) + ".")
 
                         if "ResponseStatus" in EnergyLabelDetails:
                             print(EnergyLabelDetails["ResponseStatus"]["StatusMessage"])
 
                 except ImportError:
                     print("Getting energy label failed")
+                    logging.warning("Getting energy label" + str(LabelSerialIdentifier) + " failed")
 
             SummaryFile.close()
 
