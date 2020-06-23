@@ -1,0 +1,13 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+1700;False;Varmerør;7;True;300;Isolering af varmerør op til 50 mm;2-2-2-0
+1700;False;Varmtvandsrør;8;True;300;Isolering af brugsvandsrør og cirkulationsledning op til 50 mm;3-1-3-0
+2600;False;Varmtvandsrør;9;True;300;Isolering af tilslutningsrør til varmtvandsbeholder op til 50 mm;3-1-3-0
+3000;False;Ovenlys;0;False;60;Udskiftning af eksisterende ovenlysvinduer;1-3-2-0
+8500;False;Etageadskillelse;6;True;300;Efterisolering af etageadskillelse mod det fri med 200 mm isolering;1-4-2-0
+13100;False;Yderdøre;2;False;300;Udskiftning af eksisterende yderdør;1-3-3-0
+26300;False;Loft;5;False;400;Efterisolering af loftsrum med 200 mm isolering;1-1-1-0
+31100;False;Yderdøre;1;False;700;Udskiftning af eksisterende skydedørsparti;1-3-3-0
+41900;False;Yderdøre;4;False;900;Udskiftning af eksisterende terrassedør;1-3-3-0
+68300;False;Vinduer;3;False;1300;Udskiftning af eksisterende vinduer;1-3-1-0
+93800;False;Solceller;11;False;4300;Montage af nye solceller;4-1-3-0
+170000;False;Varmepumper;10;True;6400;Konvertering til opvarmning via varmepumpe, Etablering af nyt varmefordelingsanlæg til radiatorer og Installation af ny luft/vand varmepumpe;2-1-5-0

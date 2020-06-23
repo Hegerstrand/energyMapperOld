@@ -1,0 +1,16 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+900;False;Varmtvandsrør;11;True;1700;Isolering af tilslutningsrør til varmtvandsbeholder op til 50 mm;3-1-3-0
+1700;False;Varmerør;12;True;1000;Isolering af varmerør op til 50 mm;2-2-2-0
+4000;False;Ovenlys;6;False;200;Udskiftning af eksisterende ovenlysvindue;1-3-2-0
+4300;False;Loft;2;True;300;Efterisolering af hanebåndsloft med 300 mm isolering;1-1-1-0
+7700;False;Loft;3;True;1000;Isolering af uisolerede hanebåndslofter med 400 mm isolering ;1-1-1-0
+8700;False;Lette vægge mod uopvarmet rum;4;True;900;Indvendig efterisolering af lette uisolerede vægge mod uopvarmet loftrum med 100 mm;1-2-3-1
+16400;False;Yderdøre;7;True;1100;Udskiftning af massive uisolerede døre;1-3-3-0
+21900;False;Massive ydervægge;5;True;1600;Indvendig efterisolering af massive uisolerede ydervægge med 50 mm;1-2-2-0
+22100;False;Loft;13;True;1400;Efterisolering af loftsrum med 300 mm isolering;1-1-1-0
+25800;False;Krybekælder;0;True;2300;Isolering af uisoleret gulv mod krybekælder med 200 mm isolering ;1-4-3-0
+28000;False;Loft;1;True;2600;Efterisolering af skunke med 400 mm isolering og fjernelse af eksisterende isolering ;1-1-1-0
+34700;False;Yderdøre;9;True;1400;Udskiftning af eksisterende yderdøre og terrassedør uden energiruder;1-3-3-0
+76600;False;Vinduer;8;True;3100;Udskiftning af eksisterende vinduer uden energiruder;1-3-1-0
+308800;False;Varmepumper;10;True;33400;"Montage af nye solceller, installation af nyt luft/vand anlæg, installation af ny varmtvandsbeholder, varmefordelingsanlæg - fald i temperatursæt og installation af pumpe
+";2-1-5-0

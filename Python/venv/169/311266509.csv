@@ -1,0 +1,12 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+5000;False;Varmefordelingspumper;5;True;400;Udskiftning af den eksisterende fordelingspumpe.;2-2-3-0
+8400;False;Loft;7;True;300;"Efterisolering af loft mod uopvarmet tagrum
+";1-1-1-0
+15400;False;Yderdøre;8;False;200;Udskiftning af yderdør m. termorude;1-3-3-0
+20000;False;Varmepumper;1;True;1100;Installation af ny luft-luft varmepumpe;2-1-5-0
+28200;False;Hule ydervægge;3;True;2000;Efterisolering af hulmur med granulat;1-2-1-0
+35000;False;Solceller;2;True;2300;Montering af et solcelleanlæg på 10 m²;4-1-3-0
+45000;True;Kedler;0;True;2500;Installation af en ny A-mærket gaskedel (20 kW);2-1-2-0
+63600;True;Vinduer;9;False;900;Udskiftning af vinduer med nye energivinduer (BR20 krav) og Udskiftning af vindue med nyt energivindue (BR20 krav);1-3-1-0
+119000;True;Terrændæk;6;False;500;Etablering af nyt terrændæk;1-4-1-0
+179800;False;Loft;4;False;400;Efterisolering af skråloftet;1-1-1-0

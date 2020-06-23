@@ -1,0 +1,21 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+1500;False;Varmt brugsvand;106;Kan ikke beregnes;Kan ikke beregnes;Efterisolering af tilslutningsrør til varmtvandsbeholdere;3-1-0-0
+3000;False;Belysning;112;Kan ikke beregnes;Kan ikke beregnes;Bevægelsesmeldere i teknikrum;4-1-1-0
+7000;False;Varmt brugsvand;105;False;900;Udskiftning af  cirkulationspumpe på brugsvandsanlæg;3-1-0-0
+8000;False;Belysning;108;False;1000;Bevægelsesmeldere i toiletter, forrum o.lign.;4-1-1-0
+11250;False;Belysning;111;False;1100;Bevægelsesmeldere i depotrum o.lign.;4-1-1-0
+24000;False;Varmt brugsvand;97;False;1800;Efterisolering af brugsvandsrør og cirkulationsledning;3-1-0-0
+37000;False;Varmefordeling;102;True;5500;Udskiftning af cirkulationspumper på varmeanlæg;2-2-0-0
+43750;False;Belysning;107;True;3700;Udskiftning til LED-belysning i gangarealer uden dagslys;4-1-1-0
+60000;False;Apparater;113;True;4500;Udskiftning af udebelysning til LED;4-1-2-0
+75000;False;Ventilation;114;False;3500;Udskiftning af tagventilatorer;1-5-0-0
+131040;False;Vinduer, ovenlys og døre;115;False;4400;Udskiftning af uisoleret rulleport;1-3-0-0
+138750;False;Belysning;109;True;22700;Bevægelsesmeldere og dagslysstyring i kontorlokaler;4-1-1-0
+147500;False;Varmefordeling;98;Kan ikke beregnes;Kan ikke beregnes;Efterisolering af varmefordelingsrør;2-2-0-0
+600000;False;Varmeanlæg;116;True;93600;Udskiftning af kedler til kondenserende kedler (Energimærke A);2-0-0-0
+654500;False;Belysning;110;False;68000;Ny belysning i lagerareal;4-1-1-0
+953420;False;Vinduer, ovenlys og døre;100;False;60;Montering af forsatsrude på ovenlys;1-3-0-0
+975440;False;Vinduer, ovenlys og døre;99;False;26700;Udskiftning af 2 lags termorude til energirude i vinduer og døre;1-3-0-0
+5171734;False;Ydervægge;104;Kan ikke beregnes;Kan ikke beregnes;Indvendig eller udvendig efterisolering af ydervægge;1-2-0-0
+8455965;False;Tag og loft;103;False;198800;Udvendig efterisolering af fladt tag;1-1-0-0
+13432000;False;Gulve;101;False;15800;Udførelse af nyt terrændæk;1-4-0-0

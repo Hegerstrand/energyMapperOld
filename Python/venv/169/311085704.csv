@@ -1,0 +1,13 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+1300;False;Belysning;5;False;20;Toilet - Installation af bevægelsesmelder;4-1-1-0
+1300;False;Belysning;7;False;50;Køkken - Installation af bevægelsesmelder;4-1-1-0
+1300;False;Belysning;8;False;80;Værksted - Installation af bevægelsesmelder;4-1-1-0
+1300;False;Belysning;9;False;40;Kontor - Installation af bevægelsesmelder;4-1-1-0
+1300;False;Belysning;10;True;100;Kontor - Installation af bevægelsesmelder;4-1-1-0
+1300;False;Belysning;11;True;200;Reception - Installation af bevægelsesmelder;4-1-1-0
+2500;False;Belysning;6;False;200;Toiletter + omklædning - Installation af bevægelsesmelder;4-1-1-0
+4000;False;Varmefordelingspumper;1;True;1100;Montering af ny cirkulationspumpe på varmeanlæg;2-2-3-0
+18800;False;Vinduer;4;False;600;Vestfacade - Udskiftning af vinduer & yderdøre ;1-3-1-0
+24500;False;Vinduer;3;False;700;Østfacade - Udskiftning af vinduer & yderdøre ;1-3-1-0
+38600;False;Vinduer;2;False;1200;Nordfacade - Udskiftning af vinduer & yderdøre ;1-3-1-0
+111200;False;Solceller;0;True;7900;Montering af 6 kWp solcelleanlæg;4-1-3-0

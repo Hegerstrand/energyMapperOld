@@ -1,0 +1,27 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+500;False;Belysning;103;True;1900;Optimering af belysning i omklædningsrum.;4-1-1-0
+600;False;Varmt brugsvand;94;Kan ikke beregnes;Kan ikke beregnes;Efterisolering af tilslutningsrør til varmtvandsbeholder;3-1-0-0
+3100;False;Belysning;102;True;1300;Optimering af belysning i varmecentralen.;4-1-1-0
+3100;False;Belysning;104;True;1000;Optimering af belysning i køkken.;4-1-1-0
+5000;False;Varmt brugsvand;93;Kan ikke beregnes;Kan ikke beregnes;Montering af ny cirkulationspumpe på brugsvandsanlæg.;3-1-0-0
+5000;False;Belysning;97;True;2000;Optimering af belysning hos Inter-Log.;4-1-1-0
+6864;False;Vinduer, ovenlys og døre;109;False;600;Udskiftning af uisoleret yderdør;1-3-0-0
+6864;False;Vinduer, ovenlys og døre;110;False;3300;Udskiftning af uisoleret yderdør;1-3-0-0
+6864;False;Vinduer, ovenlys og døre;111;False;900;Udskiftning af uisoleret yderdør;1-3-0-0
+9500;False;Belysning;98;True;3100;Optimering af belysning hos El-Light.;4-1-1-0
+11500;False;Belysning;99;True;5800;Optimering af belysning hos Hertag.;4-1-1-0
+11500;False;Belysning;100;True;3200;Optimering af belysning hos Freetrade.;4-1-1-0
+11500;False;Belysning;101;Kan ikke beregnes;Kan ikke beregnes;Optimering af belysning hos Presmann.;4-1-1-0
+32500;False;Varmeanlæg;89;True;15200;Montering af 3 ny automatisk modulerende cirkulationspumper på varmefordelingsanlæg.;2-0-0-0
+33600;False;Vinduer, ovenlys og døre;107;Kan ikke beregnes;Kan ikke beregnes;Udskiftning af 2 lags termoruder til energiruder i vinduer;1-3-0-0
+35000;False;Solvarme;106;Kan ikke beregnes;Kan ikke beregnes;Montering af plan solfanger og beholder til brugsvand;2-1-6-0
+43200;False;Varmt brugsvand;95;Kan ikke beregnes;Kan ikke beregnes;Efterisolering af brugsvandsrør og cirkulationsledning.;3-1-0-0
+92000;False;Solceller;105;Kan ikke beregnes;Kan ikke beregnes;Montering af 20 kvm solceller i taget;4-1-3-0
+210000;False;Belysning;96;True;88000;Optimering af belysning i lagerhallen.;4-1-1-0
+230240;False;Vinduer, ovenlys og døre;88;Kan ikke beregnes;Kan ikke beregnes;"Udskiftning af 2 lags termoruder i vinduer til energiruder med U-værdi mindre end 1,1. Energiruderne skal være med varm kant.
+";1-3-0-0
+350000;False;Varmeanlæg;112;True;147200;Udskiftning af kedel til to kondenserende kedler (Energimærke A);2-0-0-0
+1372800;False;Vinduer, ovenlys og døre;108;Kan ikke beregnes;Kan ikke beregnes;Montering af forsatsrude(2 lags energirude) på ovenlys med 2 lags termorude;1-3-0-0
+4581968;False;Ydervægge;90;Kan ikke beregnes;Kan ikke beregnes;Efterisolering af massive ydervægge med 200 mm.;1-2-0-0
+8685600;False;Tag og loft;92;Kan ikke beregnes;Kan ikke beregnes;Udvendig efterisolering af fladt tag med 300 mm.;1-1-0-0
+17600000;False;Gulve;91;Kan ikke beregnes;Kan ikke beregnes;Udførelse af nyt terrændæk;1-4-0-0

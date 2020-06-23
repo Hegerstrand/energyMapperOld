@@ -1,0 +1,11 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+5000;True;Loft;8;True;200;Udskiftning af loftslem til ny med 60 mm isolering.;1-1-1-0
+9600;True;Loft;9;True;300;Indvendig efterisolering af skråvægge med 100 mm isolering.;1-1-1-0
+18000;True;Varmepumper;0;True;3200;Installation af nyt luftvarmeanlæg, (luft/luft), 4,7 kW som type IVT Nordic 12 LR-N;2-1-5-0
+18800;False;Yderdøre;5;True;800;Udskiftning til ny yderdør med trelags energirude;1-3-3-0
+23100;False;Lette ydervægge;7;False;400;Efterisolering af lette ydervægge af træ med 200 mm isolering.;1-2-3-0
+33400;False;Vinduer;4;True;1600;Udskiftning af vinduer til trelags energiruder;1-3-1-0
+38400;False;Loft;10;True;1900;Efterisolering af loftsrum med 200 mm isolering.;1-1-1-0
+92000;False;Krybekælder;3;False;1300;Nedrivning af eksisterende krybekælder og etablering af nyt terrændæk med 300 mm isolering.;1-4-3-0
+98800;False;Hule ydervægge;6;False;2100;Indvendig montage af forsatsvæg med 100 mm isolering.;1-2-1-0
+111200;False;Solceller;1;True;9100;Montage af nye solceller, Monokrystaliske silicium, 6 kW;4-1-3-0

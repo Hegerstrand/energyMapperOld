@@ -4,7 +4,8 @@
     <list default="true" id="108be95c-bdda-4df1-8f14-aa5e999f50fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/emoweb.py" beforeDir="false" afterPath="$PROJECT_DIR$/emoweb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/BygningInfo169.csv" beforeDir="false" afterPath="$PROJECT_DIR$/venv/BygningInfo169.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/BBR169.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/BygningInfo169.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/tester.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,25 +95,25 @@
     <session id="-1313898271">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.3" value="4" />
-          <entry key="project.open.time.4" value="14" />
+          <entry key="project.open.time.4" value="15" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="48" />
           <entry key="dummy" value="15" />
-          <entry key="py" value="8764" />
+          <entry key="py" value="9138" />
           <entry key="sql" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="8812" />
+          <entry key="Python" value="9186" />
           <entry key="SQL" value="3" />
         </counts>
       </usages-collector>
@@ -135,12 +136,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/emoweb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+            <state relative-caret-position="373">
+              <caret line="186" column="41" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="41" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1592638468419" expanded="true" signature="491:492" ph="..." />
-                <marker date="1592638468419" expanded="true" signature="2377:4859" ph="..." />
+                <marker date="1592914186412" expanded="true" signature="557:558" ph="..." />
               </folding>
             </state>
           </provider>
@@ -149,8 +149,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csvHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state>
+              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -158,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/tester.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="136">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -170,8 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datafordeleren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="270" column="24" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="24" />
+            <state relative-caret-position="85">
+              <caret line="279" selection-start-line="279" selection-end-line="279" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#257#2408#0" />
@@ -205,6 +205,9 @@
       <find>saveProposalsAsCsv</find>
       <find>saveProposalsAsXml</find>
       <find>saveProposalOverviewInSummary</find>
+      <find>except</find>
+      <find>getbygning</find>
+      <find>getBulding</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -438,8 +441,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27337" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39045554" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36370778" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39041635" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
@@ -518,6 +521,11 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>target.geturl()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>data[&quot;id_lokalId&quot;]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -554,11 +562,6 @@
       </expression>
       <expression>
         <expression-string>building is not</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>building</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -689,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/datafordeleren.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="270" column="24" selection-start-line="270" selection-start-column="8" selection-end-line="270" selection-end-column="24" />
+        <state relative-caret-position="85">
+          <caret line="279" selection-start-line="279" selection-end-line="279" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#257#2408#0" />
@@ -705,15 +708,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csvHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state>
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/tester.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="136">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -722,12 +725,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/emoweb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+        <state relative-caret-position="373">
+          <caret line="186" column="41" selection-start-line="186" selection-start-column="41" selection-end-line="186" selection-end-column="41" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1592638468419" expanded="true" signature="491:492" ph="..." />
-            <marker date="1592638468419" expanded="true" signature="2377:4859" ph="..." />
+            <marker date="1592914186412" expanded="true" signature="557:558" ph="..." />
           </folding>
         </state>
       </provider>

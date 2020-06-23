@@ -1,0 +1,10 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+700;False;Gulve;41;True;3400;Isolering af lem til krybekælder;1-4-0-0
+800;False;Tag og loft;40;True;3400;Isolering af loftlem;1-1-0-0
+4500;False;Varmefordeling;43;True;800;Ny cirkulationspumpe på varmeanlæg;2-2-0-0
+4800;False;Ydervægge;42;False;3600;Isolering af væg mod uopvarmet tagrum;1-2-0-0
+5200;False;Vinduer, ovenlys og døre;45;False;3600;Udskiftning af uisolerede ventilationslemme;1-3-0-0
+32100;False;Tag og loft;39;False;4200;Efterisolering af loft ;1-1-0-0
+41000;False;Vinduer, ovenlys og døre;37;False;4800;Forbedring af vinduer;1-3-0-0
+41650;False;Gulve;38;False;4500;Efterisolering af gulv mod krybekælder ;1-4-0-0
+92000;False;Solceller;44;False;3500;Montering af 20 kvm solcelleanlæg;4-1-3-0

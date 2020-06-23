@@ -1,0 +1,15 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+2100;False;Vinduer;11;False;30;Udskiftning af vinduer med nye energivinduer (BR20 krav);1-3-1-0
+4000;False;Loft;14;False;30;Udskiftning af loftlem;1-1-1-0
+5000;False;Varmefordelingspumper;0;True;1300;Udskiftning af den eksisterende fordelingspumpe Pump;2-2-3-0
+7000;False;Vinduer;12;False;200;Udskiftning af tagvindue med et nyt energivindue (BR15 krav);1-3-1-0
+8500;False;Hule ydervægge;4;True;500;Efterisolering af hulmur med granulat;1-2-1-0
+9600;False;Loft;6;True;400;Efterisolering af gulv i skunkrum;1-1-1-0
+10400;False;Loft;7;True;400;Efterisolering af skunkvæg;1-1-1-0
+21400;False;Terrændæk;9;False;80;Efterisolering af terrændæk iht. krav i kap. 7.4.2 i Bygningsreglementet.;1-4-1-0
+34000;False;Terrændæk;10;False;200;Efterisolering af terrændæk iht. krav i kap. 7.4.2 i Bygningsreglementet.;1-4-1-0
+35000;False;Kedler;2;False;-180;Installation af ny kondenserende gaskedel;2-1-2-0
+64000;False;Varmtvandsbeholder;13;False;1800;Etablering af et nyt solvarmeanlæg til opvarmning og produktion af varmt brugsvand og Varmtvandsbeholder til solvarme - 200L;3-1-5-0
+80000;False;Solceller;1;False;3100;Montering af et solcelleanlæg på 30 m²;4-1-3-0
+105500;False;Loft;5;False;400;Efterisolering af skråloftet;1-1-1-0
+186200;False;Terrændæk;8;False;900;Efterisolering af terrændæk iht. krav i kap. 7.4.2 i Bygningsreglementet.;1-4-1-0

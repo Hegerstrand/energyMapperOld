@@ -1,0 +1,18 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+11100;False;Vinduer;7;True;700;Udskiftning af nogle vinduer til nye med tolags energiruder.;1-3-1-0
+16200;False;Yderdøre;6;True;1100;"Udskiftning til ny yderdør i bryggers med tolags energiruder.
+Montage af ny massiv, isoleret hoveddør.";1-3-3-0
+22000;False;Varmepumper;1;True;6300;Installation af luftvarmeanlæg, (luft/luft), 5,4 kW som type IVT Nordic 12 KHR-N.;2-1-5-0
+43200;True;Krybekælder;3;True;2900;Efterisolering af gulv mod krybekælder med 150 mm isolering.;1-4-3-0
+44000;True;Loft;5;True;1800;"Efterisoleringer i tagkonstruktionen:
+Efterisolering af hanebåndsloft med 150 mm isolering.
+Indvendig efterisolering af skråvægge med 150 mm isolering. 
+Efterisolering af lodret skunk med 150 mm isolering.
+Efterisolering af vandret skunk med 150 mm isolering.
+Udskiftning af loftslem til ny med 60 mm isolering.";1-1-1-0
+56000;True;Solceller;2;False;1800;Montage af solceller, Monokrystaliske silicium, 2,6 kW.;4-1-3-0
+57000;False;Solvarme;0;False;2100;"Montering af solfanger, vakumrør  til brugsvand og ny 200 liter varmvandsbeholder.
+Tilslutningsrør til VVB - 15 mm kobberrør - 50 mm.";2-1-6-0
+205700;False;Varmeanlæg;8;True;12700;"Konvertering til Naturgas:
+Udskiftning til 20 kW kondenserende gaskedel. Etablering af nyt varmefordelingsanlæg til radiatorer.
+Ny varmefordelingspumpe. ";2-1-1-0

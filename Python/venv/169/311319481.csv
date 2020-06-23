@@ -1,0 +1,9 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+11600;False;Loft;1;True;500;Efterisolering af loft mod uopvarmet tagrum;1-1-1-0
+15000;False;Ovne;5;False;600;Udskiftning af brændeovn;2-1-4-0
+20000;False;Vinduer;4;True;800;Udskiftning af tagvinduer med nye energivinduer (BR15 krav);1-3-1-0
+41800;False;Yderdøre;2;True;1500;Udskiftning af yderdøre m. termoruder;1-3-3-0
+72000;False;Vinduer;3;True;2800;Udskiftning af vinduer med nye energivinduer (BR15 krav);1-3-1-0
+100000;False;Solceller;7;True;6700;Montering af et solcelleanlæg på 40 m²;4-1-3-0
+130000;False;Varmepumper;6;True;12600;Konvertering til opvarmning via varmepumpe, Etablering af et nyt centralvarmeanlæg i bygningen, VVB ved ny brugsvandsvarmepumpe og Installation af ny luft-vand varmepumpe til opvarmning og produktion af varmt brugsvand.;2-1-5-0
+145500;False;Loft;0;False;700;Efterisolering af skråvægge;1-1-1-0

@@ -1,0 +1,15 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+4000;False;Varmefordelingspumper;12;True;500;Udskiftning af pumpe til Grundfos Alpha2 25-40;2-2-3-0
+5300;False;Loft;10;True;200;Efterisolering af fladt tag;1-1-1-0
+12000;True;Massive ydervægge;1;True;400;Udskiftning af massiv dør;1-2-2-0
+12400;False;Loft;8;True;1100;Efterisolering af vandret skunk;1-1-1-0
+14000;False;Loft;6;True;1100;Efterisolering af lodret skunk;1-1-1-0
+15000;False;Massive ydervægge;3;True;500;Efterisolering af massiv ydervæg;1-2-2-0
+24800;False;Loft;7;True;1100;Efterisolering af skrå væg;1-1-1-0
+29300;False;Loft;9;True;2100;Efterisolering af loft;1-1-1-0
+32000;False;Solvarme;13;False;1600;Etablering af solvarme og ny varmtvandsbeholder;2-1-6-0
+48800;True;Massive ydervægge;0;False;1200;Efterisolering af massiv ydervæg;1-2-2-0
+52000;False;Terrændæk;4;False;700;Nyt terrændæk;1-4-1-0
+54700;False;Vinduer;11;True;3200;Forbedring af glaspartier;1-3-1-0
+100000;True;Massive ydervægge;2;True;4200;Efterisolering af massiv ydervæg;1-2-2-0
+148000;False;Terrændæk;5;False;400;Nyt terrændæk;1-4-1-0

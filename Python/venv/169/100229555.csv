@@ -1,0 +1,12 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+700;False;Varmt brugsvand;60;False;0;Isolering af tilslutningsrør til varmtvandsbeholder;3-1-0-0
+1330;False;Varmt brugsvand;59;False;0;Isolering af brugsvandsrør og cirkulationsledning;3-1-0-0
+4420;False;Vinduer, ovenlys og døre;62;True;700;Udskiftning af uisoleret yderdør;1-3-0-0
+28836;False;Ydervægge;56;True;1400;Efterisolering af lette ydervægge med 250 mm.;1-2-0-0
+32180;False;Vinduer, ovenlys og døre;52;True;3600;Udskiftning af alm. termoruder til lavenergiruder;1-3-0-0
+35000;False;Varmepumper;58;True;11600;Luftvarme, (luft/luft), nyt anlæg, omdrejningsreguleret;2-1-5-0
+35000;False;Solvarme;61;False;1900;Montering af plan solfanger og beholder til brugsvand;2-1-6-0
+38592;False;Gulve;53;True;2200;Efterisolering af etageadskillelse mod udluftet gulvkonstruktion;1-4-0-0
+45356;False;Ydervægge;54;True;3200;Efterisolering af massive ydervægge med 200 mm.;1-2-0-0
+74681;False;Ydervægge;55;True;4700;Efterisolering af massive ydervægge med 100 mm.;1-2-0-0
+112168;False;Tag og loft;57;True;3900;Udvendig efterisolering af skråtag med 250 mm.;1-1-0-0

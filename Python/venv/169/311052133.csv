@@ -1,0 +1,15 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+400;False;Loft;2;True;200;Isolering af uisolerede loftslemme med 400 mm isolering. ;1-1-1-0
+4500;False;Vinduer;3;False;200;Udskiftning af vindue til trelags energirude;1-3-1-0
+6500;False;Loft;1;False;200;Efterisolering af hanebåndsloft med 150 mm isolering.;1-1-1-0
+6700;False;Vinduer;5;False;300;Udskiftning af vindue til trelags energirude;1-3-1-0
+6700;False;Vinduer;8;True;300;Udskiftning af vindue til trelags energirude;1-3-1-0
+9400;False;Yderdøre;10;False;400;Udskiftning til ny terrassedør med trelags energirude;1-3-3-0
+10800;False;Ovenlys;6;False;300;Udskiftning af ovenlysvindue til trelags energirude;1-3-2-0
+10800;False;Vinduer;7;True;400;Udskiftning af vindue til trelags energirude;1-3-1-0
+10800;False;Vinduer;9;True;400;Udskiftning af vindue til trelags energirude;1-3-1-0
+10800;False;Ovenlys;11;True;400;Udskiftning af ovenlysvindue til trelags energirude;1-3-2-0
+18800;False;Yderdøre;4;False;600;Udskiftning til ny yderdør med trelags energirude;1-3-3-0
+20500;False;Loft;13;True;700;Indvendig efterisolering af skråvægge med 150 mm isolering.;1-1-1-0
+59200;False;Hule ydervægge;12;False;1400;Indvendig montage af forsatsvæg med 100 mm isolering.;1-2-1-0
+79300;False;Solceller;0;True;4700;Montage af nye solceller, Monokrystaliske silicium, 4 kW;4-1-3-0

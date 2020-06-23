@@ -1,0 +1,32 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+3600;False;Varmefordelingspumper;2;True;600;Montering af ny cirkulationspumpe på varmeanlæg, som Alpha2 på 32 W;2-2-3-0
+5500;False;Varmefordelingspumper;24;True;500;Montering af ny cirkulationspumpe på varmeanlæg, som Alpha2 på 45 W;2-2-3-0
+5500;False;Yderdøre;29;True;300;"2 Nyt bygningsafsnit: 
+Montage af ny massiv, isoleret yderdør";1-3-3-0
+15600;False;Belysning;21;True;2400;Installation af dagslysstyrring i receptionsområdet ;4-1-1-0
+18500;False;Belysning;8;True;2100;Installation af dagslysstyrring i gangarealer i oprindeligt bygningsafsnit;4-1-1-0
+20700;False;Varmefordelingspumper;3;True;4200;Montering af ny cirkulationspumpe på varmeanlæg, som Grundfos Magna 3;2-2-3-0
+21300;False;Varmtvandsbeholder;19;True;2700;"2 Nyt bygningsafsnit:
+Udskiftning af varmtvandsbeholder og installation af ny cirkulationspumpe.";3-1-5-0
+34000;False;Belysning;22;True;11000;Installation af dagslysstyrring i pakkehal i det nye bygningsafsnit;4-1-1-0
+36700;True;Yderdøre;17;False;1000;"1 Oprindeligt bygningsafsnit:
+Udskiftning til nyt skydedørsparti med 2-lags energirude";1-3-3-0
+37200;False;Belysning;9;True;16100;Installation af dagslysstyrring i kontorer i oprindeligt bygningsafsnit;4-1-1-0
+80200;False;Yderdøre;15;True;2900;1 Oprindeligt bygningsafsnit: Massive yderdøre og døre med 2-lags termoglas udskiftes til isolerede massive døre og døre med 2-lags energiglas.;1-3-3-0
+134400;False;Yderdøre;20;True;5000;Udskiftning af rulleporte i oprindeligt og nyt bygnigsafsnit;1-3-3-0
+154400;False;Vinduer;13;False;4500;"2 Nyt bygningsafsnit: 
+Udskiftning af vindue til 2-lags energirude";1-3-1-0
+157300;False;Terrændæk;27;False;1900;1 Oprindeligt bygningsafsnit: Udførelse af nyt kældergulv med i alt 300 mm sundolitt;1-4-1-0
+159500;False;Kælder ydervægge;28;False;3500;1 Oprindeligt bygningsafsnit: Indvendig isolering af kælderydervæg til i alt 200 mm;1-2-4-0
+164000;False;Belysning;10;True;51300;Installation af dagslystyrring i lager/pakkehal i oprindeligt bygningsafsnit;4-1-1-0
+165100;False;Kælder ydervægge;25;False;3300;"2 Nyt bygningsafsnit: 
+Indvendig isolering af kælderydervæg mod jord til i alt 200 mm";1-2-4-0
+214500;False;Solceller;0;True;18300;Montage af nye solceller, Monokrystaliske silicium, 12 kW;4-1-3-0
+292900;False;Yderdøre;14;False;7900;"2 Nyt bygningsafsnit:
+Udskiftning til nye facadepartier med 2-lags energirude";1-3-3-0
+498500;True;Ovenlys;18;False;12900;"2 Nyt bygningsafsnit:
+Udskiftning af ovenlysvindue til 3-lags energirude";1-3-2-0
+801200;True;Vinduer;16;False;13600;"1 Oprindeligt bygningsafsnit:
+Udskiftning af vinduer til 2-lags/3-lags energiglas";1-3-1-0
+2411400;False;Hule ydervægge;6;False;29400;"1 Oprindeligt bygningsafsnit/lagerhal:
+ Isolering af hule ydervægge ved montering af 150 mm isolerede forsatsvægge eller tilsvarende udvendig isolering.";1-2-1-0

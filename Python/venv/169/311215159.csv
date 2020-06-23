@@ -1,0 +1,15 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+2600;False;Varmerør;12;True;200;Isolering af pumper i varmecentral med kapper;2-2-2-0
+2600;False;Varmerør;13;True;200;Isolering af pumper i ventilationsanlæg med kapper, loft;2-2-2-0
+5800;False;Varmefordelingspumper;10;True;1200;A2-D4-T5 Ny varmefordelingspumpe, som Grundfos Alpha 3, 15-60/25-60/15-80, 34 W;2-2-3-0
+18200;False;Yderdøre;8;True;800;K7-F5-S2-G5 Montage af nye massive, isolerede yderdøre i kantine og ved cykelparkering;1-3-3-0
+23400;False;Yderdøre;9;False;700;K7-F5-S2-G5 Montage af ny stålport, isoleret 42 mm, uden vinduer (detentionen).;1-3-3-0
+90000;False;Automatik;0;True;27600;Nye termostatventiler / Indregulering af varmeanlæg;2-2-4-0
+99000;False;Yderdøre;6;False;2600;K7-F1-S2-G3 Udskiftning til nye terrassedøre med trelags energirude;1-3-3-0
+143100;False;Belysning;15;True;12700;B12-G7 Fløj D kælderrum - Installation af højfrekvente kompaktrør med bevægelsesmelder, iht. 2016 krav;4-1-1-0
+189500;False;Belysning;16;True;51100;B10-G5 Fløj D kontorlokaler - Installation af højfrekvente kompaktrør;4-1-1-0
+221400;False;Ventilation;11;True;112500;"Udsug blok ""D"", udskiftning til mekanisk udsugning i ventilationsanlæg";1-5-1-0
+405000;False;Solceller;14;True;38600;Montage af nye solceller i monokrystallinske silicium, 150 m²;4-1-3-0
+741500;False;Loft;2;False;15500;Indvendig efterisolering af skråvægge med 200 mm isolering;1-1-1-0
+1703300;False;Vinduer;17;False;41400;K1-F4-S2-G3 Udskiftning af vinduer i mødelokaler, trappeopgange, kantine samt indgangsparti til trelags energirude, energiklasse A;1-3-1-0
+3953200;False;Vinduer;4;False;103900;K1-F4-S2-G3 Udskiftning af kældervinduer og vinduer i bygningen i øvrigt til trelags energirude, energiklasse A;1-3-1-0

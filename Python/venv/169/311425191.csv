@@ -1,0 +1,13 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+19200;False;Loft;0;True;500;Efterisolering af loftsrum.;1-1-1-0
+22500;False;Massive vægge mod uopvarmet rum;2;True;11000;Efterisolering af vægge mod uopvarmet tagrum.;1-2-2-1
+27800;False;Kælder ydervægge;5;True;4100;Udvendig efterisolering af kælderydervægge over jord.;1-2-4-0
+34200;True;Hule ydervægge;3;True;3500;Løs Leca i hulmur udtages og der indblæses mineraluldsgranulat.;1-2-1-0
+39400;False;Loft;1;False;800;Indvendig efterisolering af skråvægge.;1-1-1-0
+55200;False;Vinduer;6;False;1600;"Vinduer og døre med 2 lags alm. termoruder, udskiftes til vinduer og døre med trelags energiruder, energiklasse A.
+";1-3-1-0
+160000;True;Varmepumper;7;True;24200;"Konvertering til opvarmning via varmepumpe.
+Installation af ny luft/vand varmepumpe.
+Tilpasning af varmeanlæg til lavtemperaturdrift med varmepumpe. 
+";2-1-5-0
+177900;True;Kælder ydervægge;4;False;3600;Udvendig efterisolering af kælderydervægge mod jord.;1-2-4-0

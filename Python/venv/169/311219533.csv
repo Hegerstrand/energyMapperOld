@@ -1,0 +1,12 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+5000;False;Varmerør;0;True;1200;Isolering af ledninger og komponenter i varmecentralen;2-2-2-0
+5000;False;Varmefordelingspumper;5;True;900;Udskiftning af kedelpumpe til en moderne med et lavt energiforbrug;2-2-3-0
+5000;False;Varmtvandspumper;6;True;1200;Udskiftning af cirkulationspumpe i varmtvandsanlægget;3-1-4-0
+30000;False;Varmtvandsbeholder;7;False;500;Nedtagning af el-VVB i værksted;3-1-5-0
+80000;False;Ventilation;2;True;24100;Udskiftning af tagventilatorer til nye med et lavt energiforbrug;1-5-1-0
+125000;False;Solvarme;10;True;6600;Etablering af solvarmeanlæg til produktion af varmt brugsvand;2-1-6-0
+150000;False;Loft;1;False;6000;Efterisolering af loft;1-1-1-0
+250000;False;Kedler;4;True;50800;Udskiftning af gaskedel;2-1-2-0
+250000;False;Belysning;8;True;43400;Generel udskiftning af lyskilder i armaturer;4-1-1-0
+924300;False;Vinduer;3;False;26400;Udskiftning af vinduer til nye A-mærkede vinduer;1-3-1-0
+2500000;False;Varmepumper;9;False;63700;Varmepumpe og Jordvarmeanlæg;2-1-5-0

@@ -1,0 +1,10 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+10000;False;Etageadskillelse;8;True;600;Efterisolering af gulv mod kælder;1-4-2-0
+20000;True;Varmepumper;0;True;4900;Etablering af varmepumpe (luft/luft);2-1-5-0
+20000;False;Fladt tag;3;True;1000;Isolering af tag over bryggers;1-1-2-0
+50000;True;Varmt brugsvand;7;False;2500;Etablering af solvarmeanlæg til varmt brugsvand;3-1-1-0
+75000;True;Kedler;6;True;-21670;Konvertering til opvarmning via træpillefyr;2-1-2-0
+100000;False;Loft;4;True;15000;Efterisolering af tagkonstruktion;1-1-1-0
+220000;False;Vinduer;5;True;9700;Udskiftning af vinduer og yderdøre;1-3-1-0
+231200;False;Terrændæk;1;False;5100;Efterisolering af gulve;1-4-1-0
+296200;False;Massive ydervægge;2;False;7400;Udvendig efterisolering af ydervægge;1-2-2-0

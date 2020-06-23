@@ -1,0 +1,10 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+400;True;Varmtvandsrør;6;True;800;Isolering af uisolerede tilslutningsledninger til VVB;3-1-3-0
+10000;False;Varmeanlæg;4;True;-7830;El-radiatorer i kælder skiftes;2-1-1-0
+15000;True;Ventilation;5;False;300;Udskiftning af tagventilator;1-5-1-0
+55000;True;Belysning;7;False;2800;Ny belysning med dagslysstyring;4-1-1-0
+95000;False;Kælder ydervægge;2;True;2700;Isolering af kældervægge;1-2-4-0
+110000;False;Fjernvarme;8;True;-10420;Konvertering til fjernvarme;2-1-3-0
+128400;False;Vinduer;0;True;6200;Udskiftning af termoruder i eksisterende vinduer til nye lavenergiruder;1-3-1-0
+152400;False;Fladt tag;3;True;6800;Efterisolering af tag;1-1-2-0
+152500;False;Kældergulv;1;False;2300;Efterisolering af kældergulve;1-4-4-0

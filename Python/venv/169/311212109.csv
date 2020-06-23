@@ -1,0 +1,23 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+3700;False;Belysning;10;False;200;Monter lys og bevægelses styring i toiletter og køkken mod vest;4-1-1-0
+4500;False;Belysning;9;True;500;Udskift rør til LED og monter lys og bevægelses styring i toiletter;4-1-1-0
+5500;False;Belysning;11;True;1000;Udskift rør til LED og monter lys og bevægelses styring i køkkener;4-1-1-0
+6900;False;Belysning;5;True;600;Monter lys og bevægelses styring i toiletter i entre;4-1-1-0
+7500;False;Belysning;12;True;1200;Udskift rør til LED og monter lys og bevægelses styring i kontor i Jysk;4-1-1-0
+10000;False;Varmefordelingspumper;1;True;1100;Ny varmefordelingspumpe ved kedel;2-2-3-0
+12500;False;Belysning;4;True;2000;Udskift rør til LED og monter lys og bevægelses styring i toilet og omklædning i kælder;4-1-1-0
+13900;False;Belysning;8;True;4900;Monter lys og bevægelses styring og LED rør i lager i Outlet mod øst;4-1-1-0
+25000;False;Belysning;13;True;8300;Udskiftning af kompakt lysstofrør og halogenpærer til LED udvendigt;4-1-1-0
+50000;False;Ventilation;15;True;16500;Udskiftning af udsugninsanlæg i forbygning til toiletter og omklædning, og montering af styring;1-5-1-0
+52000;False;Varmefordelingspumper;2;True;7600;Ny pumper til ventilationsanlæggenes varmeflader ;2-2-3-0
+53000;False;Belysning;3;True;4400;Udskift rør til LED og monter lys og bevægelses styring i teknikrum;4-1-1-0
+81400;False;Belysning;6;False;4600;Monter lys og bevægelses styring i lagerlokaler;4-1-1-0
+83000;False;Yderdøre;20;True;3700;Udskiftning af ruder i døre til nye to lags lavenergiruder, rammer beholdes;1-3-3-0
+100000;False;Automatik;0;True;61000;Montage af automatik for central styring af varmeanlægget;2-2-4-0
+102000;False;Belysning;7;True;23800;Momtage af LED rør i outletbutik mod øst;4-1-1-0
+109700;False;Vinduer;19;True;5400;Udskiftning af ruder i vinduer med termoruder, rammer beholdes;1-3-1-0
+200000;False;Ventilation;16;True;16600;Udskiftning af ventilationsanlægget i entre;1-5-1-0
+700000;False;Kedler;21;True;65700;Konvertering til fjernvarme hvor det eksisterende fordelingsanlæg genanvendes;2-1-2-0
+3000000;False;Ventilation;17;True;470500;Udskiftning af ventilationsanlæg i butikker;1-5-1-0
+3500000;False;Solceller;14;True;275500;Etablering af solceller;4-1-3-0
+7423200;False;Fladt tag;18;False;39000;Efterisolering af fladt tag med 150 mm isolering, så den samlede isolering udgør 350 mm ;1-1-2-0

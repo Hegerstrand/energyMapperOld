@@ -1,0 +1,11 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+0;False;Ventilation;2;False;16100;Udskiftning af ventilationsaggregat;1-5-1-0
+7500;False;Varmefordelingspumper;3;True;900;Udskiftning af Grundfos, UPS 20-40;2-2-3-0
+7500;False;Varmefordelingspumper;5;True;600;Udskiftning af Grundfos, UPS 15-40;2-2-3-0
+10000;False;Automatik;4;True;3500;Installation af et vejrkompenseringsanlæg inkl. ur-styring;2-2-4-0
+13200;False;Yderdøre;8;False;300;Yderdør m. termorude udskiftes;1-3-3-0
+144300;False;Loft;0;True;4300;Efterisolering af loft mod uopvarmet tagrum;1-1-1-0
+194000;False;Lette ydervægge;6;False;1300;Indvendig efterisolering af træskeletvæg til en samlet isoleringsmængde på 250 mm;1-2-3-0
+362900;False;Massive ydervægge;9;False;4700;Udvendig efterisolering af ydervæg med 75 mm mineraluld;1-2-2-0
+386500;False;Vinduer;7;False;6400;Udskiftning af vinduer med nye energivinduer (BR18 krav);1-3-1-0
+1549600;False;Terrændæk;1;False;3700;Etablering af nyt terrændæk;1-4-1-0

@@ -11,6 +11,7 @@ import requests
 import xml.etree.ElementTree as ET
 from pathlib import Path
 import logging
+logging.basicConfig(filename='emowebLog.log',level=logging.DEBUG)
 
 headers = {
     'Authorization': 'Basic am9sbkBjb3dpLmNvbToxMjM0NTY3OA=='
@@ -114,41 +115,46 @@ def getAllBuildingsInKommune(kommuneNummer):
         r = requests.get(url="https://emoweb.dk/EMOData/EMOData.svc/Ping", headers=headers)
         if r.status_code == 200:
             LabelSerialIdentifierList = []
-            buildingInfo = []
-            csvFileName = 'BBR' + str(kommuneNummer) + '.csv'
-            if Path(csvFileName).is_file():
-                bygnignsData = pd.read_csv(csvFileName, encoding='latin1', header=0, quotechar='"', delimiter=";")
-                bygningsList = bygnignsData["id_lokalId"]
+            emowebcsvFileName = 'BygningInfo' + str(kommuneNummer) + '.csv'
+            if Path(emowebcsvFileName).is_file():
+                bygnignsData = pd.read_csv(emowebcsvFileName, encoding='latin1', header=0, quotechar='"', delimiter=";")
+                LabelSerialIdentifierList = bygnignsData["EnergyLabelSerialIdentifier"]
 
             else:
-                bygningsList = datafordeleren.getBygningsList(kommuneNummer)
+                BBRcsvFileName = 'BBR' + str(kommuneNummer) + '.csv'
+                if Path(BBRcsvFileName).is_file():
+                    bygnignsData = pd.read_csv(BBRcsvFileName, encoding='latin1', header=0, quotechar='"', delimiter=";")
+                    bygningsList = bygnignsData["id_lokalId"]
 
-            print("Going through list of " + str(len(bygningsList)) + " buildings")
+                else:
+                    bygningsList = datafordeleren.getBygningsList(kommuneNummer)
 
-            bygnigner_csv_file = open("BygningInfo" + str(kommuneNummer) + ".csv", 'w')
-            bygning_writer = csv.writer(bygnigner_csv_file, delimiter=';', lineterminator='\n')
-            allHeadings = []
-            allHeadings.extend(DawaHeadings)
-            allHeadings.extend(EmoDataHeadings)
-            bygning_writer.writerow(allHeadings)
-            for bygningsID in bygningsList:
-                buildingInfo = []
-                DawaBygning = datafordeleren.getDawaBygning(bygningsID)
-                if DawaBygning == None or DawaBygning["BYG_ANVEND_KODE"] >= 600 or "ESREjdNr" not in DawaBygning:
-                    continue
+                print("Going through list of " + str(len(bygningsList)) + " buildings")
 
-                EjendomsNummer = DawaBygning["ESREjdNr"]
-                SearchforEnergyLabel = getLabelSerialIdentifier(kommuneNummer, EjendomsNummer, 0)
-                if SearchforEnergyLabel == None: continue
+                bygnigner_csv_file = open("BygningInfo" + str(kommuneNummer) + ".csv", 'w')
+                bygning_writer = csv.writer(bygnigner_csv_file, delimiter=';', lineterminator='\n')
+                allHeadings = []
+                allHeadings.extend(DawaHeadings)
+                allHeadings.extend(EmoDataHeadings)
+                bygning_writer.writerow(allHeadings)
+                for bygningsID in bygningsList:
+                    buildingInfo = []
+                    DawaBygning = datafordeleren.getDawaBygning(bygningsID)
+                    if DawaBygning == None or DawaBygning["BYG_ANVEND_KODE"] >= 600 or "ESREjdNr" not in DawaBygning:
+                        continue
 
-                for heading in DawaHeadings:
-                    buildingInfo.append(DawaBygning[heading])
+                    EjendomsNummer = DawaBygning["ESREjdNr"]
+                    SearchforEnergyLabel = getLabelSerialIdentifier(kommuneNummer, EjendomsNummer, 0)
+                    if SearchforEnergyLabel == None: continue
 
-                for heading in EmoDataHeadings:
-                    buildingInfo.append(SearchforEnergyLabel[heading])
+                    for heading in DawaHeadings:
+                        buildingInfo.append(DawaBygning[heading])
 
-                bygning_writer.writerow(buildingInfo)
-                LabelSerialIdentifierList.append(SearchforEnergyLabel["EnergyLabelSerialIdentifier"])
+                    for heading in EmoDataHeadings:
+                        buildingInfo.append(SearchforEnergyLabel[heading])
+
+                    bygning_writer.writerow(buildingInfo)
+                    LabelSerialIdentifierList.append(SearchforEnergyLabel["EnergyLabelSerialIdentifier"])
 
         print("Collected EnergyLabelForLabelSerialIdentifier for " + str(len(LabelSerialIdentifierList)) + " buildings")
         getEnergyLabelForLabelSerialIdentifier(LabelSerialIdentifierList)
@@ -159,9 +165,10 @@ def getAllBuildingsInKommune(kommuneNummer):
 
 # kommunekode og ESR ejendomsnr (property) benyttes sammen til findes LabelSerialIdentifier ved /SearchEnergyLabelBBR
 def getLabelSerialIdentifier(municipality, property, building):
+    SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
+    query = ""
     try:
-        SearchEnergyLabelBBR = "https://emoweb.dk/EMOData/EMOData.svc/SearchEnergyLabelBBR/"
-        query = str(municipality) + "/" + property + "/" + str(building)
+        query = str(municipality) + "/" + str(property) + "/" + str(building)
         url = SearchEnergyLabelBBR + query + "/TL,BA"
         time.sleep(6)
         try:
@@ -177,7 +184,15 @@ def getLabelSerialIdentifier(municipality, property, building):
 
             if len(searchResults) > 0:
                 building = searchResults[0]
+                print("Energy label for property " + str(property) + " found")
                 return building
+            else:
+                print("No energy label for property " + str(property))
+                return
+        else:
+            print("Status code " + str(BBRSearchResponse.status_code) + " for " + query)
+
+        return
     except ImportError:
         logging.warning("getLabelSerialIdentifier: SearchEnergyLabelBBR " + query + " failed")
         print("getLabelSerialIdentifier: SearchEnergyLabelBBR " + query + " failed")
@@ -263,9 +278,12 @@ def saveProposalOverviewInSummary(Summary_writer, LabelSerialIdentifier,EnergyLa
         Summary.append(EnergyLabelDetails["ProposalCalculation"][heading])
     for heading in ProposalOverviewHeadings:
         Summary.append(ProposalOverview[heading])
-
-    Summary_writer.writerow(Summary)
-    print(str(LabelSerialIdentifier) + " written to Summary.csv.")
+    try:
+        Summary_writer.writerow(Summary)
+        print(str(LabelSerialIdentifier) + " written to Summary.csv.")
+    except:
+        logging.warning(str(LabelSerialIdentifier) + " failed.")
+        print(str(LabelSerialIdentifier) + " failed.")
 
 def saveProposalsAsCsv(LabelSerialIdentifier, ProposalOverview):
     Proposal_csv_file = open(str(LabelSerialIdentifier) + ".csv", 'w')

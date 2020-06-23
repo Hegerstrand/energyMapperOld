@@ -1,0 +1,26 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+100;False;Belysning;10;True;30;Toiletter v. omklædning - Udskiftning af glødepærer til LED;4-1-1-0
+200;False;Belysning;22;True;80;1.sal - Toiletter - Udskiftning af glødepærer til LED;4-1-1-0
+1300;False;Varmtvandsrør;7;True;70;Isolering af tilslutningsrør til varmtvandsbeholder op til 50 mm;3-1-3-0
+1300;False;Belysning;13;True;200;Direktørkontor - Installation af bevægelsesmelder;4-1-1-0
+1300;False;Belysning;15;True;200;Værkførerkontor - Installation af bevægelsesmelder;4-1-1-0
+2500;False;Belysning;9;False;-90;Baderum - Udskiftning af armaturer ;4-1-1-0
+2500;False;Belysning;14;True;700;Lager - Installation af bevægelsesmelder;4-1-1-0
+2500;False;Belysning;21;True;600;1.sal - Foyer - Installation af bevægelsesmelder;4-1-1-0
+2800;False;Belysning;12;False;60;Depotrum - Udskiftning af armaturer og installation af bevægelsesmelder;4-1-1-0
+3000;False;Belysning;11;True;300;Gang - Udskiftning af armaturer ;4-1-1-0
+3800;False;Belysning;8;False;300;Omklædning/vask - Installation af bevægelsesmelder;4-1-1-0
+4000;False;Varmefordelingspumper;2;True;600;Pumpe 01 - Montering af ny varmefordelingspumpe på varmeanlæg;2-2-3-0
+4200;False;Varmerør;24;False;100;Kælder - Isolering af varmefordelingsrør op til 50 mm;2-2-2-0
+4500;False;Varmefordelingspumper;3;True;1000;Pumpe 02 - Montering af ny varmefordelingspumpe på varmeanlæg;2-2-3-0
+4500;False;Varmtvandspumper;6;False;30;Montage af ny automatisk trinstyret cirkulationspumpe, som Alpha 2, 25-40N, 18 W;3-1-4-0
+5500;False;Varmefordelingspumper;4;True;2000;Pumpe 03 - Montering af ny varmefordelingspumpe på varmeanlæg;2-2-3-0
+5500;False;Varmtvandspumper;5;True;600;Montering af ny cirkulationspumpe til varmt brugsvand, Grundfos Alpha2 20-40 N;3-1-4-0
+11500;False;Belysning;17;True;1100;1.sal - Mødelokale - Udskiftning af armaturer og installation af bevægelsesmelder med dagslysstyring;4-1-1-0
+16000;False;Belysning;16;True;1600;1.sal - Frokoststue - Udskiftning af armaturer og installation af bevægelsesmelder med dagslysstyring;4-1-1-0
+20000;False;Belysning;19;False;1300;1.sal - Bi rum - Udskiftning af armaturer og installation af bevægelsesmelder;4-1-1-0
+34000;False;Belysning;18;True;3800;1.sal - Kontorer - Udskiftning af armaturer og installation af bevægelsesmelder med dagslysstyring;4-1-1-0
+36000;False;Belysning;20;True;3200;1.sal - Gange - Udskiftning af armaturer og installation af bevægelsesmelder;4-1-1-0
+100000;False;Kedler;23;True;18100;Installation af ny gaskedel 110 kW - som Baxi, type WGB 110;2-1-2-0
+111200;False;Solceller;0;True;8500;Montering af 6 kWp solcelleanlæg;4-1-3-0
+506200;False;Vinduer;1;False;12500;Udskiftning af vinduer & yderdøre med 2 lags termorude;1-3-1-0

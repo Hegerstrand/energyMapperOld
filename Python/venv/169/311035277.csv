@@ -1,0 +1,10 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+24000;True;Massive ydervægge;3;False;400;Udskiftning af massiv dør;1-2-2-0
+32000;False;Varmtvandsbeholder;8;False;800;Solvarme nyt anlæg, brugsvand;3-1-5-0
+39500;True;Massive ydervægge;2;True;3600;Isolering af massiv ydervæg;1-2-2-0
+45000;False;Ventilation;7;False;1300;Udskiftning af ventilationsaggregatet til et nyt med bedre blæser og varmegenvinding.;1-5-1-0
+55600;False;Massive ydervægge;0;False;1300;Isolering af kælderydervæg;1-2-2-0
+65900;False;Vinduer;6;False;1000;Udskiftning til lavenergivinduer;1-3-1-0
+114700;True;Hule ydervægge;1;False;1200;Isolering af hul mur;1-2-1-0
+121400;False;Terrændæk;4;False;300;Isolering af terrændæk;1-4-1-0
+175200;False;Kældergulv;5;False;600;Isolering af kældergulv;1-4-4-0

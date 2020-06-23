@@ -1,0 +1,12 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+9000;False;Varmefordelingspumper;1;True;1700;Ny varmefordelingspumpe;2-2-3-0
+85600;False;Etageadskillelse;5;True;13300;Isolering af uisoleret gulv mod uopvarmet kælder;1-4-2-0
+100000;False;Ventilation;0;True;10300;Udskiftning af tagventilatorer;1-5-1-0
+108000;False;Yderdøre;7;False;2300;Udskiftning af yderdøre;1-3-3-0
+125000;False;Belysning;9;True;16100;Udskiftning LED i lager med konventionel belysning;4-1-1-0
+153800;False;Solceller;3;True;15400;Montage af nye solceller;4-1-3-0
+241200;False;Yderdøre;8;False;7000;Udskiftning af rulleporte;1-3-3-0
+260000;False;Belysning;2;True;18500;Udskiftning til LED i kontorer med traditionel belysning;4-1-1-0
+499000;False;Fladt tag;10;False;12200;Efterisolering af fladt tag over kontorareal;1-1-2-0
+712800;False;Vinduer;6;False;14300;Udskiftning af vinduer;1-3-1-0
+967200;False;Hule ydervægge;4;False;14200;Indvendig montage af forsatsvæg på ydervægge i kontorer;1-2-1-0

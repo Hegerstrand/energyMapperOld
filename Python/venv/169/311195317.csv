@@ -1,0 +1,40 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+5400;False;Varmtvandsrør;64;False;100;"Kontor og reception:
+Isolering af brugsvandsrør og cirkulationsledning op til 100 mm";3-1-3-0
+8400;False;Varmtvandsrør;65;True;400;"Kontor og reception:
+Isolering af tilslutningsrør til varmtvandsbeholder op til 100 mm";3-1-3-0
+20400;False;Vinduer;41;False;500;"Ny lav hal(3): 
+Udskiftning af nyere vinduer til trelags energirude, energiklasse A. og Ny lav hal(3): Reduceret linjetab ved udskiftning af elementer";1-3-1-0
+25200;False;Vinduer;7;True;1000;"Reception: 
+Udskiftning af vinduer i reception og kontorer i stueetagen.
+";1-3-1-0
+36900;False;Belysning;62;True;7500;"Opv. kælder: 
+Installation af LED panel, med bevægelsesmelder, iht. 2016 krav";4-1-1-0
+38300;False;Yderdøre;4;False;900;"Reception: 
+Udskiftning til nyt facadeparti med trelags energirude";1-3-3-0
+58300;False;Varmefordelingspumper;52;True;12400;"Varmeanlæg: 
+Udskiftning af gamle  varmefordelingspumper til moderne pumper med lavt forbrug.";2-2-3-0
+60800;False;Belysning;60;True;7100;Reception og kontor i stueplan: Installation af LED panel, med bevægelsesmeldere.;4-1-1-0
+79400;False;Etageadskillelse;18;True;24000;"Lager: 
+Isolering af uisolerede læsseramper i stål.";1-4-2-0
+135200;False;Ovenlys;5;False;2800;"Reception: 
+Udskiftning af ovenlysvindue til trelags energirude, efter BR20.";1-3-2-0
+163800;False;Vinduer;16;False;4100;"Kontor: 
+Udskiftning af nyere vinduer til trelags energirude, energiklasse A. og Kontor: Forbedret linjetab efter udskiftning, mellem ydervæg og vinduer/døre";1-3-1-0
+168200;False;Vinduer;21;False;2800;"Opr. lav hal(1): 
+Udskiftning af vindue til trelags energirude, energiklasse A.";1-3-1-0
+225800;False;Vinduer;6;False;4400;"Reception: 
+Udskiftning af vindue til trelags energirude, energiklasse A.";1-3-1-0
+265200;False;Belysning;59;True;30400;"Kontorer, gang og toiletter på 1. sal: Installation af LED panel, med bevægelsesmelder. 
+";4-1-1-0
+267000;False;Solceller;50;True;18100;"Kontor:
+Montage af 2 nye solcelleanlæg på hver 7,2 kW mod øst og syd. Monteres på ydermur af kontorer på 1. sal.";4-1-3-0
+318500;False;Kælder ydervægge;57;False;7700;"Opv. kælder: 
+Indvendig efterisolering med 200 mm isolering på kælderydervægge mod jord";1-2-4-0
+427200;False;Massive vægge mod uopvarmet rum;58;True;21200;"Opv. kælder: 
+Efterisolering med 300 mm isolering på kældervægge ved opvarmet zone.
+";1-2-2-1
+1000000;False;Solceller;48;True;100000;"Lager:
+Montage af nye solceller, Monokrystallinske silicium, større end 50 kW monteret på sydvendt mur af lager.";4-1-3-0
+1500000;False;Ventilation;61;False;25100;"Lager og kontor:
+Udskiftning af 3 stk. ventilationsanlæg";1-5-1-0

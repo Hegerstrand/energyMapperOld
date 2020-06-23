@@ -1,0 +1,11 @@
+Investment;Recommended;SeebClassificationDescription;ProposalID;Profitable;Savings;ProposalHeadline;SeebClassification
+2600;False;Loft;3;True;90;Efterisolering af vandret skunk med 100 mm isolering.;1-1-1-0
+3600;False;Ovenlys;5;True;300;Udskiftning af ruder i ovenlysvinduer med termoruder;1-3-2-0
+6100;False;Yderdøre;4;True;500;Montage af ny massiv, isoleret yderdør;1-3-3-0
+7000;False;Loft;2;False;200;Indvendig efterisolering af skråvægge med 100 mm isolering;1-1-1-0
+8000;False;Loft;1;False;200;Efterisolering af hanebåndsloft med 100 mm isolering;1-1-1-0
+8400;False;Varmerør;0;False;70;Isolering af varmefordelingsrør op til 50 mm;2-2-2-0
+18000;False;Varmeanlæg;8;True;3300;Nedlægning af elradiatorer på 1. sal;2-1-1-0
+25000;False;Ventilation;9;True;2200;Udskiftning af aggregat ved ventilationsanlæg;1-5-1-0
+32000;False;Solvarme;6;False;1000;Etablering af solvarme til varmt brugsvand;2-1-6-0
+77000;False;Solceller;7;False;3900;Montering af solceller;4-1-3-0
